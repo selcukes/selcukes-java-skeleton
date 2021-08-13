@@ -36,5 +36,6 @@ dependencies {
 
 tasks.withType(Test) {
     useTestNG()
+    scanForTestClasses = false
     maxParallelForks = 5
 }
