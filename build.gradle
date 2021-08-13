@@ -10,13 +10,13 @@ sourceCompatibility = 11
 repositories {
     mavenCentral()
 }
-ext{
-    testngVersion="7.4.0"
-    selcukesVersion="1.3.0"
-    seleniumVersion="4.0.0-beta-4"
-    cucumberVersion="6.11.0"
-    lombokVersion="1.18.20"
-    extentVersion="5.0.8"
+ext {
+    testngVersion = "7.4.0"
+    selcukesVersion = "1.3.0"
+    seleniumVersion = "4.0.0-beta-4"
+    cucumberVersion = "6.11.0"
+    lombokVersion = "1.18.20"
+    extentVersion = "5.0.8"
 }
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
@@ -26,9 +26,11 @@ dependencies {
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
     implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
-    implementation "org.projectlombok:lombok:${lombokVersion}"
-    compileOnly "com.aventstack:extentreports:${extentVersion}"
+    implementation "com.aventstack:extentreports:${extentVersion}"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
 }
 
