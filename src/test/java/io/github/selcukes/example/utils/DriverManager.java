@@ -36,6 +36,8 @@ public class DriverManager implements Disposable {
 
     @Override
     public void dispose() {
-        webDriver.quit();
+        if (webDriver != null) {
+            webDriver.quit();
+        }
     }
 }
