@@ -1,6 +1,5 @@
 plugins {
     id 'java'
-
 }
 
 group 'io.github.selcukes'
@@ -33,7 +32,9 @@ dependencies {
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
 }
-
+test {
+    testLogging.showStandardStreams = true
+}
 tasks.withType(Test) {
     useTestNG()
     scanForTestClasses = false
