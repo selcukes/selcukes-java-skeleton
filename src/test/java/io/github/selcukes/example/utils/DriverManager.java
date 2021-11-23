@@ -15,14 +15,14 @@ public class DriverManager implements Disposable {
     private WebDriver webDriver;
 
     private void createWebDriver() {
-        WebDriverBinary.chromeDriver().setup();
+        WebDriverBinary.chromeDriver().checkBrowserVersion().setup();
 
         ChromeOptions options = new ChromeOptions();
         if (Platform.isLinux()) options.setHeadless(true);
         webDriver = new ChromeDriver(options);
-    /*    WebDriverListener eventCapture = new EventCapture();
+        WebDriverListener eventCapture = new EventCapture();
 
-        webDriver = new EventFiringDecorator(eventCapture).decorate(webDriver);*/
+        webDriver = new EventFiringDecorator(eventCapture).decorate(webDriver);
         webDriver.manage().window().maximize();
 
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
