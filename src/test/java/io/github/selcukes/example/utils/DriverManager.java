@@ -4,8 +4,8 @@ import io.github.selcukes.wdb.WebDriverBinary;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.support.events.EventFiringWebDriver;
-import org.openqa.selenium.support.events.WebDriverEventListener;
+import org.openqa.selenium.support.events.EventFiringDecorator;
+import org.openqa.selenium.support.events.WebDriverListener;
 import org.picocontainer.Disposable;
 
 import java.time.Duration;
@@ -18,10 +18,9 @@ public class DriverManager implements Disposable {
 
         ChromeOptions options = new ChromeOptions();
         webDriver = new ChromeDriver(options);
-        WebDriverEventListener eventCapture = new EventCapture();
-        webDriver = new EventFiringWebDriver(webDriver).register(eventCapture);
+        WebDriverListener eventCapture = new EventCapture();
 
-        // webDriver = new EventFiringDecorator(eventCapture).decorate(webDriver);
+        webDriver = new EventFiringDecorator(eventCapture).decorate(webDriver);
         webDriver.manage().window().maximize();
 
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(1));
