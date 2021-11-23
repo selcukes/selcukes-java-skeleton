@@ -1,5 +1,6 @@
 package io.github.selcukes.example.utils;
 
+import io.github.selcukes.commons.os.Platform;
 import io.github.selcukes.wdb.WebDriverBinary;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -17,6 +18,7 @@ public class DriverManager implements Disposable {
         WebDriverBinary.chromeDriver().setup();
 
         ChromeOptions options = new ChromeOptions();
+        if (Platform.isLinux()) options.setHeadless(true);
         webDriver = new ChromeDriver(options);
         WebDriverListener eventCapture = new EventCapture();
 
