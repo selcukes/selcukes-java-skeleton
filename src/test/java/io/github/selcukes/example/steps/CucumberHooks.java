@@ -14,12 +14,13 @@ public class CucumberHooks {
 
     public CucumberHooks(DriverManager driverManager) {
         driver = driverManager.getDriver();
+        reporter = Reporter.getReport();
     }
 
 
     @Before
     public void beforeTest(Scenario scenario) {
-        reporter = Reporter.getReport();
+
         reporter.start() //Initialise Extent Report and start recording logRecord
                 .initSnapshot(driver); //Initialise Full page screenshot
         logger.info(() -> "Starting Scenario .." + scenario.getName());
