@@ -32,11 +32,9 @@ dependencies {
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
 }
-test {
-    testLogging.showStandardStreams = true
-}
 tasks.withType(Test) {
+    testLogging.showStandardStreams = true
     useTestNG()
     scanForTestClasses = false
-    maxParallelForks = 5
+    maxParallelForks = 1
 }
