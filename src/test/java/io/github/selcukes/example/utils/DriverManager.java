@@ -1,10 +1,8 @@
 package io.github.selcukes.example.utils;
 
-import io.github.selcukes.commons.os.Platform;
-import io.github.selcukes.wdb.WebDriverBinary;
+import io.github.selcukes.wdb.driver.LocalDriver;
+import io.github.selcukes.wdb.enums.DriverType;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 import org.picocontainer.Disposable;
@@ -15,11 +13,8 @@ public class DriverManager implements Disposable {
     private WebDriver webDriver;
 
     private void createWebDriver() {
-        WebDriverBinary.chromeDriver().checkBrowserVersion().setup();
-
-        ChromeOptions options = new ChromeOptions();
-        if (Platform.isLinux()) options.setHeadless(true);
-        webDriver = new ChromeDriver(options);
+        LocalDriver localDriver = new LocalDriver();
+        webDriver = localDriver.createWebDriver(DriverType.CHROME);
         WebDriverListener eventCapture = new EventCapture();
 
         webDriver = new EventFiringDecorator(eventCapture).decorate(webDriver);
