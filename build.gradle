@@ -4,6 +4,7 @@ plugins {
 
 group 'io.github.selcukes'
 version '1.0-SNAPSHOT'
+
 sourceCompatibility = 11
 
 repositories {
@@ -21,7 +22,7 @@ dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
     implementation "org.testng:testng:${testngVersion}"
     implementation "io.github.selcukes:webdriver-binaries:${selcukesVersion}"
-    implementation "io.github.selcukes:selcukes-extent-reports:1.4.1"
+    implementation "io.github.selcukes:selcukes-extent-reports:${selcukesVersion}"
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
     implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
