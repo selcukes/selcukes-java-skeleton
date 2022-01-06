@@ -11,7 +11,7 @@ repositories {
     mavenCentral()
 }
 ext {
-    testngVersion = "7.4.0"
+    testngVersion = "7.5"
     selcukesVersion = "1.4.1"
     seleniumVersion = "4.1.1"
     cucumberVersion = "7.2.1"
