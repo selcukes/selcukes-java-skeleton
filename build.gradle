@@ -15,7 +15,7 @@ ext {
     selcukesVersion = "1.5.1"
     seleniumVersion = "4.1.3"
     cucumberVersion = "7.2.3"
-    lombokVersion = "1.18.22"
+    lombokVersion = "1.18.24"
     extentVersion = "5.0.9"
 }
 dependencies {
