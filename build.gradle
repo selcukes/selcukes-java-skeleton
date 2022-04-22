@@ -21,8 +21,7 @@ ext {
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
     implementation "org.seleniumhq.selenium:selenium-grid:${seleniumVersion}"
-    implementation "org.testng:testng:${testngVersion}"
-    implementation "io.github.selcukes:webdriver-binaries:${selcukesVersion}"
+    implementation "io.github.selcukes:selcukes-excel-runner:${selcukesVersion}"
     implementation "io.github.selcukes:selcukes-core:${selcukesVersion}"
     implementation "io.github.selcukes:selcukes-extent-reports:${selcukesVersion}"
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"

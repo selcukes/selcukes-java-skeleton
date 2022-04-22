@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 
 @CustomLog
 public class CucumberHooks {
-
+    public static ThreadLocal<String> testName = new InheritableThreadLocal<>();
     private final Reporter reporter;
     WebDriver driver;
 
@@ -20,7 +20,8 @@ public class CucumberHooks {
 
     @Before
     public void beforeTest(Scenario scenario) {
-
+        String test = getFeatureName(scenario) + "::" + scenario.getName();
+        testName.set(test);
         reporter.start() //Initialise Extent Report and start recording logRecord
             .initSnapshot(driver); //Initialise Full page screenshot
         logger.info(() -> "Starting Scenario .." + scenario.getName());
@@ -48,4 +49,9 @@ public class CucumberHooks {
         reporter.attachAndClear(); // Attach INFO logs and clear logRecord
     }
 
+    public static String getFeatureName(Scenario scenario) {
+        String featureName = scenario.getUri().getPath();
+        featureName = featureName.substring(featureName.lastIndexOf("/") + 1, featureName.indexOf("."));
+        return featureName;
+    }
 }

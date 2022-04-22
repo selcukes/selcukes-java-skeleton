@@ -1,12 +1,9 @@
 package io.github.selcukes.example;
 
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
+import io.github.selcukes.excel.ExcelTestRunner;
 
-@CucumberOptions(tags = "@tag1")
-
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class TestRunner extends ExcelTestRunner {
 
 
 }
