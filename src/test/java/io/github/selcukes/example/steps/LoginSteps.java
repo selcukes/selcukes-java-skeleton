@@ -4,9 +4,8 @@ package io.github.selcukes.example.steps;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.github.selcukes.core.listener.EventCapture;
 import io.github.selcukes.example.pages.LoginPage;
-import io.github.selcukes.example.utils.TestDriverManager;
+import io.github.selcukes.example.utils.TestContext;
 import io.github.selcukes.extent.report.Reporter;
 
 
@@ -15,14 +14,12 @@ public class LoginSteps {
 
     LoginPage loginPage;
 
-    public LoginSteps(TestDriverManager driverManager) {
+    public LoginSteps(TestContext driverManager) {
         loginPage = new LoginPage(driverManager.getDriver());
     }
 
     @Given("{} is on Home Page")
     public void userIsOnHomePage(String user) {
-        EventCapture.FIELD_ATTRIBUTE = "title";
-        loginPage.enableDriverEvents();
         loginPage.open("http://www.google.com/");
         Reporter.getReport().attachScreenshot();
     }

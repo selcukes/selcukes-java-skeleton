@@ -1,7 +1,7 @@
 package io.github.selcukes.example.steps;
 
 import io.cucumber.java.*;
-import io.github.selcukes.example.utils.TestDriverManager;
+import io.github.selcukes.example.utils.TestContext;
 import io.github.selcukes.extent.report.Reporter;
 import lombok.CustomLog;
 import org.openqa.selenium.WebDriver;
@@ -12,7 +12,7 @@ public class CucumberHooks {
     private final Reporter reporter;
     WebDriver driver;
 
-    public CucumberHooks(TestDriverManager driverManager) {
+    public CucumberHooks(TestContext driverManager) {
         driver = driverManager.getDriver();
         reporter = Reporter.getReport();
     }
