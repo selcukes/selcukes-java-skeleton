@@ -1,7 +1,7 @@
 package io.github.selcukes.example.steps;
 
 import io.cucumber.java.*;
-import io.github.selcukes.example.utils.DriverManager;
+import io.github.selcukes.example.utils.TestDriverManager;
 import io.github.selcukes.extent.report.Reporter;
 import lombok.CustomLog;
 import org.openqa.selenium.WebDriver;
@@ -9,10 +9,10 @@ import org.openqa.selenium.WebDriver;
 @CustomLog
 public class CucumberHooks {
 
-    private Reporter reporter;
+    private final Reporter reporter;
     WebDriver driver;
 
-    public CucumberHooks(DriverManager driverManager) {
+    public CucumberHooks(TestDriverManager driverManager) {
         driver = driverManager.getDriver();
         reporter = Reporter.getReport();
     }
@@ -22,7 +22,7 @@ public class CucumberHooks {
     public void beforeTest(Scenario scenario) {
 
         reporter.start() //Initialise Extent Report and start recording logRecord
-                .initSnapshot(driver); //Initialise Full page screenshot
+            .initSnapshot(driver); //Initialise Full page screenshot
         logger.info(() -> "Starting Scenario .." + scenario.getName());
         reporter.attachAndRestart(); // Attach INFO logs and restart logRecord
 
