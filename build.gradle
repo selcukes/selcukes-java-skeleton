@@ -17,6 +17,7 @@ ext {
     cucumberVersion = "7.3.2"
     lombokVersion = "1.18.24"
     extentVersion = "5.0.9"
+    log4jVersion="2.17.2"
 }
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
@@ -28,6 +29,7 @@ dependencies {
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
     implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
     implementation "com.aventstack:extentreports:${extentVersion}"
+    testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
