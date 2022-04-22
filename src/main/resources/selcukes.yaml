@@ -8,7 +8,7 @@ excelRunner:
   filePath: ""
   suiteName: "smoke"
 web:
-  remote: false
+  remote: true
   browserName: CHROME
   headLess: true
   serviceUrl: "http://localhost:4444"
