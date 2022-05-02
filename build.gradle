@@ -14,7 +14,7 @@ ext {
     testngVersion = "7.5"
     selcukesVersion = "1.6.0"
     seleniumVersion = "4.1.4"
-    cucumberVersion = "7.3.3"
+    cucumberVersion = "7.3.4"
     lombokVersion = "1.18.24"
     extentVersion = "5.0.9"
     log4jVersion="2.17.2"
