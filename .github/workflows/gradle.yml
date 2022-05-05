@@ -22,9 +22,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Deploy reports to Github Pages
-      if: always()
       uses: JamesIves/github-pages-deploy-action@v4.3.3
-      env:
-          PERSONAL_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: ./target/extent-reports
+      with:
+          branch: gh-pages 
+          folder: ./target/extent-reports
