@@ -1,0 +1,75 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>io.github.selcukes</groupId>
+    <artifactId>selcukes-java-skeleton</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <properties>
+
+        <testng.version>7.5</testng.version>
+        <selenium.version>4.1.4</selenium.version>
+        <cucumber.version>7.3.4</cucumber.version>
+        <extentreports.version>5.0.9</extentreports.version>
+
+        <selcukes.version>2.0.0</selcukes.version>
+
+        <lombok.version>1.18.24</lombok.version>
+
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>io.github.selcukes</groupId>
+            <artifactId>selcukes-core</artifactId>
+            <version>${selcukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.selcukes</groupId>
+            <artifactId>selcukes-reports</artifactId>
+            <version>${selcukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.selcukes</groupId>
+            <artifactId>selcukes-excel-runner</artifactId>
+            <version>${selcukes.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-grid</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extentreports.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

@@ -21,7 +21,6 @@ public class LoginSteps {
     @Given("{} is on Home Page")
     public void userIsOnHomePage(String user) {
         loginPage.open("http://www.google.com/");
-        Reporter.getReport().attachScreenshot();
     }
 
 

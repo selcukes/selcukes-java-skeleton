@@ -12,7 +12,7 @@ repositories {
 }
 ext {
     testngVersion = "7.5"
-    selcukesVersion = "1.6.0"
+    selcukesVersion = "2.0.0"
     seleniumVersion = "4.1.4"
     cucumberVersion = "7.3.4"
     lombokVersion = "1.18.24"
@@ -22,14 +22,19 @@ ext {
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
     implementation "org.seleniumhq.selenium:selenium-grid:${seleniumVersion}"
+    implementation "org.testng:testng:${testngVersion}"
+
     implementation "io.github.selcukes:selcukes-excel-runner:${selcukesVersion}"
     implementation "io.github.selcukes:selcukes-core:${selcukesVersion}"
-    implementation "io.github.selcukes:selcukes-extent-reports:${selcukesVersion}"
+    implementation "io.github.selcukes:selcukes-reports:${selcukesVersion}"
+
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
     implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
+
     implementation "com.aventstack:extentreports:${extentVersion}"
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
+
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"

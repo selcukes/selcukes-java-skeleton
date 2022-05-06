@@ -14,12 +14,13 @@ public class CommonPage extends WebPage {
     public CommonPage(WebDriver driver) {
         super(driver);
     }
-    public Map<String,String> getScenarioData()
-    {
+
+    public Map<String, String> getScenarioData() {
         return ExcelUtils.getTestDataAsMap(CucumberHooks.testName.get());
     }
+
     public void enter(String text) {
-        find(By.name("q")).clear();
-        write(By.name("q"), text + Keys.TAB);
+        click(By.name("q"));
+        enter(By.name("q"), text + Keys.TAB);
     }
 }
