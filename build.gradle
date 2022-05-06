@@ -22,14 +22,19 @@ ext {
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
     implementation "org.seleniumhq.selenium:selenium-grid:${seleniumVersion}"
+    implementation "org.testng:testng:${testngVersion}"
+
     implementation "io.github.selcukes:selcukes-excel-runner:${selcukesVersion}"
     implementation "io.github.selcukes:selcukes-core:${selcukesVersion}"
-    implementation "io.github.selcukes:selcukes-extent-reports:${selcukesVersion}"
+    implementation "io.github.selcukes:selcukes-reports:${selcukesVersion}"
+
     implementation "io.cucumber:cucumber-java:${cucumberVersion}"
     implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
     implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
+
     implementation "com.aventstack:extentreports:${extentVersion}"
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
+
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"

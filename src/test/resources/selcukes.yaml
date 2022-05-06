@@ -1,24 +1,34 @@
-# Selcukes Environment Properties
----
 projectName: Selcukes
 env: Dev
 proxy: false
 baseUrl:
-excelRunner:
-  fileName: "TestData.xlsx"
+excel:
+  runner: true
+  fileName: src/test/resources/TestData.xlsx
   suiteName: "Smoke"
+cucumber:
+  module:
+  features: src/test/resources/features
+  glue: io.github.selcukes.example.steps
+  tags:
+  plugin:
 web:
   remote: true
   browserName: CHROME
   headLess: true
-  serviceUrl: "http://localhost:4444"
+  serviceUrl: "http://127.0.0.1:8080"
 windows:
   serviceUrl: "http://127.0.0.1:4723"
-  winApp-path: "C:/Program Files (x86)/Windows Application Driver/WinAppDriver.exe"
   app: "C:\\Windows\\System32\\notepad.exe"
 mobile:
   serviceUrl: "http://127.0.0.1:4723"
   app: "ApiDemos-debug.apk"
+reports:
+  emailReport: true
+  htmlReport: true
+  path: build
+  fileName: index
+  timestamp: false
 video:
   recording: false
   recorderType: FFMPEG

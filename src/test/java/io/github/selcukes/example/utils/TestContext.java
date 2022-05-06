@@ -2,11 +2,12 @@ package io.github.selcukes.example.utils;
 
 import io.github.selcukes.commons.config.ConfigFactory;
 import io.github.selcukes.core.driver.DriverManager;
+import io.github.selcukes.core.driver.GridRunner;
 import io.github.selcukes.core.enums.DeviceType;
 import io.github.selcukes.core.listener.EventCapture;
+import io.github.selcukes.wdb.enums.DriverType;
 import lombok.SneakyThrows;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.events.EventFiringDecorator;
 import org.openqa.selenium.support.events.WebDriverListener;
 
@@ -17,8 +18,8 @@ public class TestContext {
 
     @SneakyThrows
     private void createWebDriver() {
-        DriverManager<RemoteWebDriver> driverManager = new DriverManager<>();
-        webDriver = driverManager.createDriver(DeviceType.BROWSER);
+        GridRunner.startSeleniumServer(DriverType.CHROME);
+        webDriver = DriverManager.createDriver(DeviceType.BROWSER);
         ConfigFactory.loadLoggerProperties();
         EventCapture.FIELD_ATTRIBUTE = "title";
         WebDriverListener eventCapture = new EventCapture();
