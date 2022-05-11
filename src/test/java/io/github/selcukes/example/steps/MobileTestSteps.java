@@ -20,7 +20,12 @@ public class MobileTestSteps {
 
     @Then("{string} text should display")
     public void textShouldDisplay(String text) {
-        System.out.println(page.find(AppiumBy.accessibilityId(text)).isDisplayed());
+        try {
+            System.out.println(page.find(AppiumBy.accessibilityId(text)).isDisplayed());
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+
 
     }
 
