@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import io.github.selcukes.core.enums.SwipeDirection;
 import io.github.selcukes.example.pages.MobileTestPage;
 import io.github.selcukes.example.utils.TestContext;
+import org.openqa.selenium.By;
 import org.testng.Assert;
 
 public class MobileTestSteps {
@@ -27,6 +28,8 @@ public class MobileTestSteps {
     @Then("Dialog should be visible")
     public void dialogShouldBeVisible() {
 
+        page.click(By.id("android:id/button1"));
+        page.back();
     }
 
     @When("I scroll down and click on {string}")
