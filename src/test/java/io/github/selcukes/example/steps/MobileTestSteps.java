@@ -24,4 +24,7 @@ public class MobileTestSteps {
 
     }
 
+    @Then("Dialog should be visible")
+    public void dialogShouldBeVisible() {
+    }
 }
