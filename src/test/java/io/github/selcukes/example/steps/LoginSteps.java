@@ -6,16 +6,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.github.selcukes.example.pages.LoginPage;
 import io.github.selcukes.example.utils.TestContext;
-import io.github.selcukes.extent.report.Reporter;
 
 
 public class LoginSteps {
 
-
     LoginPage loginPage;
 
-    public LoginSteps(TestContext driverManager) {
-        loginPage = new LoginPage(driverManager.getDriver());
+    public LoginSteps(TestContext context) {
+        loginPage = new LoginPage(context.getDriver());
     }
 
     @Given("{} is on Home Page")

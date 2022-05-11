@@ -8,7 +8,13 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ macos-latest ]
+        java: [ 11 ]
+        api-level: [ 30 ]
+        target: [ default ]
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
@@ -19,8 +25,16 @@ jobs:
           cache: gradle
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      - name: Build with Gradle
-        run: ./gradlew build
+      - name: Install the Appium Server
+        run: npm install -g appium
+      - name: Run Android Emulator
+        uses: ReactiveCircus/android-emulator-runner@v2.23.0
+        with:
+          api-level: ${{ matrix.api-level }}
+          target: ${{ matrix.target }}
+          arch: x86_64
+          profile: Nexus 6
+          script: ./gradlew build
       - name: Deploy reports to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:

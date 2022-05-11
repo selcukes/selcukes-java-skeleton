@@ -1,9 +1,12 @@
 package io.github.selcukes.example.steps;
 
 import io.cucumber.java.*;
+import io.github.selcukes.core.driver.GridRunner;
 import io.github.selcukes.example.utils.TestContext;
 import io.github.selcukes.extent.report.Reporter;
 import lombok.CustomLog;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
 @CustomLog
@@ -15,6 +18,17 @@ public class CucumberHooks {
         driver = driverManager.getDriver();
     }
 
+    @BeforeAll
+    public static void beforeAll() {
+        logger.info(() -> "Before All ...");
+        GridRunner.startAppiumServer();
+    }
+
+    @AfterAll
+    public static void afterAll() {
+        logger.info(() -> "After All ...");
+        GridRunner.startAppiumServer();
+    }
 
     @Before
     public void beforeTest(Scenario scenario) {
@@ -34,7 +48,9 @@ public class CucumberHooks {
     @AfterStep
     public void afterStep(Scenario scenario) {
         logger.info(() -> "After Step");
-        Reporter.getReporter().attachScreenshot(); //Attach Full page screenshot
+        byte[] bytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+        scenario.attach(bytes, "image/png", "screenshot");
+        //  Reporter.getReporter().attachScreenshot(); //Attach Full page screenshot
     }
 
     @After
