@@ -3,7 +3,6 @@ package io.github.selcukes.example.steps;
 import io.cucumber.java.*;
 import io.github.selcukes.core.driver.GridRunner;
 import io.github.selcukes.example.utils.TestContext;
-import io.github.selcukes.extent.report.Reporter;
 import lombok.CustomLog;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -34,7 +33,7 @@ public class CucumberHooks {
     public void beforeTest(Scenario scenario) {
         String test = getFeatureName(scenario) + "::" + scenario.getName();
         testName.set(test);
-        Reporter.getReporter().initSnapshot(driver); //Initialise Full page screenshot
+        // Reporter.getReporter().initSnapshot(driver); //Initialise Full page screenshot
         logger.info(() -> "Starting Scenario .." + scenario.getName());
 
     }
