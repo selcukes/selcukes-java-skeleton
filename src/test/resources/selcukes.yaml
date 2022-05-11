@@ -3,14 +3,14 @@ env: Dev
 proxy: false
 baseUrl:
 excel:
-  runner: true
+  runner: false
   fileName: src/test/resources/TestData.xlsx
   suiteName: "Smoke"
 cucumber:
   module:
-  features: src/test/resources/features
+  features: src/test/resources/features/mobile
   glue: io.github.selcukes.example.steps
-  tags:
+  tags: "@mb"
   plugin:
 web:
   remote: true

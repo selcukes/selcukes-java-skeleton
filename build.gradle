@@ -12,8 +12,9 @@ repositories {
 }
 ext {
     testngVersion = "7.5"
-    selcukesVersion = "2.0.0"
+    selcukesVersion = "2.0.1"
     seleniumVersion = "4.1.4"
+    appiumVersion = "8.0.0"
     cucumberVersion = "7.3.4"
     lombokVersion = "1.18.24"
     extentVersion = "5.0.9"
@@ -22,6 +23,7 @@ ext {
 dependencies {
     implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
     implementation "org.seleniumhq.selenium:selenium-grid:${seleniumVersion}"
+    implementation "io.appium:java-client:${appiumVersion}"
     implementation "org.testng:testng:${testngVersion}"
 
     implementation "io.github.selcukes:selcukes-excel-runner:${selcukesVersion}"
