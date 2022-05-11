@@ -26,7 +26,7 @@ public class CucumberHooks {
     @AfterAll
     public static void afterAll() {
         logger.info(() -> "After All ...");
-        GridRunner.startAppiumServer();
+        GridRunner.stopAppiumServer();
     }
 
     @Before
