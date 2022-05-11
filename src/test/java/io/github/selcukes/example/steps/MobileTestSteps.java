@@ -1,10 +1,11 @@
 package io.github.selcukes.example.steps;
 
-import io.appium.java_client.AppiumBy;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.selcukes.core.enums.SwipeDirection;
 import io.github.selcukes.example.pages.MobileTestPage;
 import io.github.selcukes.example.utils.TestContext;
+import org.testng.Assert;
 
 public class MobileTestSteps {
     MobileTestPage page;
@@ -13,23 +14,23 @@ public class MobileTestSteps {
         page = new MobileTestPage(context.getDriver());
     }
 
-    @When("I click on {string} on {string}")
-    public void iClickOn(String linkName, String screenName) {
-        page.click(AppiumBy.accessibilityId(linkName));
+    @When("I click on {string} link/button")
+    public void iClickOn(String linkName) {
+        page.click(linkName);
     }
 
     @Then("{string} text should display")
     public void textShouldDisplay(String text) {
-        try {
-            System.out.println(page.find(AppiumBy.accessibilityId(text)).isDisplayed());
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
-
-
+        Assert.assertTrue(page.find(text).isDisplayed());
     }
 
     @Then("Dialog should be visible")
     public void dialogShouldBeVisible() {
+
+    }
+
+    @When("I scroll down and click on {string}")
+    public void iScrollDownClickOn(String name) {
+        page.swipe(name, SwipeDirection.DOWN).tap(name);
     }
 }

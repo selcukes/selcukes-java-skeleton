@@ -34,7 +34,7 @@ jobs:
           target: ${{ matrix.target }}
           arch: x86_64
           profile: Nexus 6
-          script: ./gradlew build
+          script: ./gradlew test
       - name: Deploy reports to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:

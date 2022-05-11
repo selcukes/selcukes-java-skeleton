@@ -1,10 +1,11 @@
 package io.github.selcukes.example.pages;
 
-import io.github.selcukes.core.page.WebPage;
+import io.github.selcukes.core.page.MobilePage;
 import org.openqa.selenium.WebDriver;
 
-public class MobileTestPage extends WebPage {
+public class MobileTestPage extends MobilePage {
     public MobileTestPage(WebDriver driver) {
         super(driver);
     }
+
 }
