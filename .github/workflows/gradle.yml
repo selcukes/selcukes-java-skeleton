@@ -36,6 +36,7 @@ jobs:
           profile: Nexus 6
           script: ./gradlew test
       - name: Deploy reports to Github Pages
+        if: always()
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages

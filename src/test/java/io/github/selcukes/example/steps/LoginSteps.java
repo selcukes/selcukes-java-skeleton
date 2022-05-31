@@ -24,7 +24,7 @@ public class LoginSteps {
 
     @And("Open new browser window")
     public void switchToNewBrowserWindow() {
-        loginPage.openNewBrowserWindow();
+        loginPage.openNewWindow();
     }
 
     @And("Switch to User{int} browser window")
