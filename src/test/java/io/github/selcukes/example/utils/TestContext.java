@@ -15,10 +15,10 @@ public class TestContext {
     @SneakyThrows
     private void createWebDriver() {
         //Temp fix to resolve App Path
-        String app = FileHelper.loadThreadResource(ConfigFactory.getConfig()
+       /* String app = FileHelper.loadThreadResource(ConfigFactory.getConfig()
             .getMobile().getApp()).getAbsolutePath();
         ConfigFactory.getConfig()
-            .getMobile().setApp(app);
+            .getMobile().setApp(app);*/
 
         driver = DriverManager.createDriver(DeviceType.MOBILE);
         ConfigFactory.loadLoggerProperties();

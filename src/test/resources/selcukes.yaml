@@ -27,7 +27,7 @@ mobile:
   platform: Android
   browser: APP
   serviceUrl: "http://127.0.0.1:4723"
-  app: "android-app.apk"
+  app: "bs://230f0a21895b6c99da63cb44483fde48ef6b17c7"
 reports:
   emailReport: true
   htmlReport: true
