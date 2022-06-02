@@ -12,8 +12,8 @@ repositories {
 }
 ext {
     testngVersion = "7.6.0"
-    selcukesVersion = "2.0.2"
-    seleniumVersion = "4.2.0"
+    selcukesVersion = "2.0.3"
+    seleniumVersion = "4.2.1"
     appiumVersion = "8.1.0"
     cucumberVersion = "7.3.4"
     lombokVersion = "1.18.24"
