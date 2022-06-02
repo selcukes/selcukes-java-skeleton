@@ -20,13 +20,13 @@ public class CucumberHooks {
     @BeforeAll
     public static void beforeAll() {
         logger.info(() -> "Before All ...");
-        GridRunner.startAppiumServer();
+        GridRunner.startAppium();
     }
 
     @AfterAll
     public static void afterAll() {
         logger.info(() -> "After All ...");
-        GridRunner.stopAppiumServer();
+        GridRunner.stopAppium();
     }
 
     @Before
@@ -47,8 +47,12 @@ public class CucumberHooks {
     @AfterStep
     public void afterStep(Scenario scenario) {
         logger.info(() -> "After Step");
-        byte[] bytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-        scenario.attach(bytes, "image/png", "screenshot");
+        try {
+            byte[] bytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+            scenario.attach(bytes, "image/png", "screenshot");
+        } catch (Exception ignored) {
+        }
+
         //  Reporter.getReporter().attachScreenshot(); //Attach Full page screenshot
     }
 
