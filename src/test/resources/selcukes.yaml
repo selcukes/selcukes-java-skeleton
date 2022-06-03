@@ -14,16 +14,20 @@ cucumber:
   plugin:
 web:
   remote: true
-  browserName: CHROME
+  cloud:
+  browser: CHROME
   headLess: true
-  serviceUrl: "http://127.0.0.1:8080"
+  serviceUrl: "http://127.0.0.1:4444"
 windows:
   serviceUrl: "http://127.0.0.1:4723"
   app: "C:\\Windows\\System32\\notepad.exe"
 mobile:
   remote: false
+  cloud:
+  platform: Android
+  browser: APP
   serviceUrl: "http://127.0.0.1:4723"
-  app: "ApiDemos-debug.apk"
+  app: "android-app.apk"
 reports:
   emailReport: true
   htmlReport: true
@@ -32,12 +36,13 @@ reports:
   timestamp: false
 video:
   recording: false
-  recorderType: FFMPEG
+  type: MONTE
   ffmpegPath:
-  watermarkStatus: false
+  watermark: false
 notifier:
   notification: false
   type: slack
-  webhook-token: WEBHOOKXXXX
-  api-token: APIXXXX
+  webhookToken: WEBHOOKXXXX
+  apiToken: APIXXXX
   channel: selcukes
+  authorIcon: https://github.com/rameshbabuprudhvi.png
