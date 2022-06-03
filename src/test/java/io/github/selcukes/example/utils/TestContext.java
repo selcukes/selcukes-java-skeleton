@@ -1,5 +1,6 @@
 package io.github.selcukes.example.utils;
 
+import io.appium.java_client.windows.WindowsDriver;
 import io.github.selcukes.commons.config.ConfigFactory;
 import io.github.selcukes.commons.helper.FileHelper;
 import io.github.selcukes.core.driver.DriverManager;
@@ -15,10 +16,11 @@ public class TestContext {
     @SneakyThrows
     private void createWebDriver() {
         //Temp fix to resolve App Path
-       /* String app = FileHelper.loadThreadResource(ConfigFactory.getConfig()
+        String app = FileHelper.loadThreadResource(ConfigFactory.getConfig()
             .getMobile().getApp()).getAbsolutePath();
         ConfigFactory.getConfig()
-            .getMobile().setApp(app);*/
+            .getMobile().setApp(app);
+
 
         driver = DriverManager.createDriver(DeviceType.MOBILE);
         ConfigFactory.loadLoggerProperties();
@@ -31,4 +33,11 @@ public class TestContext {
         }
         return driver;
     }
+    public WindowsDriver getWinDriver() {
+        if (driver == null) {
+            driver = DriverManager.createDriver(DeviceType.DESKTOP);
+        }
+        return (WindowsDriver) driver;
+    }
+
 }

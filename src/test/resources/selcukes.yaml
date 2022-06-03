@@ -22,12 +22,12 @@ windows:
   serviceUrl: "http://127.0.0.1:4723"
   app: "C:\\Windows\\System32\\notepad.exe"
 mobile:
-  remote: true
-  cloud: BROWSER_STACK
+  remote: false
+  cloud:
   platform: Android
   browser: APP
   serviceUrl: "http://127.0.0.1:4723"
-  app: "bs://230f0a21895b6c99da63cb44483fde48ef6b17c7"
+  app: "android-app.apk"
 reports:
   emailReport: true
   htmlReport: true
@@ -36,7 +36,7 @@ reports:
   timestamp: false
 video:
   recording: false
-  type: FFMPEG
+  type: MONTE
   ffmpegPath:
   watermark: false
 notifier:
@@ -45,3 +45,4 @@ notifier:
   webhookToken: WEBHOOKXXXX
   apiToken: APIXXXX
   channel: selcukes
+  authorIcon: https://github.com/rameshbabuprudhvi.png
