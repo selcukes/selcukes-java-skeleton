@@ -19,7 +19,6 @@
             <artifactId>selcukes-java</artifactId>
             <version>${selcukes.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
