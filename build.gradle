@@ -11,30 +11,12 @@ repositories {
     mavenCentral()
 }
 ext {
-    testngVersion = "7.6.0"
-    selcukesVersion = "2.0.3"
-    seleniumVersion = "4.2.2"
-    appiumVersion = "8.1.1"
-    cucumberVersion = "7.3.4"
+    selcukesVersion = "2.1.0"
     lombokVersion = "1.18.24"
-    extentVersion = "5.0.9"
     log4jVersion="2.17.2"
 }
 dependencies {
-    implementation "org.seleniumhq.selenium:selenium-java:${seleniumVersion}"
-    implementation "org.seleniumhq.selenium:selenium-grid:${seleniumVersion}"
-    implementation "io.appium:java-client:${appiumVersion}"
-    implementation "org.testng:testng:${testngVersion}"
-
-    implementation "io.github.selcukes:selcukes-excel-runner:${selcukesVersion}"
-    implementation "io.github.selcukes:selcukes-core:${selcukesVersion}"
-    implementation "io.github.selcukes:selcukes-reports:${selcukesVersion}"
-
-    implementation "io.cucumber:cucumber-java:${cucumberVersion}"
-    implementation "io.cucumber:cucumber-testng:${cucumberVersion}"
-    implementation "io.cucumber:cucumber-picocontainer:${cucumberVersion}"
-
-    implementation "com.aventstack:extentreports:${extentVersion}"
+    implementation "io.github.selcukes:selcukes-java:${selcukesVersion}"
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4jVersion}"
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
