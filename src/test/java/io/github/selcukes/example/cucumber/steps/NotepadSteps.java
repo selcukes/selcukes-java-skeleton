@@ -1,4 +1,4 @@
-package io.github.selcukes.example.steps;
+package io.github.selcukes.example.cucumber.steps;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -6,7 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.selcukes.core.driver.DriverManager;
 import io.github.selcukes.core.enums.DeviceType;
-import io.github.selcukes.example.pages.NotepadPage;
+import io.github.selcukes.example.cucumber.pages.NotepadPage;
 import org.openqa.selenium.By;
 
 public class NotepadSteps {

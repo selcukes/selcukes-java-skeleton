@@ -1,4 +1,4 @@
-package io.github.selcukes.example.pages;
+package io.github.selcukes.example.cucumber.pages;
 
 import io.github.selcukes.core.page.MobilePage;
 import org.openqa.selenium.WebDriver;

@@ -9,7 +9,7 @@ excel:
 cucumber:
   module:
   features: src/test/resources/features/mobile
-  glue: io.github.selcukes.example.steps
+  glue: io.github.selcukes.example.cucumber.steps
   tags: "@mb"
   plugin:
 web:
@@ -27,7 +27,7 @@ mobile:
   platform: Android
   browser: APP
   serviceUrl: "http://127.0.0.1:4723"
-  app: "android-app.apk"
+  app: "src/test/resources/android-app.apk"
 reports:
   emailReport: true
   htmlReport: true

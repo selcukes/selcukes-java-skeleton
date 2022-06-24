@@ -1,4 +1,4 @@
-package io.github.selcukes.example;
+package io.github.selcukes.example.cucumber;
 
 
 import io.github.selcukes.excel.ExcelTestRunner;

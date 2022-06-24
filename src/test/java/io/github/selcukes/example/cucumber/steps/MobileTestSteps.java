@@ -1,10 +1,10 @@
-package io.github.selcukes.example.steps;
+package io.github.selcukes.example.cucumber.steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.selcukes.core.enums.SwipeDirection;
-import io.github.selcukes.example.pages.MobileTestPage;
-import io.github.selcukes.example.utils.TestContext;
+import io.github.selcukes.example.cucumber.pages.MobileTestPage;
+import io.github.selcukes.example.cucumber.utils.TestContext;
 import org.openqa.selenium.By;
 
 public class MobileTestSteps {

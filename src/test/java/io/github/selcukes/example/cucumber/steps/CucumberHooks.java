@@ -1,8 +1,8 @@
-package io.github.selcukes.example.steps;
+package io.github.selcukes.example.cucumber.steps;
 
 import io.cucumber.java.*;
 import io.github.selcukes.core.driver.GridRunner;
-import io.github.selcukes.example.utils.TestContext;
+import io.github.selcukes.example.cucumber.utils.TestContext;
 import lombok.CustomLog;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
