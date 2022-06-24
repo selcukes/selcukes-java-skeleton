@@ -7,10 +7,10 @@ excel:
   fileName: src/test/resources/TestData.xlsx
   suiteName: "Smoke"
 cucumber:
-  module:
-  features: src/test/resources/features/mobile
-  glue: io.github.selcukes.example.steps
-  tags: "@mb"
+  module: mobile
+  features: src/test/resources/features/
+  glue: io.github.selcukes.example.cucumber.steps
+  tags: "@mobile"
   plugin:
 web:
   remote: true
@@ -27,7 +27,7 @@ mobile:
   platform: Android
   browser: APP
   serviceUrl: "http://127.0.0.1:4723"
-  app: "android-app.apk"
+  app: "src/test/resources/android-app.apk"
 reports:
   emailReport: true
   htmlReport: true

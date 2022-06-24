@@ -14,12 +14,12 @@
  *  limitations under the License.
  */
 
-package io.github.selcukes.example.steps;
+package io.github.selcukes.example.cucumber.steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.github.selcukes.example.pages.CommonPage;
-import io.github.selcukes.example.utils.TestContext;
+import io.github.selcukes.example.cucumber.pages.CommonPage;
+import io.github.selcukes.example.cucumber.utils.TestContext;
 import lombok.CustomLog;
 import org.testng.Assert;
 

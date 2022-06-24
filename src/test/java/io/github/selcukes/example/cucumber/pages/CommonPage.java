@@ -1,7 +1,7 @@
-package io.github.selcukes.example.pages;
+package io.github.selcukes.example.cucumber.pages;
 
 import io.github.selcukes.core.page.WebPage;
-import io.github.selcukes.example.steps.CucumberHooks;
+import io.github.selcukes.example.cucumber.steps.CucumberHooks;
 import io.github.selcukes.excel.ExcelUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -20,7 +20,6 @@ public class CommonPage extends WebPage {
     }
 
     public void enter(String text) {
-        click(By.name("q"));
         enter(By.name("q"), text + Keys.TAB);
     }
 }

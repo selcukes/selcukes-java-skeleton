@@ -1,11 +1,11 @@
-package io.github.selcukes.example.steps;
+package io.github.selcukes.example.cucumber.steps;
 
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import io.github.selcukes.example.pages.LoginPage;
-import io.github.selcukes.example.utils.TestContext;
+import io.github.selcukes.example.cucumber.pages.LoginPage;
+import io.github.selcukes.example.cucumber.utils.TestContext;
 
 
 public class LoginSteps {
