@@ -20,7 +20,6 @@ public class CommonPage extends WebPage {
     }
 
     public void enter(String text) {
-        click(By.name("q"));
         enter(By.name("q"), text + Keys.TAB);
     }
 }

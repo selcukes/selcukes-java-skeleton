@@ -1,6 +1,6 @@
 Feature: Secure Dialog Test in API Demo Application
 
-    @mb
+    @mobile
     Scenario: Navigation to Secure Dialog
         When I click on "App" link
         Then "Activity" text should display

@@ -53,7 +53,7 @@ public class CucumberHooks {
         } catch (Exception ignored) {
         }
 
-        //  Reporter.getReporter().attachScreenshot(); //Attach Full page screenshot
+        //  Reporter.attachScreenshot(); //Attach Full page screenshot
     }
 
     @After
