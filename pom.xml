@@ -8,7 +8,7 @@
     <properties>
         <selcukes.version>2.1.3</selcukes.version>
         <lombok.version>1.18.24</lombok.version>
-        <slfj4.version>2.17.2</slfj4.version>
+        <slfj4.version>2.18.0</slfj4.version>
 
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
