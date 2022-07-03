@@ -33,6 +33,6 @@ public class MobileTestSteps {
     public void iScrollDownClickOn(String name) {
         page.swipe(name, SwipeDirection.DOWN);
         page.assertThat().element(page.find(name)).isVisible();
-        page.tap(name);
+        page.click(name);
     }
 }
