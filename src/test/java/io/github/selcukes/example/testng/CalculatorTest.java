@@ -31,8 +31,8 @@ public class CalculatorTest {
             .click(By.name("One"))
             .click(By.name("Two"))
             .click(By.name("Three"))
-            .click(By.name("Multiply by"));
-        page.click("num9Button")
+            .click(By.name("Multiply by"))
+            .click("num9Button")
             .click("equalButton")
             .assertThat().element(page.find("CalculatorResults")).textAs("Display is 82,107");
     }
