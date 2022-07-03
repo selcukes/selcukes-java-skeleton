@@ -31,10 +31,10 @@ public class CalculatorTest {
             .click(By.name("One"))
             .click(By.name("Two"))
             .click(By.name("Three"))
-            .click(By.name("Multiply by"));
-        page.click("num9Button")
-            .click("equalButton")
-            .assertThat().element(page.find("CalculatorResults")).textAs("Display is 82,107");
+            .click(By.name("Multiply by"))
+            .click("aid:num9Button")
+            .click("aid:equalButton")
+            .assertThat().element(page.find("aid:CalculatorResults")).textAs("Display is 82,107");
     }
 
     @AfterMethod
