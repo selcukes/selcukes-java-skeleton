@@ -30,9 +30,9 @@ public class LoginSteps {
     @And("Switch to User{int} browser window")
     public void switchToWindow(int i) {
         if (i > 2)
-            loginPage.switchWindow(i - 3);
+            loginPage.switchToWindow(i - 3);
         else
-            loginPage.switchWindow(i - 1);
+            loginPage.switchToWindow(i - 1);
         loginPage.enter("User" + i);
     }
 
