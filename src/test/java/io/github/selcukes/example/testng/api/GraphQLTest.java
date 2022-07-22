@@ -3,12 +3,10 @@ package io.github.selcukes.example.testng.api;
 import com.fasterxml.jackson.databind.JsonNode;
 import io.github.selcukes.core.page.ApiPage;
 import io.github.selcukes.core.page.Pages;
-import lombok.CustomLog;
 import org.testng.annotations.Test;
 
 import java.util.UUID;
 
-@CustomLog
 public class GraphQLTest {
     ApiPage page;
 
@@ -22,7 +20,7 @@ public class GraphQLTest {
             .post(query)
             .bodyJson()
             .at("/data/company/ceo");
-        logger.info(body::asText);
+        page.assertThat().object(body.asText()).isEqualTo("Elon Musk");
     }
 
 
@@ -43,7 +41,7 @@ public class GraphQLTest {
             .at("/data/launches")
             .get(0)
             .get("mission_name");
-        logger.info(body::asText);
+        page.assertThat().object(body.asText()).isEqualTo("Thaicom 6");
 
     }
 
@@ -67,10 +65,7 @@ public class GraphQLTest {
             .bodyJson()
             .at("/data/insert_users/returning")
             .get(0);
-
-        logger.info(() -> body.get("id").asText());
-        logger.info(() -> body.get("name").asText());
-        logger.info(() -> body.get("rocket").asText());
-
+        page.assertThat().object(body.get("name").asText()).isEqualTo("Selcukes");
+        page.assertThat().object(body.get("rocket").asText()).isEqualTo("One Stop Automation");
     }
 }
