@@ -1,13 +1,13 @@
 package io.github.selcukes.example.testng.api;
 
+import java.util.UUID;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.UUID;
 @Data
 @Builder
 public class User {
-    UUID id;
-    String name;
-    String rocket;
+	UUID id;
+	String name;
+	String rocket;
 }

@@ -26,30 +26,30 @@ import org.testng.Assert;
 @CustomLog
 public class MySteps {
 
-    private final CommonPage commonPage;
+	private final CommonPage commonPage;
 
-    public MySteps(TestContext driverManager) {
-        commonPage = new CommonPage(driverManager.getDriver());
-    }
+	public MySteps(TestContext driverManager) {
+		commonPage = new CommonPage(driverManager.getDriver());
+	}
 
-    @Given("I open {} page")
-    public void openPage(String page) {
-        commonPage.open(String.format("http://www.%s.com/", page));
-    }
+	@Given("I open {} page")
+	public void openPage(String page) {
+		commonPage.open(String.format("http://www.%s.com/", page));
+	}
 
-    @Then("I see {string} in the title")
-    public void title(String page) {
-        Assert.assertTrue(commonPage.title().contains(page));
-    }
+	@Then("I see {string} in the title")
+	public void title(String page) {
+		Assert.assertTrue(commonPage.title().contains(page));
+	}
 
-    @Given("I kinda open {} page")
-    public void kinda(String page) {
-        logger.info(() -> page);
-    }
+	@Given("I kinda open {} page")
+	public void kinda(String page) {
+		logger.info(() -> page);
+	}
 
-    @Then("I am very happy")
-    public void happy() {
-        commonPage.getScenarioData()
-            .forEach((k, v) -> logger.info(() -> String.format("Key: [%s] Values: [%s]%n", k, v)));
-    }
+	@Then("I am very happy")
+	public void happy() {
+		commonPage.getScenarioData()
+				.forEach((k, v) -> logger.info(() -> String.format("Key: [%s] Values: [%s]%n", k, v)));
+	}
 }
