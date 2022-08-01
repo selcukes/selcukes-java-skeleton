@@ -7,7 +7,7 @@ import lombok.Data;
 @Data
 @Builder
 public class User {
-  UUID id;
-  String name;
-  String rocket;
+	UUID id;
+	String name;
+	String rocket;
 }

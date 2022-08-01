@@ -33,6 +33,7 @@ spotless {
         importOrder('java', 'javax', 'com.acme', '', '\\#com.acme', '\\#')
         removeUnusedImports()
         googleJavaFormat()
+        eclipse()
     }
 }
 tasks.withType(Test) {

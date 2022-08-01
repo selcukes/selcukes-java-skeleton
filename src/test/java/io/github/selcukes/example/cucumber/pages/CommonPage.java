@@ -10,15 +10,15 @@ import org.openqa.selenium.WebDriver;
 
 public class CommonPage extends WebPage {
 
-  public CommonPage(WebDriver driver) {
-    super(driver);
-  }
+	public CommonPage(WebDriver driver) {
+		super(driver);
+	}
 
-  public Map<String, String> getScenarioData() {
-    return ExcelUtils.getTestDataAsMap(CucumberHooks.testName.get());
-  }
+	public Map<String, String> getScenarioData() {
+		return ExcelUtils.getTestDataAsMap(CucumberHooks.testName.get());
+	}
 
-  public void enter(String text) {
-    enter(By.name("q"), text + Keys.TAB);
-  }
+	public void enter(String text) {
+		enter(By.name("q"), text + Keys.TAB);
+	}
 }
