@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "com.diffplug.spotless" version "6.9.0"
 }
 
 group 'io.github.selcukes'
@@ -13,8 +14,9 @@ repositories {
 ext {
     selcukesVersion = "2.1.6"
     lombokVersion = "1.18.24"
-    slf4jVersion="2.18.0"
+    slf4jVersion = "2.18.0"
 }
+
 dependencies {
     implementation "io.github.selcukes:selcukes-java:${selcukesVersion}"
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${slf4jVersion}"
@@ -24,6 +26,14 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
+}
+compileJava.dependsOn 'spotlessApply'
+spotless {
+    java {
+        importOrder('java', 'javax', 'com.acme', '', '\\#com.acme', '\\#')
+        removeUnusedImports()
+        googleJavaFormat()
+    }
 }
 tasks.withType(Test) {
     testLogging.showStandardStreams = true
