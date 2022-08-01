@@ -10,25 +10,19 @@ import org.testng.annotations.Test;
 
 @Lifecycle
 public class CalculatorTest {
-    WinPage page;
+	WinPage page;
 
-    @BeforeMethod
-    public void beforeMethod() {
-        ConfigFactory.getConfig().getWindows().setApp("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
-        page = Pages.winPage();
-    }
+	@BeforeMethod
+	public void beforeMethod() {
+		ConfigFactory.getConfig().getWindows().setApp("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
+		page = Pages.winPage();
+	}
 
-    @Test(enabled = false)
-    public void calTest() {
+	@Test(enabled = false)
+	public void calTest() {
 
-        page.click(By.name("Nine"))
-            .click(By.name("One"))
-            .click(By.name("Two"))
-            .click(By.name("Three"))
-            .click(By.name("Multiply by"))
-            .click("aid:num9Button")
-            .click("aid:equalButton")
-            .assertThat().element(page.find("aid:CalculatorResults")).textAs("Display is 82,107");
-    }
-
+		page.click(By.name("Nine")).click(By.name("One")).click(By.name("Two")).click(By.name("Three"))
+				.click(By.name("Multiply by")).click("aid:num9Button").click("aid:equalButton").assertThat()
+				.element(page.find("aid:CalculatorResults")).textAs("Display is 82,107");
+	}
 }
