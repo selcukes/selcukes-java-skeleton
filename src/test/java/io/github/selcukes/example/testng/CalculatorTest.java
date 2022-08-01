@@ -1,19 +1,14 @@
 package io.github.selcukes.example.testng;
 
+import io.github.selcukes.commons.annotation.Lifecycle;
 import io.github.selcukes.commons.config.ConfigFactory;
-import io.github.selcukes.core.driver.DriverManager;
-import io.github.selcukes.core.listener.TestLifecyclePerMethod;
 import io.github.selcukes.core.page.Pages;
 import io.github.selcukes.core.page.WinPage;
-import io.github.selcukes.reports.ReportDriver;
-import io.github.selcukes.reports.listeners.TestNGReportListener;
 import org.openqa.selenium.By;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners({TestLifecyclePerMethod.class, TestNGReportListener.class})
+@Lifecycle
 public class CalculatorTest {
     WinPage page;
 
@@ -21,7 +16,6 @@ public class CalculatorTest {
     public void beforeMethod() {
         ConfigFactory.getConfig().getWindows().setApp("Microsoft.WindowsCalculator_8wekyb3d8bbwe!App");
         page = Pages.winPage();
-        ReportDriver.setReportDriver(DriverManager.getDriver());
     }
 
     @Test(enabled = false)
@@ -37,8 +31,4 @@ public class CalculatorTest {
             .assertThat().element(page.find("aid:CalculatorResults")).textAs("Display is 82,107");
     }
 
-    @AfterMethod
-    public void afterMethod() {
-        ReportDriver.removeDriver();
-    }
 }
