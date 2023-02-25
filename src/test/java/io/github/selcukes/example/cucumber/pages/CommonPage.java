@@ -2,8 +2,10 @@ package io.github.selcukes.example.cucumber.pages;
 
 import io.github.selcukes.core.page.WebPage;
 import io.github.selcukes.example.cucumber.steps.CucumberHooks;
-import io.github.selcukes.excel.ExcelUtils;
+
 import java.util.Map;
+
+import io.github.selcukes.excel.SingleExcelData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +17,7 @@ public class CommonPage extends WebPage {
 	}
 
 	public Map<String, String> getScenarioData() {
-		return ExcelUtils.getTestDataAsMap(CucumberHooks.testName.get());
+		return SingleExcelData.getTestDataAsMap(CucumberHooks.testName.get());
 	}
 
 	public void enter(String text) {
