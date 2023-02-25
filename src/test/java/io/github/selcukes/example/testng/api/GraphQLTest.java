@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class GraphQLTest {
 	ApiPage page;
 
-	@Test(enabled = false,description = "Get Company data and verify CEO")
+	@Test(enabled = false, description = "Get Company data and verify CEO")
 	public void verifyCeoTest() {
 
 		GraphQLQuery query = new GraphQLQuery();
@@ -19,7 +19,7 @@ public class GraphQLTest {
 		page.assertThat().object(body.asText()).isEqualTo("Elon Musk");
 	}
 
-	@Test(enabled = false,description = "Get Launches and verify MissionName should be 'Thaicom6'")
+	@Test(enabled = false, description = "Get Launches and verify MissionName should be 'Thaicom6'")
 	public void verifyMissionName() {
 
 		GraphQLQuery query = new GraphQLQuery();
@@ -35,7 +35,7 @@ public class GraphQLTest {
 		page.assertThat().object(body.asText()).isEqualTo("Thaicom 6");
 	}
 
-	@Test(enabled = false,description = "Add User and verify returned data should correspond to data sent")
+	@Test(enabled = false, description = "Add User and verify returned data should correspond to data sent")
 	public void verifyUserData() {
 
 		GraphQLQuery query = new GraphQLQuery();

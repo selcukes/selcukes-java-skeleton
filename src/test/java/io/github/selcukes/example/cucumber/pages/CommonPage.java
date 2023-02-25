@@ -2,10 +2,8 @@ package io.github.selcukes.example.cucumber.pages;
 
 import io.github.selcukes.core.page.WebPage;
 import io.github.selcukes.example.cucumber.steps.CucumberHooks;
-
-import java.util.Map;
-
 import io.github.selcukes.excel.SingleExcelData;
+import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

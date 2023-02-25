@@ -36,8 +36,7 @@ public class CucumberHooks {
     @Before
     public void beforeTest(Scenario scenario) {
         ScenarioContext.setTestName(scenario);
-        // Reporter.getReporter().initSnapshot(driver); //Initialise Full page
-        // screenshot
+
         logger.info(() -> "Starting Scenario .." + scenario.getName());
     }
 
@@ -49,13 +48,12 @@ public class CucumberHooks {
     @AfterStep
     public void afterStep(Scenario scenario) {
         logger.info(() -> "After Step");
+
         try {
             byte[] bytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(bytes, "image/png", "screenshot");
         } catch (Exception ignored) {
         }
-
-        // Reporter.attachScreenshot(); //Attach Full page screenshot
     }
 
     @After
