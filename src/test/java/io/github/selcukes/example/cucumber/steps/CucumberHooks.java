@@ -7,9 +7,10 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
+import io.github.selcukes.core.driver.DriverManager;
 import io.github.selcukes.example.cucumber.utils.TestContext;
 import io.github.selcukes.excel.ScenarioContext;
-import io.github.selcukes.snapshot.SnapshotImpl;
+import io.github.selcukes.reports.screen.ScreenPlayBuilder;
 import lombok.CustomLog;
 import org.openqa.selenium.WebDriver;
 
@@ -48,8 +49,10 @@ public class CucumberHooks {
         logger.info(() -> "After Step");
 
         try {
-            var snapshot = new SnapshotImpl(driver).shootVisiblePageAsBytes();
-            scenario.attach(snapshot, "image/png", "screenshot");
+            ScreenPlayBuilder.getScreenPlay(DriverManager.getWrappedDriver())
+                .withResult(scenario)
+                .attachScreenshot();
+            ;
         } catch (Exception ignored) {
         }
     }
