@@ -4,7 +4,7 @@ proxy: false
 baseUrl:
 excel:
   runner: false
-  fileName: src/test/resources/TestData.xlsx
+  dataFile: TestData.xlsx
   suiteName: "Smoke"
 cucumber:
   module: mobile
