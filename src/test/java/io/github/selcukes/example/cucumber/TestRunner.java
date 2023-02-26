@@ -1,6 +1,6 @@
 package io.github.selcukes.example.cucumber;
 
-import io.github.selcukes.testng.SelcukesTestNGRunner;
+import io.github.selcukes.excel.ExcelTestRunner;
 
-public class TestRunner extends SelcukesTestNGRunner {
+public class TestRunner extends ExcelTestRunner {
 }
