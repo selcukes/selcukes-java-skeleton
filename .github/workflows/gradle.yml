@@ -27,7 +27,7 @@ jobs:
       - name: Install the Appium Server
         run: npm install -g appium
       - name: Run Android Emulator
-        uses: ReactiveCircus/android-emulator-runner@v2.27.0
+        uses: ReactiveCircus/android-emulator-runner@v2.28.0
         with:
           api-level: ${{ matrix.api-level }}
           target: ${{ matrix.target }}
