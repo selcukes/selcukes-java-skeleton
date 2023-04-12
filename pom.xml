@@ -5,8 +5,7 @@
     <groupId>io.github.selcukes</groupId>
     <artifactId>selcukes-java-skeleton</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <properties>
-    
+    <properties>    
         <selcukes.version>2.2.8</selcukes.version>
         <lombok.version>1.18.26</lombok.version>
         <slf4j.version>2.20.0</slf4j.version>
