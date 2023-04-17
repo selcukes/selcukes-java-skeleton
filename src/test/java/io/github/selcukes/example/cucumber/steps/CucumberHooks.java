@@ -17,8 +17,8 @@ import org.openqa.selenium.WebDriver;
 public class CucumberHooks {
 	WebDriver driver;
 
-	public CucumberHooks(TestContext driverManager) {
-		driver = driverManager.getDriver();
+	public CucumberHooks(TestContext testContext) {
+		driver = testContext.getDriver();
 	}
 
 	@BeforeAll

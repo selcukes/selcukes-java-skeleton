@@ -1,9 +1,8 @@
 package io.github.selcukes.example.cucumber.pages;
 
 import io.github.selcukes.core.page.WebPage;
-import java.util.Map;
-
 import io.github.selcukes.excel.ExcelDataFactory;
+import java.util.Map;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

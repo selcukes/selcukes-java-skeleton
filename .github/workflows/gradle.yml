@@ -25,7 +25,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Install the Appium Server
-        run: npm install -g appium
+        run: npm install -g appium@next
       - name: Run Android Emulator
         uses: ReactiveCircus/android-emulator-runner@v2.28.0
         with:

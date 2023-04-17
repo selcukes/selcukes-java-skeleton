@@ -4,6 +4,7 @@ proxy: false
 baseUrl:
 excel:
   runner: false
+  suiteFile:
   dataFile: TestData.xlsx
   suiteName: "Smoke"
 cucumber:
