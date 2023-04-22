@@ -21,7 +21,7 @@ dependencies {
     implementation("io.github.selcukes:selcukes-java:${selcukesVersion}") {
         exclude group: "org.seleniumhq.selenium"
     }
-    implementation 'org.seleniumhq.selenium:selenium-java:4.8.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.9.0'
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${slf4jVersion}"
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
