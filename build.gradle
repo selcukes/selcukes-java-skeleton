@@ -19,7 +19,6 @@ ext {
 
 dependencies {
     implementation "io.github.selcukes:selcukes-java:${selcukesVersion}"
-    implementation 'io.appium:java-client:8.4.0'
     testImplementation "org.apache.logging.log4j:log4j-slf4j-impl:${slf4jVersion}"
 
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
