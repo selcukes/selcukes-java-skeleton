@@ -7,7 +7,7 @@
     <version>1.0-SNAPSHOT</version>
     <properties>
         <selcukes.version>2.3.4</selcukes.version>
-        <lombok.version>1.18.28</lombok.version>
+        <lombok.version>1.18.30</lombok.version>
         <slf4j.version>2.20.0</slf4j.version>
 
         <maven.compiler.source>11</maven.compiler.source>
