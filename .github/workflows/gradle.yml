@@ -25,7 +25,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Install the Appium Server
-        run: npm install -g appium@next
+        run: npm install -g appium
       - name: Install Android Driver
         run: appium driver install uiautomator2
       - name: Run Android Emulator
