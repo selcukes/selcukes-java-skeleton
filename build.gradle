@@ -6,13 +6,13 @@ plugins {
 group 'io.github.selcukes'
 version '1.0-SNAPSHOT'
 
-sourceCompatibility = 11
+sourceCompatibility = 17
 
 repositories {
     mavenCentral()
 }
 ext {
-    selcukesVersion = "2.3.8"
+    selcukesVersion = "2.3.9"
     lombokVersion = "1.18.30"
     slf4jVersion = "2.23.0"
 }
