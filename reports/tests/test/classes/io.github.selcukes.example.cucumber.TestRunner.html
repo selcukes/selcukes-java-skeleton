@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class io.github.selcukes.example.cucumber.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class io.github.selcukes.example.cucumber.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.github.selcukes.example.cucumber.html">io.github.selcukes.example.cucumber</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">27.949s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)"></a>
+<h3 class="failures">runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)</h3>
+<span class="code">
+<pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '17.0.10'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$n6VCqBM3
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e
+	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at app//io.github.selcukes.core.page.Page.waitFor(Page.java:710)
+	at app//io.github.selcukes.core.page.Page.find(Page.java:536)
+	at app//io.github.selcukes.core.page.Page.click(Page.java:223)
+	at app//io.github.selcukes.core.page.Page.click(Page.java:172)
+	at app//io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(MobileTestSteps.java:20)
+	at ✽.I click on &quot;App&quot; link(file:///Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/features/mobile/SecureDialog.feature:5)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)</td>
+<td class="failures">27.949s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[35m[Appium]?[39m Welcome to Appium v2.5.1
+?[35m[Appium]?[39m Non-default server args:
+?[35m[Appium]?[39m { address: ?[32m'127.0.0.1'?[39m, basePath: ?[32m'/wd/'?[39m, port: ?[33m47258?[39m, sessionOverride: ?[33mtrue?[39m }
+?[35m[Appium]?[39m The autodetected Appium home path: /Users/runner/.appium
+?[35m[Appium]?[39m Attempting to load driver uiautomator2...
+?[35m[Appium]?[39m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+[Appium] AndroidUiautomator2Driver has been successfully loaded in 0.617s
+[Appium] Appium REST http interface listener started on http://127.0.0.1:47258/wd
+[Appium] Available drivers:
+[Appium]   - uiautomator2@3.0.4 (automationName 'UiAutomator2')
+[Appium] No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/status?[39m
+?[38;5;0m[HTTP]?[0m {}
+?[38;5;16m[AppiumDriver@3138]?[0m Calling AppiumDriver.getStatus() with args: []
+?[38;5;16m[AppiumDriver@3138]?[0m Responding to client with driver.getStatus() result: {&quot;ready&quot;:true,&quot;message&quot;:&quot;The server is ready to accept new connections&quot;,&quot;build&quot;:{&quot;version&quot;:&quot;2.5.1&quot;}}
+?[38;5;0m[HTTP]?[0m &lt;-- GET /wd/status 200 5 ms - 110
+?[38;5;0m[HTTP]?[0m 
+?[38;5;0m[HTTP]?[0m Request idempotency key: a8e4fc36-c7b7-45a2-8ad5-bd3afd9168f3
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session?[39m
+?[38;5;0m[HTTP]?[0m {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{}],&quot;alwaysMatch&quot;:{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}}}
+?[38;5;16m[AppiumDriver@3138]?[0m Calling AppiumDriver.createSession() with args: [null,null,{&quot;firstMatch&quot;:[{}],&quot;alwaysMatch&quot;:{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}}]
+?[38;5;16m[AppiumDriver@3138]?[0m Event 'newSessionRequested' logged at 1711219191011 (18:39:51 GMT+0000 (Coordinated Universal Time))
+[Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+[Appium] The 'uiautomator2' driver was installed and matched caps.
+[Appium] Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+[Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;16m[AppiumDriver@3138]?[0m Appium v2.5.1 creating new AndroidUiautomator2Driver (v3.0.4) session
+?[38;5;16m[AppiumDriver@3138]?[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+?[38;5;16m[AppiumDriver@3138]?[0m Appium's BaseDriver version is 9.5.2
+?[38;5;16m[AppiumDriver@3138]?[0m AndroidUiautomator2Driver's BaseDriver version is 9.5.2
+?[38;5;16m[AppiumDriver@3138]?[0m There are no active sessions for cleanup
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m Creating session with W3C capabilities: {
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m   &quot;alwaysMatch&quot;: {
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m     &quot;platformName&quot;: &quot;ANDROID&quot;,
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m     &quot;appium:app&quot;: &quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m     &quot;appium:automationName&quot;: &quot;UIAutomator2&quot;
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m   },
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m   &quot;firstMatch&quot;: [
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m     {}
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m   ]
+?[38;5;32m[AndroidUiautomator2Driver@6598]?[0m }
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Session created with session id: ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e
+?[38;5;48m[ADB]?[0m Found 7 'build-tools' folders under '/Users/runner/Library/Android/sdk' (newest first):
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/34.0.0
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.3
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.2
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.1
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.0
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/32.0.0
+?[38;5;48m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/31.0.0
+?[38;5;48m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Retrieving device list
+?[38;5;48m[ADB]?[0m Trying to find connected Android devices
+?[38;5;48m[ADB]?[0m Getting connected devices
+?[38;5;48m[ADB]?[0m Connected devices: [{&quot;udid&quot;:&quot;emulator-5554&quot;,&quot;state&quot;:&quot;device&quot;}]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Using device: emulator-5554
+?[38;5;48m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;48m[ADB]?[0m Setting device id to emulator-5554
+?[38;5;64m[BaseDriver]?[0m Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Checking whether app is actually present
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+?[38;5;48m[ADB]?[0m Current device property 'ro.build.version.sdk': 30
+?[38;5;48m[ADB]?[0m Getting device platform version
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+?[38;5;48m[ADB]?[0m Current device property 'ro.build.version.release': 11
+?[38;5;48m[ADB]?[0m Device API level: 30
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Relaxing hidden api policy
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Parsing package and activity from app manifest
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+?[38;5;48m[ADB]?[0m Package name: 'io.appium.android.apis'
+?[38;5;48m[ADB]?[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Parsed package and activity are: io.appium.android.apis/io.appium.android.apis.ApiDemos
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Pushing settings apk to the device...
+?[38;5;48m[ADB]?[0m Getting package info for 'io.appium.settings'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+?[38;5;48m[ADB]?[0m App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' is not installed
+?[38;5;48m[ADB]?[0m Installing '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 help'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 features'
+?[38;5;48m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -g /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+?[38;5;48m[ADB]?[0m The installation of 'settings_apk-debug.apk' took 714ms
+?[38;5;48m[ADB]?[0m Install command stdout: Performing Streamed Install
+?[38;5;48m[ADB]?[0m Success
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd notification allow_listener io.appium.settings/.NLService'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings PROJECT_MEDIA allow'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;80m[SettingsApp]?[0m Starting Appium Settings app
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;96m[Logcat]?[0m Starting logs capture with command: /Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Forwarding UiAutomator2 Server port 6790 to local port 8200
+?[38;5;48m[ADB]?[0m Forwarding system: 8200 to device: 6790
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+?[38;5;48m[ADB]?[0m Checking app cert for /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[38;5;48m[ADB]?[0m Checking app cert for /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk
+?[38;5;48m[ADB]?[0m Checking app cert for /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+?[38;5;48m[ADB]?[0m Using 'apksigner.jar' from '/Users/runner/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar'
+?[38;5;48m[ADB]?[0m Starting apksigner: /Users/runner/hostedtoolcache/Java_Corretto_jdk/17.0.10-7.1/x64/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/runner/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+?[38;5;48m[ADB]?[0m Starting apksigner: /Users/runner/hostedtoolcache/Java_Corretto_jdk/17.0.10-7.1/x64/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/runner/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[38;5;48m[ADB]?[0m Starting apksigner: /Users/runner/hostedtoolcache/Java_Corretto_jdk/17.0.10-7.1/x64/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/runner/Library/Android/sdk/build-tools/34.0.0/lib/apksigner.jar verify --print-certs /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk
+?[38;5;48m[ADB]?[0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+?[38;5;48m[ADB]?[0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+?[38;5;48m[ADB]?[0m 
+?[38;5;48m[ADB]?[0m sha256 hash did match for 'appium-uiautomator2-server-debug-androidTest.apk'
+?[38;5;48m[ADB]?[0m '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is signed with the default certificate
+?[38;5;48m[ADB]?[0m Getting install status for io.appium.uiautomator2.server.test
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm path io.appium.uiautomator2.server.test'
+?[38;5;48m[ADB]?[0m apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-256 digest: ff2c1b0d041edb6e32a5f7c190ca9c3e78c4ca2cddbbb76133fc30c40b291e30
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-1 digest: b3de7d52e6aa703f166c4ee6e921c2816278c393
+?[38;5;48m[ADB]?[0m Signer #1 certificate MD5 digest: 7dce13e4e43fbe159a70f7a252cb0acf
+?[38;5;48m[ADB]?[0m 
+?[38;5;48m[ADB]?[0m '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is signed with a non-default certificate
+?[38;5;48m[ADB]?[0m Getting package info for 'io.appium.android.apis'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.android.apis'
+?[38;5;48m[ADB]?[0m 'io.appium.uiautomator2.server.test' is not installed
+?[38;5;48m[ADB]?[0m apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+?[38;5;48m[ADB]?[0m Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+?[38;5;48m[ADB]?[0m Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+?[38;5;48m[ADB]?[0m 
+?[38;5;48m[ADB]?[0m sha256 hash did match for 'appium-uiautomator2-server-v7.0.5.apk'
+?[38;5;48m[ADB]?[0m '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk' is signed with the default certificate
+?[38;5;48m[ADB]?[0m Getting package info for 'io.appium.uiautomator2.server'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+?[38;5;48m[ADB]?[0m App '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is not installed
+?[38;5;48m[ADB]?[0m Installing '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;48m[ADB]?[0m The application at '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;48m[ADB]?[0m App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk' is not installed
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Server packages status: [{&quot;wasSigned&quot;:true,&quot;installState&quot;:&quot;notInstalled&quot;,&quot;appPath&quot;:&quot;/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk&quot;,&quot;appId&quot;:&quot;io.appium.uiautomator2.server&quot;},{&quot;wasSigned&quot;:true,&quot;installState&quot;:&quot;notInstalled&quot;,&quot;appPath&quot;:&quot;/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk&quot;,&quot;appId&quot;:&quot;io.appium.uiautomator2.server.test&quot;}]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Server packages are going to be (re)installed
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 version'
+?[38;5;48m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk'
+?[38;5;48m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+?[38;5;48m[ADB]?[0m The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 1032ms
+?[38;5;48m[ADB]?[0m Install command stdout: Performing Streamed Install
+?[38;5;48m[ADB]?[0m Success
+?[38;5;48m[ADB]?[0m The installation of 'android-app.apk' took 1737ms
+?[38;5;48m[ADB]?[0m Install command stdout: Performing Streamed Install
+?[38;5;48m[ADB]?[0m Success
+?[38;5;48m[ADB]?[0m The installation of 'appium-uiautomator2-server-v7.0.5.apk' took 2204ms
+?[38;5;48m[ADB]?[0m Install command stdout: Performing Streamed Install
+?[38;5;48m[ADB]?[0m Success
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waiting up to 30000ms for services to be available
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+?[38;5;48m[ADB]?[0m Adding packages [&quot;io.appium.settings&quot;,&quot;io.appium.uiautomator2.server&quot;,&quot;io.appium.uiautomator2.server.test&quot;] to Doze whitelist
+?[38;5;48m[ADB]?[0m Got the following command chunks to execute: [[&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.settings&quot;,&quot;;&quot;,&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.uiautomator2.server&quot;,&quot;;&quot;,&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.uiautomator2.server.test&quot;,&quot;;&quot;]]
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Performing shallow cleanup of automation leftovers
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m No obsolete sessions have been detected (socket hang up)
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Starting UIAutomator2 server 7.0.5
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Using UIAutomator2 server from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.5.apk' and test from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waiting up to 30000ms for UiAutomator2 to be online...
+?[38;5;48m[ADB]?[0m Creating ADB subprocess with args: [&quot;-P&quot;,&quot;5037&quot;,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;instrument&quot;,&quot;-w&quot;,&quot;-e&quot;,&quot;disableAnalytics&quot;,&quot;true&quot;,&quot;io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner&quot;]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m socket hang up
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m socket hang up
+?[38;5;112m[Instrumentation]?[0m io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m socket hang up
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m socket hang up
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;None&quot;,&quot;value&quot;:{&quot;message&quot;:&quot;UiAutomator2 Server is ready to accept commands&quot;,&quot;ready&quot;:true}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m The initialization of the instrumentation process took 4485ms
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/session' to command name 'createSession'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;}],&quot;alwaysMatch&quot;:{}}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;}],&quot;alwaysMatch&quot;:{}},&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Determined the downstream protocol as 'W3C'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/appium/device/pixel_ratio] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/appium/device/system_bars' to command name 'getSystemBars'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/appium/device/system_bars] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/window/current/size' to command name 'getWindowSize'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/window/current/size] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/appium/device/info] with no body
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:3.5}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;height&quot;:2560,&quot;width&quot;:1440}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;statusBar&quot;:84}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;androidId&quot;:&quot;bc7f660d7fa7d9ec&quot;,&quot;apiVersion&quot;:&quot;30&quot;,&quot;bluetooth&quot;:{&quot;state&quot;:&quot;ON&quot;},&quot;brand&quot;:&quot;Android&quot;,&quot;carrierName&quot;:&quot;Android&quot;,&quot;displayDensity&quot;:560,&quot;locale&quot;:&quot;en_US&quot;,&quot;manufacturer&quot;:&quot;unknown&quot;,&quot;model&quot;:&quot;Android SDK built for x86_64&quot;,&quot;networks&quot;:[{&quot;capabilities&quot;:{&quot;SSID&quot;:null,&quot;linkDownBandwidthKbps&quot;:141000,&quot;linkUpstreamBandwidthKbps&quot;:141000,&quot;networkCapabilities&quot;:&quot;NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED&quot;,&quot;signalStrength&quot;:-30,&quot;transportTypes&quot;:&quot;TRANSPORT_WIFI&quot;},&quot;detailedState&quot;:&quot;CONNECTED&quot;,&quot;extraInfo&quot;:&quot;&quot;,&quot;isAvailable&quot;:true,&quot;isConnected&quot;:true,&quot;isFailover&quot;:false,&quot;isRoaming&quot;:false,&quot;state&quot;:&quot;CONNECTED&quot;,&quot;subtype&quot;:0,&quot;subtypeName&quot;:&quot;&quot;,&quot;type&quot;:1,&quot;typeName&quot;:&quot;WIFI&quot;},{&quot;capabilities&quot;:{&quot;SSID&quot;:null,&quot;linkDownBandwidthKbps&quot;:30000,&quot;linkUpstreamBandwidthKbps&quot;:15000,&quot;n...
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Screen already unlocked, doing nothing
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n io.appium.android.apis/io.appium.android.apis.ApiDemos -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+?[38;5;48m[ADB]?[0m Waiting up to 20000ms for activity matching pkg: 'io.appium.android.apis' and activity: 'io.appium.android.apis.ApiDemos' to be focused
+?[38;5;48m[ADB]?[0m Possible activities, to be checked: 'io.appium.android.apis.ApiDemos', 'io.appium.android.apis.io.appium.android.apis.ApiDemos'
+?[38;5;48m[ADB]?[0m Getting focused package and activity
+?[38;5;48m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window displays'
+?[38;5;48m[ADB]?[0m Found package: 'io.appium.android.apis' and fully qualified activity name : 'io.appium.android.apis.ApiDemos'
+?[38;5;16m[AppiumDriver@3138]?[0m New AndroidUiautomator2Driver session created successfully, session ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e added to master session list
+?[38;5;16m[AppiumDriver@3138]?[0m Event 'newSessionStarted' logged at 1711219212138 (18:40:12 GMT+0000 (Coordinated Universal Time))
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Cached the protocol value 'W3C' for the new session ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Responding to client with driver.createSession() result: {&quot;capabilities&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;,&quot;pixelRatio&quot;:&quot;3.5&quot;,&quot;statBarHeight&quot;:84,&quot;viewportRect&quot;:{&quot;left&quot;:0,&quot;top&quot;:84,&quot;width&quot;:1440,&quot;height&quot;:2476},&quot;deviceApiLevel&quot;:30,&quot;platformVersion&quot;:&quot;11&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;,&quot;deviceModel&quot;:&quot;Android SDK built for x86_64&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceScreenDensity&quot;:560}}
+?[38;5;0m[HTTP]?[0m &lt;-- POST /wd/session 200 21129 ms - 987
+?[38;5;0m[HTTP]?[0m 
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/timeouts?[39m
+?[38;5;0m[HTTP]?[0m {&quot;implicit&quot;:1000}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Calling AppiumDriver.timeouts() with args: [null,null,null,null,1000,&quot;ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e&quot;]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m W3C timeout argument: {&quot;implicit&quot;:1000}}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Set implicit wait to 1000ms
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Responding to client with driver.timeouts() result: null
+?[38;5;0m[HTTP]?[0m &lt;-- POST /wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/timeouts 200 3 ms - 14
+?[38;5;0m[HTTP]?[0m 
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/element?[39m
+?[38;5;0m[HTTP]?[0m {&quot;value&quot;:&quot;App&quot;,&quot;using&quot;:&quot;accessibility id&quot;}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;App&quot;,&quot;ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e&quot;]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waiting up to 1000 ms for condition
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/element' to command name 'findElement'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 404: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+?[38;5;128m[W3C]?[0m Matched W3C error code 'no such element' to NoSuchElementError
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waited for 118 ms so far
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/element' to command name 'findElement'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 404: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+?[38;5;128m[W3C]?[0m Matched W3C error code 'no such element' to NoSuchElementError
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElOrEls (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+?[38;5;0m[HTTP]?[0m &lt;-- POST /wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/element 404 1186 ms - 811
+?[38;5;0m[HTTP]?[0m 
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/element?[39m
+?[38;5;0m[HTTP]?[0m {&quot;value&quot;:&quot;App&quot;,&quot;using&quot;:&quot;accessibility id&quot;}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;App&quot;,&quot;ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e&quot;]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waiting up to 1000 ms for condition
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/element' to command name 'findElement'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 404: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+?[38;5;128m[W3C]?[0m Matched W3C error code 'no such element' to NoSuchElementError
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waited for 47 ms so far
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/element' to command name 'findElement'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 404: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+?[38;5;128m[W3C]?[0m Matched W3C error code 'no such element' to NoSuchElementError
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Waited for 577 ms so far
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/element' to command name 'findElement'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 404: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;An element could not be located on the page using the given search parameters&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+?[38;5;128m[W3C]?[0m Matched W3C error code 'no such element' to NoSuchElementError
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElOrEls (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at processTicksAndRejections (node:internal/process/task_queues:95:5)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m     at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+?[38;5;0m[HTTP]?[0m &lt;-- POST /wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/element 404 1038 ms - 811
+?[38;5;0m[HTTP]?[0m 
+?[38;5;0m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/screenshot?[39m
+?[38;5;0m[HTTP]?[0m {}
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e&quot;]
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/d3dbdcf5-67be-42c9-a009-81f1965ff2ea/screenshot] with no body
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;d3dbdcf5-67be-42c9-a009-81f1965ff2ea&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15fFT1vf/x90xmspFANkICSUhkXxLgoiKuKGpLWyq2VREVW5eqtxWsSy23/Fpab4te26JdFAva6tW2Vr3V9iFetV6UIoJUWQQCAWRJCIFM9pBtMvP9/cFNLiGzJjM5Cb6ej8fnoZw553s+850ZeMznfOdzbJKMAAAAAAAAAACIMLvVCQAAAAAAAAAAzkwUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgAQAAAAAAAABRQQEaAAAAAAAAABAVFKABAAAAAAAAAFFBARoAAAAAAAAAEBUUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgAQAAAAAAAABRQQEaAAAAAAAAABAVFKABAAAAAAAAAFFBARoAAAAAAAAAEBUUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgcUax2WzKzMzU/Pnz9dJLL+no0aPyer3yeDzyer2d/98R+/fv1+rVqzVnzhwNGTJENpvN6qcAAAAAAAAAnDFskozVSQC9YbPZlJycrEcffVRf+9rXlJqa2rk9HF6vVxUVFVq5cqWWL1+u9vb2aKTbb9lsNsXHx8vpdMputysmJkZOp1OSZIyR2+3uLOC3tbWptbXV4owBAAAAAADQ31GAxoBls9k0YsQIbdy4UdnZ2bLbI7eg3+v1avPmzbriiivU0NAQsXH7m5iYGCUmJio+Pl4pKSmaMWOGxo0bp8GDBys1NVVjxoyRJLndbu3Zs0f19fWqqanRjh079NFHH6mpqUktLS1qbm6W1+u1+NkAAAAAAACgv6EAjQEpISFBO3bsUEFBQVTbZng8HsXGxp5xxVWHw6HU1FQVFBTo8ssv1/nnn69LLrlESUlJIR3v9XpVWVmpv//9...
+?[38;5;32m[AndroidUiautomator2Driver@6598 (ec6bbfcb)]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15fFT1vf/x90xmspFANkICSUhkXxLgoiKuKGpLWyq2VREVW5eqtxWsSy23/Fpab4te26JdFAva6tW2Vr3V9iFetV6UIoJUWQQCAWRJCIFM9pBtMvP9/cFNLiGzJjM5Cb6ej8fnoZw553s+850ZeMznfOdzbJKMAAAAAAAAAACIMLvVCQAAAAAAAAAAzkwUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgAQAAAAAAAABRQQEaAAAAAAAAABAVFKABAAAAAAAAAFFBARoAAAAAAAAAEBUUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgAQAAAAAAAABRQQEaAAAAAAAAABAVFKABAAAAAAAAAFFBARoAAAAAAAAAEBUUoAEAAAAAAAAAUUEBGgAAAAAAAAAQFRSgcUax2WzKzMzU/Pnz9dJLL+no0aPyer3yeDzyer2d/98R+/fv1+rVqzVnzhwNGTJENpvN6qcAAAAAAAAAnDFskozVSQC9YbPZlJycrEcffVRf+9rXlJqa2rk9HF6vVxUVFVq5cqWWL1+u9vb2aKTbb9lsNsXHx8vpdMputysmJkZOp1OSZIyR2+3uLOC3tbWptbXV4owBAAAAAADQ31GAxoBls9k0YsQIbdy4UdnZ2bLbI7eg3+v1avPmzbriiivU0NAQsXH7m5iYGCUmJio+Pl4pKSmaMWOGxo0bp8GDBys1NVVjxoyRJLndbu3Zs0f19fWqqanRjh079NFHH6mpqUktLS1qbm6W1+u1+NkAAAAAAACgv6EAjQEpISFBO3bsUEFBQVTbZng8HsXGxp5xxVWHw6HU1FQVFBTo8ssv1/nnn69LLrlESUlJIR3v9XpVWVmpv//979qwYYPeffddlZeXq76+/oybKwAAAABA/2Gz2ZSbm6vJkyfLZrMpLS1NklRd...
+?[38;5;0m[HTTP]?[0m &lt;-- GET /wd/session/ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e/screenshot 200 976 ms - 159304
+?[38;5;0m[HTTP]?[0m 
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>?[32m03/23/2024 06:39:42 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeAll:26] - Before All ...
+?[0m?[36m03/23/2024 06:39:48 - [DEBUG] - [io.github.selcukes.excel.SingleExcelData.init:50] - Using excel runner sheet : Smoke
+?[0m?[32m03/23/2024 06:39:48 - [INFO] - [io.github.selcukes.core.driver.DriverFactory.create:65] - Creating new MOBILE session...
+?[0m?[36m03/23/2024 06:39:48 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.lambda$getAppiumAppOptions$5:91] - Using APP: /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[0m?[36m03/23/2024 06:39:48 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.createAppDriver:76] - Creating New ANDROID App Session...
+?[0m?[32m03/23/2024 06:39:48 - [INFO] - [io.github.selcukes.core.driver.AppiumEngine.startLocalServer:59] - Starting Appium server...
+?[0m?[36m03/23/2024 06:39:50 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.getServiceUrl:55] - Using ServiceUrl[http://127.0.0.1:47258]
+?[0m?[32m03/23/2024 06:40:12 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeTest:38] - Starting Scenario ..Navigation to Secure Dialog
+?[0m?[32m03/23/2024 06:40:12 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[91m03/23/2024 06:40:14 - [ERROR] - [io.github.selcukes.commons.helper.ExceptionHelper.logError:106] - Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '17.0.10'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$n6VCqBM3
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e
+How to fix: 
+* This exception will be thrown when the page or element was not loaded after the specified wait time.
+To overcome this, you can increase the wait time, if you are using an implicit wait, or better yet, replace the implicit wait with an explicit wait
+
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.7.3', java.version: '17.0.10'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$n6VCqBM3
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: ec6bbfcb-5aa9-4188-87ee-d3f18d94f33e
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.github.selcukes.core.page.Page.waitFor(Page.java:710)
+	at io.github.selcukes.core.page.Page.find(Page.java:536)
+	at io.github.selcukes.core.page.Page.click(Page.java:223)
+	at io.github.selcukes.core.page.Page.click(Page.java:172)
+	at io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(MobileTestSteps.java:20)
+	at ✽.I click on &quot;App&quot; link(file:///Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/features/mobile/SecureDialog.feature:5)
+
+?[0m?[32m03/23/2024 06:40:14 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m03/23/2024 06:40:15 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterTest:59] - Completed Scenario ..Navigation to Secure Dialog
+?[0m</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at Mar 23, 2024, 6:40:22 PM</p>
+</div>
+</div>
+</body>
+</html>
