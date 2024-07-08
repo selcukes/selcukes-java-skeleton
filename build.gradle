@@ -12,7 +12,7 @@ repositories {
     mavenCentral()
 }
 ext {
-    selcukesVersion = "2.3.9"
+    selcukesVersion = "2.3.10"
     lombokVersion = "1.18.30"
     slf4jVersion = "2.23.1"
 }
