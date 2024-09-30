@@ -1,0 +1,409 @@
+2024-09-30 18:34:14:910 [Appium] Welcome to Appium v2.11.5
+2024-09-30 18:34:14:914 [Appium] Non-default server args:
+2024-09-30 18:34:14:916 [Appium] { address: '127.0.0.1', basePath: '/wd/', port: 11489, sessionOverride: true }
+2024-09-30 18:34:14:916 [Appium] The autodetected Appium home path: /Users/runner/.appium
+2024-09-30 18:34:14:917 [Appium] Attempting to load driver uiautomator2...
+2024-09-30 18:34:14:921 [Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2024-09-30 18:34:16:910 [Appium] AndroidUiautomator2Driver has been successfully loaded in 1.992s
+2024-09-30 18:34:16:941 [Appium] Appium REST http interface listener started on http://127.0.0.1:11489/wd
+2024-09-30 18:34:16:942 [Appium] Available drivers:
+2024-09-30 18:34:16:943 [Appium]   - uiautomator2@3.8.0 (automationName 'UiAutomator2')
+2024-09-30 18:34:16:944 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2024-09-30 18:34:17:090 [HTTP] --> GET /wd/status {}
+2024-09-30 18:34:17:092 [AppiumDriver@5306] Calling AppiumDriver.getStatus() with args: []
+2024-09-30 18:34:17:094 [AppiumDriver@5306] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.11.5"}}
+2024-09-30 18:34:17:100 [HTTP] <-- GET /wd/status 200 7 ms - 111 
+2024-09-30 18:34:17:618 [HTTP] Request idempotency key: a116574f-5137-42f2-b3a0-9491d3a57055
+2024-09-30 18:34:17:640 [HTTP] --> POST /wd/session {"capabilities":{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}}
+2024-09-30 18:34:17:641 [AppiumDriver@5306] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}]
+2024-09-30 18:34:17:641 [AppiumDriver@5306] Event 'newSessionRequested' logged at 1727721257641 (18:34:17 GMT+0000 (Coordinated Universal Time))
+2024-09-30 18:34:17:646 [Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+2024-09-30 18:34:17:646 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2024-09-30 18:34:17:646 [Appium] Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+2024-09-30 18:34:17:650 [Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2024-09-30 18:34:17:650 [AppiumDriver@5306] Appium v2.11.5 creating new AndroidUiautomator2Driver (v3.8.0) session
+2024-09-30 18:34:17:651 [AppiumDriver@5306] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2024-09-30 18:34:17:651 [AppiumDriver@5306] Appium's BaseDriver version is 9.11.5
+2024-09-30 18:34:17:651 [AppiumDriver@5306] AndroidUiautomator2Driver's BaseDriver version is 9.11.5
+2024-09-30 18:34:17:652 [AppiumDriver@5306] There are no active sessions for cleanup
+2024-09-30 18:34:17:660 [38;5;-77m[AndroidUiautomator2Driver@a4d5] 
+2024-09-30 18:34:17:661 [38;5;-77m[AndroidUiautomator2Driver@a4d5] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "ANDROID",
+    "appium:app": "/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk",
+    "appium:automationName": "UIAutomator2"
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2024-09-30 18:34:17:671 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Session created with session id: 8efb356e-aedb-4297-aec7-16dd9ea79717
+2024-09-30 18:34:17:689 [8efb356e][ADB] Found 4 'build-tools' folders under '/Users/runner/Library/Android/sdk' (newest first):
+2024-09-30 18:34:17:689 [8efb356e][ADB]     /Users/runner/Library/Android/sdk/build-tools/35.0.0
+2024-09-30 18:34:17:690 [8efb356e][ADB]     /Users/runner/Library/Android/sdk/build-tools/34.0.0
+2024-09-30 18:34:17:690 [8efb356e][ADB]     /Users/runner/Library/Android/sdk/build-tools/33.0.3
+2024-09-30 18:34:17:691 [8efb356e][ADB]     /Users/runner/Library/Android/sdk/build-tools/33.0.2
+2024-09-30 18:34:17:692 [8efb356e][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2024-09-30 18:34:17:693 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2024-09-30 18:34:17:731 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Retrieving device list
+2024-09-30 18:34:17:731 [8efb356e][ADB] Trying to find connected Android devices
+2024-09-30 18:34:17:732 [8efb356e][ADB] Getting connected devices
+2024-09-30 18:34:17:781 [8efb356e][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2024-09-30 18:34:17:782 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Using device: emulator-5554
+2024-09-30 18:34:17:784 [8efb356e][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2024-09-30 18:34:17:784 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2024-09-30 18:34:17:822 [8efb356e][ADB] Setting device id to emulator-5554
+2024-09-30 18:34:17:825 [8efb356e][BaseDriver] Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2024-09-30 18:34:17:872 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Checking whether app is actually present
+2024-09-30 18:34:17:874 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2024-09-30 18:34:18:035 [8efb356e][ADB] Current device property 'ro.build.version.sdk': 30
+2024-09-30 18:34:18:035 [8efb356e][ADB] Getting device platform version
+2024-09-30 18:34:18:036 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2024-09-30 18:34:18:220 [8efb356e][ADB] Current device property 'ro.build.version.release': 11
+2024-09-30 18:34:18:221 [8efb356e][ADB] Device API level: 30
+2024-09-30 18:34:18:221 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Relaxing hidden api policy
+2024-09-30 18:34:18:222 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2024-09-30 18:34:18:224 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Parsing package and activity from app manifest
+2024-09-30 18:34:18:227 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2024-09-30 18:34:18:236 [8efb356e][ADB] Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/35.0.0/aapt2'
+2024-09-30 18:34:18:237 [8efb356e][ADB] Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/35.0.0/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2024-09-30 18:34:18:257 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2024-09-30 18:34:18:357 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Pushing settings apk to the device...
+2024-09-30 18:34:18:358 [8efb356e][ADB] Getting package info for 'io.appium.settings'
+2024-09-30 18:34:18:358 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2024-09-30 18:34:18:391 [8efb356e][ADB] Package name: 'io.appium.android.apis'
+2024-09-30 18:34:18:391 [8efb356e][ADB] Main activity name: 'io.appium.android.apis.ApiDemos'
+2024-09-30 18:34:18:391 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Parsed package and activity are: io.appium.android.apis/io.appium.android.apis.ApiDemos
+2024-09-30 18:34:26:708 [8efb356e][ADB] App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' is not installed
+2024-09-30 18:34:26:708 [8efb356e][ADB] Installing '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-09-30 18:34:26:709 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 help'
+2024-09-30 18:34:26:733 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 features'
+2024-09-30 18:34:26:765 [8efb356e][ADB] The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2024-09-30 18:34:26:765 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -g /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2024-09-30 18:34:29:784 [8efb356e][ADB] The installation of 'settings_apk-debug.apk' took 3019ms
+2024-09-30 18:34:29:784 [8efb356e][ADB] Install command stdout: Performing Streamed Install
+Success
+2024-09-30 18:34:29:785 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2024-09-30 18:34:29:950 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd notification allow_listener io.appium.settings/.NLService'
+2024-09-30 18:34:29:952 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings PROJECT_MEDIA allow'
+2024-09-30 18:34:30:335 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2024-09-30 18:34:30:408 [8efb356e][SettingsApp] Starting Appium Settings app
+2024-09-30 18:34:30:408 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+2024-09-30 18:34:34:007 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2024-09-30 18:34:36:124 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+2024-09-30 18:34:37:730 [8efb356e][Logcat] Starting logs capture with command: /Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+2024-09-30 18:34:38:926 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Forwarding UiAutomator2 Server port 6790 to local port 8200
+2024-09-30 18:34:38:927 [8efb356e][ADB] Forwarding system: 8200 to device: 6790
+2024-09-30 18:34:38:927 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+2024-09-30 18:34:39:000 [8efb356e][ADB] Getting package info for 'io.appium.uiautomator2.server'
+2024-09-30 18:34:39:000 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+2024-09-30 18:34:39:004 [8efb356e][ADB] Getting install status for io.appium.uiautomator2.server.test
+2024-09-30 18:34:39:005 [8efb356e][ADB] Checking app cert for /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+2024-09-30 18:34:39:005 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+2024-09-30 18:34:39:037 [8efb356e][ADB] Using 'apksigner.jar' from '/Users/runner/Library/Android/sdk/build-tools/35.0.0/lib/apksigner.jar'
+2024-09-30 18:34:39:038 [8efb356e][ADB] Starting apksigner: /Users/runner/hostedtoolcache/Java_Corretto_jdk/17.0.12-7.1/x64/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/runner/Library/Android/sdk/build-tools/35.0.0/lib/apksigner.jar verify --print-certs /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+2024-09-30 18:34:40:045 [8efb356e][ADB] apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: ff2c1b0d041edb6e32a5f7c190ca9c3e78c4ca2cddbbb76133fc30c40b291e30
+Signer #1 certificate SHA-1 digest: b3de7d52e6aa703f166c4ee6e921c2816278c393
+Signer #1 certificate MD5 digest: 7dce13e4e43fbe159a70f7a252cb0acf
+
+2024-09-30 18:34:40:046 [8efb356e][ADB] '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is signed with a non-default certificate
+2024-09-30 18:34:40:046 [8efb356e][ADB] Getting package info for 'io.appium.android.apis'
+2024-09-30 18:34:40:046 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.android.apis'
+2024-09-30 18:34:43:950 [8efb356e][ADB] 'io.appium.uiautomator2.server.test' is not installed
+2024-09-30 18:34:48:203 [8efb356e][ADB] App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.25.apk' is not installed
+2024-09-30 18:34:48:204 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Server packages status: [{"installState":"notInstalled","appPath":"/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.25.apk","appId":"io.appium.uiautomator2.server"},{"installState":"notInstalled","appPath":"/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk","appId":"io.appium.uiautomator2.server.test"}]
+2024-09-30 18:34:48:204 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Server packages are going to be (re)installed
+2024-09-30 18:34:48:206 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 version'
+2024-09-30 18:34:48:231 [8efb356e][ADB] The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.25.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2024-09-30 18:34:48:232 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.25.apk'
+2024-09-30 18:34:48:234 [8efb356e][ADB] The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2024-09-30 18:34:48:234 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2024-09-30 18:34:48:265 [8efb356e][ADB] App '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is not installed
+2024-09-30 18:34:48:265 [8efb356e][ADB] Installing '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2024-09-30 18:34:48:267 [8efb356e][ADB] The application at '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2024-09-30 18:34:48:267 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2024-09-30 18:35:00:596 [8efb356e][ADB] The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 12362ms
+2024-09-30 18:35:00:596 [8efb356e][ADB] Install command stdout: Performing Streamed Install
+Success
+2024-09-30 18:35:05:002 [8efb356e][ADB] The installation of 'android-app.apk' took 16735ms
+2024-09-30 18:35:05:003 [8efb356e][ADB] Install command stdout: Performing Streamed Install
+Success
+2024-09-30 18:35:06:032 [8efb356e][ADB] The installation of 'appium-uiautomator2-server-v7.0.25.apk' took 17800ms
+2024-09-30 18:35:06:032 [8efb356e][ADB] Install command stdout: Performing Streamed Install
+Success
+2024-09-30 18:35:06:033 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waiting up to 30000ms for services to be available
+2024-09-30 18:35:06:034 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+2024-09-30 18:35:06:918 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+2024-09-30 18:35:06:920 [8efb356e][ADB] Adding packages ["io.appium.settings","io.appium.uiautomator2.server","io.appium.uiautomator2.server.test"] to Doze whitelist
+2024-09-30 18:35:06:921 [8efb356e][ADB] Got the following command chunks to execute: [["dumpsys","deviceidle","whitelist","+io.appium.settings",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server",";","dumpsys","deviceidle","whitelist","+io.appium.uiautomator2.server.test",";"]]
+2024-09-30 18:35:06:921 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+2024-09-30 18:35:08:045 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Performing shallow cleanup of automation leftovers
+2024-09-30 18:35:08:176 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] No obsolete sessions have been detected (socket hang up)
+2024-09-30 18:35:08:177 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+2024-09-30 18:35:08:179 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+2024-09-30 18:35:09:287 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Starting UIAutomator2 server 7.0.25
+2024-09-30 18:35:09:287 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Using UIAutomator2 server from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v7.0.25.apk' and test from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2024-09-30 18:35:09:287 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waiting up to 30000ms for UiAutomator2 to be online...
+2024-09-30 18:35:09:288 [8efb356e][ADB] Creating ADB subprocess with args: ["-P","5037","-s","emulator-5554","shell","am","instrument","-w","-e","disableAnalytics","true","io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner"]
+2024-09-30 18:35:09:293 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:09:294 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:09:368 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:10:370 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:10:371 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:10:383 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:11:384 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:11:384 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:11:395 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:12:398 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:12:399 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:12:407 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:13:298 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] [Instrumentation] 
+2024-09-30 18:35:13:409 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:13:409 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:13:420 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:14:421 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:14:422 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:14:432 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:15:433 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:15:434 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:15:443 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] socket hang up
+2024-09-30 18:35:16:445 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/status' to command name 'getStatus'
+2024-09-30 18:35:16:446 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+2024-09-30 18:35:16:922 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"None","value":{"message":"UiAutomator2 Server is ready to accept commands","ready":true}}
+2024-09-30 18:35:16:923 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] The initialization of the instrumentation process took 7635ms
+2024-09-30 18:35:16:923 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/session' to command name 'createSession'
+2024-09-30 18:35:16:924 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {"capabilities":{"firstMatch":[{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2"},"deviceName":"emulator-5554","deviceUDID":"emulator-5554","appPackage":"io.appium.android.apis"}],"alwaysMatch":{}}}
+2024-09-30 18:35:17:069 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"capabilities":{"firstMatch":[{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2"},"deviceName":"emulator-5554","deviceUDID":"emulator-5554","appPackage":"io.appium.android.apis"}],"alwaysMatch":{}},"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447"}}
+2024-09-30 18:35:17:070 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Determined the downstream protocol as 'W3C'
+2024-09-30 18:35:17:225 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/appium/device/pixel_ratio] with no body
+2024-09-30 18:35:17:230 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2024-09-30 18:35:17:231 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/appium/device/system_bars] with no body
+2024-09-30 18:35:17:233 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/window/current/size' to command name 'getWindowSize'
+2024-09-30 18:35:17:233 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/window/current/size] with no body
+2024-09-30 18:35:17:252 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/appium/device/info] with no body
+2024-09-30 18:35:17:254 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+2024-09-30 18:35:17:256 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys power'
+2024-09-30 18:35:17:434 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":3.5}
+2024-09-30 18:35:17:459 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"statusBar":84}}
+2024-09-30 18:35:17:461 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"androidId":"d34cdfd33122c9d6","apiVersion":"30","bluetooth":{"state":"ON"},"brand":"Android","carrierName":"Android","displayDensity":560,"locale":"en_US","manufacturer":"unknown","model":"Android SDK built for x86_64","networks":[{"capabilities":{"SSID":null,"linkDownBandwidthKbps":33962,"linkUpstreamBandwidthKbps":33962,"networkCapabilities":"NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED","signalStrength":-30,"transportTypes":"TRANSPORT_WIFI"},"detailedState":"CONNECTED","extraInfo":"","isAvailable":true,"isConnected":true,"isFailover":false,"isRoaming":false,"state":"CONNECTED","subtype":0,"subtypeName":"","type":1,"typeName":"WIFI"},{"capabilities":{"SSID":null,"linkDownBandwidthKbps":30000,"linkUpstreamBandwidthKbps":15000,"net...
+2024-09-30 18:35:17:463 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"height":2560,"width":1440}}
+2024-09-30 18:35:17:584 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Screen already unlocked, doing nothing
+2024-09-30 18:35:17:585 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+2024-09-30 18:35:17:586 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start -W -n io.appium.android.apis/io.appium.android.apis.ApiDemos -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2024-09-30 18:35:21:334 [8efb356e][ADB] Waiting up to 20000ms for activity matching pkg: 'io.appium.android.apis' and activity: 'io.appium.android.apis.ApiDemos' to be focused
+2024-09-30 18:35:21:335 [8efb356e][ADB] Possible activities, to be checked: 'io.appium.android.apis.ApiDemos', 'io.appium.android.apis.io.appium.android.apis.ApiDemos'
+2024-09-30 18:35:21:336 [8efb356e][ADB] Getting focused package and activity
+2024-09-30 18:35:21:336 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window displays'
+2024-09-30 18:35:21:570 [8efb356e][ADB] Found package: 'io.appium.android.apis' and fully qualified activity name : 'io.appium.android.apis.ApiDemos'
+2024-09-30 18:35:21:572 [8efb356e][AppiumDriver@5306] New AndroidUiautomator2Driver session created successfully, session 8efb356e-aedb-4297-aec7-16dd9ea79717 added to master session list
+2024-09-30 18:35:21:573 [8efb356e][AppiumDriver@5306] Event 'newSessionStarted' logged at 1727721321573 (18:35:21 GMT+0000 (Coordinated Universal Time))
+2024-09-30 18:35:21:574 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Cached the protocol value 'W3C' for the new session 8efb356e-aedb-4297-aec7-16dd9ea79717
+2024-09-30 18:35:21:575 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Responding to client with driver.createSession() result: {"capabilities":{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"ANDROID","app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","automationName":"UIAutomator2"},"deviceName":"emulator-5554","deviceUDID":"emulator-5554","appPackage":"io.appium.android.apis","pixelRatio":"3.5","statBarHeight":84,"viewportRect":{"left":0,"top":84,"width":1440,"height":2476},"deviceApiLevel":30,"platformVersion":"11","deviceManufacturer":"unknown","deviceModel":"Android SDK built for x86_64","deviceScreenSize":"1440x2560","deviceScreenDensity":560}}
+2024-09-30 18:35:21:579 [8efb356e][HTTP] <-- POST /wd/session 200 63938 ms - 987 
+2024-09-30 18:35:23:289 [8efb356e][HTTP] --> POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/timeouts {"implicit":1000}
+2024-09-30 18:35:23:291 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Calling AppiumDriver.timeouts() with args: [null,null,null,null,1000,"8efb356e-aedb-4297-aec7-16dd9ea79717"]
+2024-09-30 18:35:23:292 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] W3C timeout argument: {"implicit":1000}}
+2024-09-30 18:35:23:292 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Set implicit wait to 1000ms
+2024-09-30 18:35:23:293 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Responding to client with driver.timeouts() result: null
+2024-09-30 18:35:23:294 [8efb356e][HTTP] <-- POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/timeouts 200 5 ms - 14 
+2024-09-30 18:35:23:339 [8efb356e][HTTP] --> POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/element {"using":"accessibility id","value":"App"}
+2024-09-30 18:35:23:341 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Calling AppiumDriver.findElement() with args: ["accessibility id","App","8efb356e-aedb-4297-aec7-16dd9ea79717"]
+2024-09-30 18:35:23:342 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2024-09-30 18:35:23:342 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waiting up to 1000 ms for condition
+2024-09-30 18:35:23:351 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:23:352 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:23:485 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:23:486 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:23:487 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waited for 145 ms so far
+2024-09-30 18:35:23:994 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:23:994 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:24:022 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:24:023 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:24:023 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waited for 681 ms so far
+2024-09-30 18:35:24:345 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:24:346 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:24:408 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:24:408 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:24:409 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2024-09-30 18:35:24:411 [8efb356e][HTTP] <-- POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/element 404 1071 ms - 811 
+2024-09-30 18:35:24:529 [8efb356e][HTTP] --> POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/element {"using":"accessibility id","value":"App"}
+2024-09-30 18:35:24:530 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Calling AppiumDriver.findElement() with args: ["accessibility id","App","8efb356e-aedb-4297-aec7-16dd9ea79717"]
+2024-09-30 18:35:24:531 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+2024-09-30 18:35:24:531 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waiting up to 1000 ms for condition
+2024-09-30 18:35:24:534 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:24:534 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:24:561 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:24:561 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:24:561 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waited for 30 ms so far
+2024-09-30 18:35:25:067 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:25:067 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:25:129 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:25:130 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:25:130 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Waited for 599 ms so far
+2024-09-30 18:35:25:533 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/element' to command name 'findElement'
+2024-09-30 18:35:25:534 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [POST /element] to [POST http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/element] with body: {"strategy":"accessibility id","selector":"App","context":"","multiple":false}
+2024-09-30 18:35:25:567 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 404: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":{"error":"no such element","message":"An element could not be located on the page using the given search parameters","stacktrace":"io.appium.uiautomator2.common.exceptions.ElementNotFoundException: An element could not be located on the page using the given search parameters\n\tat io.appium.uiautomator2.handler.FindElement.safeHandle(FindElement.java:63)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)\n\tat io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)\n\tat io.netty.chann...
+2024-09-30 18:35:25:568 [8efb356e][W3C] Matched W3C error code 'no such element' to NoSuchElementError
+2024-09-30 18:35:25:570 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Encountered internal error running command: NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/lib/commands/find.ts:86:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at AndroidUiautomator2Driver.findElOrElsWithProcessing (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:60:12)
+    at AndroidUiautomator2Driver.findElement (/usr/local/lib/node_modules/appium/node_modules/@appium/base-driver/lib/basedriver/commands/find.ts:75:12)
+2024-09-30 18:35:25:571 [8efb356e][HTTP] <-- POST /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/element 404 1041 ms - 811 
+2024-09-30 18:35:25:615 [8efb356e][HTTP] --> GET /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/screenshot {}
+2024-09-30 18:35:25:616 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Calling AppiumDriver.getScreenshot() with args: ["8efb356e-aedb-4297-aec7-16dd9ea79717"]
+2024-09-30 18:35:25:617 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/screenshot' to command name 'getScreenshot'
+2024-09-30 18:35:25:618 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447/screenshot] with no body
+2024-09-30 18:35:26:779 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15dFXlvf/x7z45UyYyT5CEhDEMYSgigxNCpdJeKrSiqBXnilcFb9Varizr0tWKtRbxWsGCY2v1OlTpLSgol0FABGUQwhBAhoQkkJM5JCc5w/P7g5v8CDljck52gu/XWp/Vus/ez372c050ne9+zrM1EVECAAAAAAAAAECIGfTuAAAAAAAAAADg4kQBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaAAAAAAAAABAWFKABAAAAAAAAAGFBARoAAAAAAAAAEBYUoAEAAAAAAAAAYUEBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaAAAAAAAAABAWFKABAAAAAAAAAGFBARoAAAAAAAAAEBYUoAEAAAAAAAAAYUEBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaFxVN0yQ1NVVmz54t77//vpSWlorb7RaXyyVut7v1/7fk6NGjsmLFCpk2bZrExcWJpml6XwIAAAAAAABw0dBEROndCaAzNE2T2NhYee655+T666+XhISE1u3BcLvdUlZWJsuWLZNnnnlGnE5nOLrbbWmaJlarVUwmkxgMBomIiBCTySQiIkopcTgcrQX85uZmaWpq0rnHAAAAAAAA6O4oQKPH0jRN+vTpI9u2bZOMjAwxGEI3od/tdsuOHTvkmmuukbq6upC1291ERERIVFSUWK1WiY+Pl3HjxsngwYOlV69ekpCQIAMHDhQREYfDIYcOHZLa2lqpqqqSffv2yTfffCMNDQ1it9ulsbFR3G63zlcDAAAAAACA7oYCNHqkyMhI2bdvn+Tm5oZ12QyXyyVms/miK64ajUZJSEiQ3Nxc+eEPfygTJ06Uq666SmJiYgI63u12S3l5uXz+...
+2024-09-30 18:35:26:781 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Responding to client with driver.getScreenshot() result: "iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15dFXlvf/x7z45UyYyT5CEhDEMYSgigxNCpdJeKrSiqBXnilcFb9Varizr0tWKtRbxWsGCY2v1OlTpLSgol0FABGUQwhBAhoQkkJM5JCc5w/P7g5v8CDljck52gu/XWp/Vus/ez372c050ne9+zrM1EVECAAAAAAAAAECIGfTuAAAAAAAAAADg4kQBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaAAAAAAAAABAWFKABAAAAAAAAAGFBARoAAAAAAAAAEBYUoAEAAAAAAAAAYUEBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaAAAAAAAAABAWFKABAAAAAAAAAGFBARoAAAAAAAAAEBYUoAEAAAAAAAAAYUEBGgAAAAAAAAAQFhSgAQAAAAAAAABhQQEaFxVN0yQ1NVVmz54t77//vpSWlorb7RaXyyVut7v1/7fk6NGjsmLFCpk2bZrExcWJpml6XwIAAAAAAABw0dBEROndCaAzNE2T2NhYee655+T666+XhISE1u3BcLvdUlZWJsuWLZNnnnlGnE5nOLrbbWmaJlarVUwmkxgMBomIiBCTySQiIkopcTgcrQX85uZmaWpq0rnHAAAAAAAA6O4oQKPH0jRN+vTpI9u2bZOMjAwxGEI3od/tdsuOHTvkmmuukbq6upC1291ERERIVFSUWK1WiY+Pl3HjxsngwYOlV69ekpCQIAMHDhQREYfDIYcOHZLa2lqpqqqSffv2yTfffCMNDQ1it9ulsbFR3G63zlcDAAAAAACA7oYCNHqkyMhI2bdvn+Tm5oZ12QyXyyVms/miK64ajUZJSEiQ3Nxc+eEPfygTJ06Uq666SmJiYgI63u12S3l5uXz++eeydetW2bBhg5SUlEhtbe1FN1YAAAAAgO5D0zTJysqS4cOHi6ZpkpiYKCIi...
+2024-09-30 18:35:26:785 [8efb356e][HTTP] <-- GET /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717/screenshot 200 1169 ms - 158204 
+2024-09-30 18:35:27:381 [8efb356e][HTTP] --> DELETE /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717 {}
+2024-09-30 18:35:27:382 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Calling AppiumDriver.deleteSession() with args: ["8efb356e-aedb-4297-aec7-16dd9ea79717"]
+2024-09-30 18:35:27:382 [8efb356e][AppiumDriver@5306] Event 'quitSessionRequested' logged at 1727721327382 (18:35:27 GMT+0000 (Coordinated Universal Time))
+2024-09-30 18:35:27:382 [8efb356e][AppiumDriver@5306] Removing session 8efb356e-aedb-4297-aec7-16dd9ea79717 from our master session list
+2024-09-30 18:35:27:383 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Deleting UiAutomator2 session
+2024-09-30 18:35:27:383 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Deleting UiAutomator2 server session
+2024-09-30 18:35:27:384 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Matched '/' to command name 'deleteSession'
+2024-09-30 18:35:27:384 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Proxying [DELETE /] to [DELETE http://127.0.0.1:8200/session/47c59a57-0710-4cc3-95e1-2f07d3660447] with no body
+2024-09-30 18:35:27:411 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Got response with status 200: {"sessionId":"47c59a57-0710-4cc3-95e1-2f07d3660447","value":null}
+2024-09-30 18:35:27:414 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] [Instrumentation] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:
+2024-09-30 18:35:27:415 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] [Instrumentation] The process has exited with code null, signal SIGTERM
+2024-09-30 18:35:27:416 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2024-09-30 18:35:27:418 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.android.apis'
+2024-09-30 18:35:28:829 [8efb356e][ADB] Removing forwarded port socket connection: 8200 
+2024-09-30 18:35:28:829 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward --remove tcp:8200'
+2024-09-30 18:35:28:858 [8efb356e][38;5;-77m[AndroidUiautomator2Driver@a4d5] Restoring hidden api policy to the device default configuration
+2024-09-30 18:35:28:859 [8efb356e][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2024-09-30 18:35:29:142 [8efb356e][Logcat] Stopping logcat capture
+2024-09-30 18:35:29:145 [8efb356e][AppiumDriver@5306] Event 'quitSessionFinished' logged at 1727721329145 (18:35:29 GMT+0000 (Coordinated Universal Time))
+2024-09-30 18:35:29:145 [8efb356e][AppiumDriver@5306] Received response: null
+2024-09-30 18:35:29:146 [8efb356e][AppiumDriver@5306] But deleting session, so not returning
+2024-09-30 18:35:29:146 [8efb356e][AppiumDriver@5306] Responding to client with driver.deleteSession() result: null
+2024-09-30 18:35:29:147 [8efb356e][HTTP] <-- DELETE /wd/session/8efb356e-aedb-4297-aec7-16dd9ea79717 200 1765 ms - 14 
+2024-09-30 18:35:29:155 [Appium] Received SIGTERM - shutting down
+2024-09-30 18:35:29:155 [AppiumDriver@5306] There are no active sessions for cleanup
+2024-09-30 18:35:29:158 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:954:11)
+    at Socket._write (node:net:966:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Socket.Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:87:23)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+    at _write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-09-30 18:35:29:159 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:954:11)
+    at Socket._write (node:net:966:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Socket.Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+    at _write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-09-30 18:35:29:161 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:954:11)
+    at Socket._write (node:net:966:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Socket.Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+    at _write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-09-30 18:35:29:162 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:954:11)
+    at Socket._write (node:net:966:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Socket.Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+    at _write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)
+2024-09-30 18:35:29:165 uncaughtException: write EPIPE
+Error: write EPIPE
+    at afterWriteDispatched (node:internal/stream_base_commons:161:15)
+    at writeGeneric (node:internal/stream_base_commons:152:3)
+    at Socket._writeGeneric (node:net:954:11)
+    at Socket._write (node:net:966:8)
+    at writeOrBuffer (node:internal/streams/writable:570:12)
+    at _write (node:internal/streams/writable:499:10)
+    at Socket.Writable.write (node:internal/streams/writable:508:10)
+    at Console.log (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/transports/console.js:59:25)
+    at Console._write (/usr/local/lib/node_modules/appium/node_modules/winston-transport/modern.js:103:17)
+    at writeOrBuffer (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:334:12)
+    at _write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:283:10)
+    at Console.Writable.write (/usr/local/lib/node_modules/appium/node_modules/readable-stream/lib/internal/streams/writable.js:286:10)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:629:20)
+    at DerivedLogger.emit (node:events:531:35)
+    at addChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:279:12)
+    at readableAddChunk (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:262:11)
+    at DerivedLogger.Readable.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_readable.js:228:10)
+    at DerivedLogger.Transform.push (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:132:32)
+    at DerivedLogger._transform (/usr/local/lib/node_modules/appium/node_modules/winston/lib/winston/logger.js:313:12)
+    at DerivedLogger.Transform._read (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:166:10)
+    at DerivedLogger.Transform._write (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_transform.js:155:83)
+    at doWrite (/usr/local/lib/node_modules/appium/node_modules/winston/node_modules/readable-stream/lib/_stream_writable.js:390:139)

@@ -1,0 +1,35 @@
+09/30/2024 06:35:23 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeTest:38] - Starting Scenario ..Navigation to Secure Dialog
+09/30/2024 06:35:23 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+09/30/2024 06:35:25 - [ERROR] - [io.github.selcukes.commons.helper.ExceptionHelper.logError:106] - Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '17.0.12'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$dWiVZErX
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8efb356e-aedb-4297-aec7-16dd9ea79717
+How to fix: 
+* This exception will be thrown when the page or element was not loaded after the specified wait time.
+To overcome this, you can increase the wait time, if you are using an implicit wait, or better yet, replace the implicit wait with an explicit wait
+
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '17.0.12'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$dWiVZErX
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 8efb356e-aedb-4297-aec7-16dd9ea79717
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.github.selcukes.core.page.Page.waitFor(Page.java:710)
+	at io.github.selcukes.core.page.Page.find(Page.java:536)
+	at io.github.selcukes.core.page.Page.click(Page.java:223)
+	at io.github.selcukes.core.page.Page.click(Page.java:172)
+	at io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(MobileTestSteps.java:20)
+	at ✽.I click on "App" link(file:///Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/features/mobile/SecureDialog.feature:5)
+
+09/30/2024 06:35:25 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+09/30/2024 06:35:26 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterTest:59] - Completed Scenario ..Navigation to Secure Dialog
+09/30/2024 06:35:26 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterAll:31] - After All ...
+09/30/2024 06:35:27 - [DEBUG] - [io.github.selcukes.testng.listeners.TestListener.onFinish:30] - Gradle test Execution finished...
+09/30/2024 06:35:29 - [INFO] - [io.github.selcukes.core.listener.EventCapture.afterQuit:71] - Driver closed
+09/30/2024 06:35:29 - [DEBUG] - [io.github.selcukes.core.driver.DriverManager.lambda$removeAllDrivers$4:180] - Closed driver 377941381 and removed from DevicePool.
+09/30/2024 06:35:34 - [INFO] - [io.github.selcukes.core.driver.AppiumEngine.stopServer:69] - Stopped Appium server...
+09/30/2024 06:35:34 - [DEBUG] - [io.github.selcukes.core.listener.ResourceCleanupProvider.afterSuite:40] - Test Suite Execution finished...
