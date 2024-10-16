@@ -1,0 +1,49 @@
+projectName: Selcukes
+env: Dev
+proxy: false
+baseUrl:
+excel:
+  runner: false
+  suiteFile:
+  dataFile: TestData.xlsx
+  suiteName: "Smoke"
+cucumber:
+  module: mobile
+  features: src/test/resources/features/
+  glue: io.github.selcukes.example.cucumber.steps
+  tags: "@mobile"
+  plugin:
+web:
+  remote: true
+  cloud:
+  browser: CHROME
+  headLess: true
+  serviceUrl: "http://127.0.0.1:4444"
+windows:
+  serviceUrl: "http://127.0.0.1:4723"
+  app: "C:\\Windows\\System32\\notepad.exe"
+mobile:
+  remote: false
+  cloud:
+  platform: Android
+  browser: APP
+  serviceUrl: "http://127.0.0.1:4723"
+  app: "src/test/resources/android-app.apk"
+reports:
+  emailReport: true
+  htmlReport: true
+  path: build
+  fileName: index
+  timestamp: false
+video:
+  recording: false
+  type: MONTE
+  ffmpegPath:
+  watermark: false
+notifier:
+  notification: false
+  type: slack
+  webhookToken: WEBHOOKXXXX
+  apiToken: APIXXXX
+  channel: selcukes
+  authorIcon: https://github.com/rameshbabuprudhvi.png

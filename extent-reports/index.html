@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Automation Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Automation Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Oct 16, 2024 02:57:14 PM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Oct 16, 2024 02:57:14 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Oct 16, 2024 02:58:51 PM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='30%'><b>4</b> steps passed</small></div>
+<div>
+<small data-tooltip='7%'><b>1</b> steps failed,
+<b>8</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Secure Dialog Test in API Demo Application":88.688
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@mobile</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Environment</td>
+<td>Dev</td>
+</tr>
+<tr>
+<td>Platform</td>
+<td>mac os x</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 4,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 8,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@mobile</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Secure Dialog Test in API Demo Application</p>
+            <p class="text-sm">
+              <span>2:57:22 PM</span> / <span>00:01:28:688</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Secure Dialog Test in API Demo Application</h5>
+<span class='badge badge-success'>10.16.2024 2:57:22 PM</span>
+<span class='badge badge-danger'>10.16.2024 2:58:51 PM</span>
+<span class='badge badge-default'>00:01:28:688</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Navigation to Secure Dialog</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="BEFORE">
+                <span>io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeTest(io.cucumber.java.Scenario)</span>
+      <div><details><summary>View Logs</summary><pre><ul><li> Creating new MOBILE session...</li><li>Starting Appium server...</li><li>Starting Scenario ..Navigation to Secure Dialog</li></ul><br/></pre></details><br/>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="BEFORE_STEP">
+                <span>io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep(io.cucumber.java.Scenario)</span>
+      <div><details><summary>View Logs</summary><pre><ul><li> Before Step</li></ul><br/></pre></details><br/>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(java.lang.String)">
+                <span><b>When I click on "App" link</b></span>
+      <div>
+        <textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '17.0.13'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$GJxPPXIz
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 384e4d4d-6508-4291-a433-4fef349843cd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at io.github.selcukes.core.page.Page.waitFor(Page.java:710)
+	at io.github.selcukes.core.page.Page.find(Page.java:536)
+	at io.github.selcukes.core.page.Page.click(Page.java:223)
+	at io.github.selcukes.core.page.Page.click(Page.java:172)
+	at io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(MobileTestSteps.java:20)
+	at ✽.I click on "App" link(file:///Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/features/mobile/SecureDialog.feature:5)
+</textarea>
+      
+      </div>
+      <div><details><summary>View Logs</summary><pre><ul><li> <span style="color:red;">Expected condition failed: waiting for element to be clickable: AppiumBy.accessibilityId: App (tried for 2 second(s) with 100 milliseconds interval)<br/>Build info: version: '4.25.0', revision: '8a8aea2337'<br/>System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7', java.version: '17.0.13'<br/>Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$GJxPPXIz<br/>Capabilities {appium:app: /Users/runner/work/selcukes..., appium:appPackage: io.appium.android.apis, appium:automationName: UIAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/runner/work/selcukes..., automationName: UIAutomator2, platformName: ANDROID}, appium:deviceApiLevel: 30, appium:deviceManufacturer: unknown, appium:deviceModel: Android SDK built for x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x2560, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 11, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2476, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}<br/>Session ID: 384e4d4d-6508-4291-a433-4fef349843cd<br/>How to fix: <br/>* This exception will be thrown when the page or element was not loaded after the specified wait time.<br/>To overcome this, you can increase the wait time, if you are using an implicit wait, or better yet, replace the implicit wait with an explicit wait<br/></span></li></ul><br/></pre></details><br/>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep(io.cucumber.java.Scenario)</span>
+      <div><details><summary>View Logs</summary><pre><ul><li> After Step</li></ul><br/></pre></details><br/>
+      </div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.textShouldDisplay(java.lang.String)">
+                <span><b>Then "Activity" text should display</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(java.lang.String)">
+                <span><b>When I click on "Activity" link</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.iScrollDownClickOn(java.lang.String)">
+                <span><b>And I scroll down and click on "Secure Surfaces"</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.textShouldDisplay(java.lang.String)">
+                <span><b>Then "Secure Dialog" text should display</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(java.lang.String)">
+                <span><b>When I click on "Secure Dialog" link</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.textShouldDisplay(java.lang.String)">
+                <span><b>Then "Show secure dialog" text should display</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.iClickOn(java.lang.String)">
+                <span><b>When I click on "Show secure dialog" button</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="io.github.selcukes.example.cucumber.steps.MobileTestSteps.dialogShouldBeVisible()">
+                <span><b>Then Dialog should be visible</b></span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>io.github.selcukes.example.cucumber.steps.CucumberHooks.afterTest(io.cucumber.java.Scenario)</span>
+      <div><details><summary>View Logs</summary><pre><ul><li> Completed Scenario ..Navigation to Secure Dialog</li></ul><br/></pre></details><br/>
+      </div>
+      <div>
+      </div>
+      <div><details><summary>View Logs</summary><pre><ul><li> After All ...</li></ul><br/></pre></details><br/>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@mobile</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@mobile</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:57:22 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Navigation to Secure Dialog</a>
+<div class="">
+<span class="badge badge-default">Secure Dialog Test in API Demo Application.Navigation to Secure Dialog</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.TimeoutException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.TimeoutException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>14:58:46 PM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='5'><b>When I click on "App" link</b></a>
+<div class="">
+<span class="badge badge-default">Secure Dialog Test in API Demo Application.Navigation to Secure Dialog.<b>When I click on "App" link</b></span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c05cd28cde1617b9d0c05a831daff6cb97fd9fd5/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
