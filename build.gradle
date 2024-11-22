@@ -14,7 +14,7 @@ repositories {
 ext {
     selcukesVersion = "2.3.12"
     lombokVersion = "1.18.36"
-    slf4jVersion = "2.24.1"
+    slf4jVersion = "2.24.2"
 }
 
 dependencies {
