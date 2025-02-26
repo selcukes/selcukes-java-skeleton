@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class io.github.selcukes.example.cucumber.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class io.github.selcukes.example.cucumber.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.github.selcukes.example.cucumber.html">io.github.selcukes.example.cucumber</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">6.538s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">0%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Failed tests</a>
+</li>
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)"></a>
+<h3 class="failures">runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)</h3>
+<span class="code">
+<pre>org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+ 
+Host info: host: 'Mac-1740579580168.local', ip: 'fe80:0:0:0:1446:5254:31f0:a5ce%en0'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '17.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}]}]
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}
+	at app//org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at app//org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at app//org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at app//io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at app//io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at app//io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at app//io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
+	at app//io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
+	at app//io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at app//io.github.selcukes.core.driver.AppiumManager.createAppDriver(AppiumManager.java:78)
+	at app//io.github.selcukes.core.driver.AppiumManager.createDriver(AppiumManager.java:41)
+	at app//io.github.selcukes.core.driver.DriverFactory.create(DriverFactory.java:74)
+	at app//io.github.selcukes.core.driver.DriverManager.createDevice(DriverManager.java:90)
+	at app//io.github.selcukes.core.driver.DriverManager.createDriver(DriverManager.java:58)
+	at app//io.github.selcukes.example.cucumber.utils.TestContext.createWebDriver(TestContext.java:16)
+	at app//io.github.selcukes.example.cucumber.utils.TestContext.getDriver(TestContext.java:23)
+	at app//io.github.selcukes.example.cucumber.steps.CucumberHooks.&lt;init&gt;(CucumberHooks.java:21)
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base@17.0.14/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base@17.0.14/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at app//org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at app//org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at app//org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at app//org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at app//org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at app//org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at app//org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at app//org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at app//org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at app//org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at app//io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at app//io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at app//io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at app//io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at app//io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at app//io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at app//io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at app//io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at app//io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at app//io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at app//io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at app//io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at app//io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at app//io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at app//io.github.selcukes.testng.SelcukesTestNGRunner.runSerialScenario(SelcukesTestNGRunner.java:64)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base@17.0.14/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at app//org.testng.TestRunner.run(TestRunner.java:614)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+	at app//org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@17.0.14/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base@17.0.14/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@17.0.14/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</pre>
+</span>
+</div>
+</div>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)</td>
+<td class="failures">6.538s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[38;5;112m[Appium]?[0m Welcome to Appium v2.16.2
+?[38;5;112m[Appium]?[0m Non-default server args:
+?[38;5;112m[Appium]?[0m { address: ?[32m'127.0.0.1'?[39m, basePath: ?[32m'/wd/'?[39m, port: ?[33m15024?[39m, sessionOverride: ?[33mtrue?[39m }
+?[38;5;112m[Appium]?[0m The autodetected Appium home path: /Users/runner/.appium
+?[38;5;112m[Appium]?[0m Attempting to load driver uiautomator2...
+?[38;5;112m[Appium]?[0m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;112m[Appium]?[0m AndroidUiautomator2Driver has been successfully loaded in 1.893s
+?[38;5;112m[Appium]?[0m Appium REST http interface listener started on http://127.0.0.1:15024/wd
+?[38;5;112m[Appium]?[0m Available drivers:
+?[38;5;112m[Appium]?[0m   - uiautomator2@4.0.3 (automationName 'UiAutomator2')
+?[38;5;112m[Appium]?[0m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/status?[39m {}
+?[38;5;75m[AppiumDriver@a602]?[0m Calling AppiumDriver.getStatus() with args: []
+?[38;5;75m[AppiumDriver@a602]?[0m Responding to client with driver.getStatus() result: {&quot;ready&quot;:true,&quot;message&quot;:&quot;The server is ready to accept new connections&quot;,&quot;build&quot;:{&quot;version&quot;:&quot;2.16.2&quot;}}
+?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/status 200 7 ms - 111 
+?[38;5;86m[HTTP]?[0m Request idempotency key: fb91886d-e9cd-483a-9756-b38c53a7cc01
+?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session?[39m {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}}
+?[38;5;75m[AppiumDriver@a602]?[0m Calling AppiumDriver.createSession() with args: [null,null,{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}]
+?[38;5;75m[AppiumDriver@a602]?[0m Event 'newSessionRequested' logged at 1740581064978 (14:44:24 GMT+0000 (Coordinated Universal Time))
+?[38;5;112m[Appium]?[0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+?[38;5;112m[Appium]?[0m The 'uiautomator2' driver was installed and matched caps.
+?[38;5;112m[Appium]?[0m Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+?[38;5;112m[Appium]?[0m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;75m[AppiumDriver@a602]?[0m Appium v2.16.2 creating new AndroidUiautomator2Driver (v4.0.3) session
+?[38;5;75m[AppiumDriver@a602]?[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+?[38;5;75m[AppiumDriver@a602]?[0m Appium's BaseDriver version is 9.16.2
+?[38;5;75m[AppiumDriver@a602]?[0m AndroidUiautomator2Driver's BaseDriver version is 9.16.2
+?[38;5;75m[AppiumDriver@a602]?[0m There are no active sessions for cleanup
+?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m 
+?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Creating session with W3C capabilities: {
+  &quot;alwaysMatch&quot;: {
+    &quot;platformName&quot;: &quot;ANDROID&quot;,
+    &quot;appium:app&quot;: &quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,
+    &quot;appium:automationName&quot;: &quot;UIAutomator2&quot;
+  },
+  &quot;firstMatch&quot;: [
+    {}
+  ]
+}
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Session created with session id: d0653c1d-5e92-49a4-814d-f800b1d0afa1
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Found 5 'build-tools' folders under '/Users/runner/Library/Android/sdk' (newest first):
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/35.0.1
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/35.0.0
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/34.0.0
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.3
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.2
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Retrieving device list
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Trying to find connected Android devices
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Getting connected devices
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Connected devices: [{&quot;udid&quot;:&quot;emulator-5554&quot;,&quot;state&quot;:&quot;device&quot;}]
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Using device: emulator-5554
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Setting device id to emulator-5554
+?[38;5;66m[d0653c1d]?[0m?[38;5;123m[BaseDriver]?[0m Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Checking whether app is actually present
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.sdk': 30
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Getting device platform version
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.release': 11
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Device API level: 30
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Relaxing hidden api policy
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Parsing package and activity from the 'android-app.apk' file manifest
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Pushing settings apk to the device...
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Getting package info for 'io.appium.settings'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Hidden API policy (https://developer.android.com/guide/app-compatibility/restrictions-non-sdk-interfaces) cannot be enabled. This might be happening because the device under test is not configured properly. Please check https://github.com/appium/appium/issues/13802 for more details. You could also set the &quot;appium:ignoreHiddenApiPolicyError&quot; capability to true in order to ignore this error, which might later lead to unexpected crashes or behavior of the automation server. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Deleting UiAutomator2 session
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Package name: 'io.appium.android.apis'
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Restoring hidden api policy to the device default configuration
+?[38;5;66m[d0653c1d]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Resolved launch package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;66m[d0653c1d]?[0m?[38;5;-138m[AndroidUiautomator2Driver@aa47]?[0m Resolved wait package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;66m[d0653c1d]?[0m?[38;5;75m[AppiumDriver@a602]?[0m Event 'newSessionStarted' logged at 1740581065707 (14:44:25 GMT+0000 (Coordinated Universal Time))
+?[38;5;66m[d0653c1d]?[0m?[38;5;75m[AppiumDriver@a602]?[0m Encountered internal error running command: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Error: Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20
+    at ChildProcess.&lt;anonymous&gt; (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.js:110:19)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.&lt;anonymous&gt; (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.&lt;anonymous&gt; (node:net:343:12)
+    at Pipe.callbackTrampoline (node:internal/async_hooks:130:17)
+?[38;5;66m[d0653c1d]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session 500 750 ms - 1344 
+?[38;5;86m[HTTP]?[0m Request idempotency key: 9406d48e-3f76-4955-a307-5fb0ca8f94a6
+?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session?[39m {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}}
+?[38;5;75m[AppiumDriver@a602]?[0m Calling AppiumDriver.createSession() with args: [null,null,{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}]
+?[38;5;75m[AppiumDriver@a602]?[0m Event 'newSessionRequested' logged at 1740581065851 (14:44:25 GMT+0000 (Coordinated Universal Time))
+?[38;5;112m[Appium]?[0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+?[38;5;112m[Appium]?[0m The 'uiautomator2' driver was installed and matched caps.
+?[38;5;112m[Appium]?[0m Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+?[38;5;112m[Appium]?[0m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;75m[AppiumDriver@a602]?[0m Appium v2.16.2 creating new AndroidUiautomator2Driver (v4.0.3) session
+?[38;5;75m[AppiumDriver@a602]?[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+?[38;5;75m[AppiumDriver@a602]?[0m Appium's BaseDriver version is 9.16.2
+?[38;5;75m[AppiumDriver@a602]?[0m AndroidUiautomator2Driver's BaseDriver version is 9.16.2
+?[38;5;75m[AppiumDriver@a602]?[0m There are no active sessions for cleanup
+?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m 
+?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Creating session with W3C capabilities: {
+  &quot;alwaysMatch&quot;: {
+    &quot;platformName&quot;: &quot;ANDROID&quot;,
+    &quot;appium:app&quot;: &quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,
+    &quot;appium:automationName&quot;: &quot;UIAutomator2&quot;
+  },
+  &quot;firstMatch&quot;: [
+    {}
+  ]
+}
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Session created with session id: fc454ef0-0d1d-41ca-9473-70ee92f0f4d6
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Retrieving device list
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Trying to find connected Android devices
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Getting connected devices
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Connected devices: [{&quot;udid&quot;:&quot;emulator-5554&quot;,&quot;state&quot;:&quot;device&quot;}]
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Using device: emulator-5554
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Setting device id to emulator-5554
+?[38;5;43m[fc454ef0]?[0m?[38;5;123m[BaseDriver]?[0m Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Checking whether app is actually present
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.sdk': 30
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Getting device platform version
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.release': 11
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Device API level: 30
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Relaxing hidden api policy
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Parsing package and activity from the 'android-app.apk' file manifest
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Package name: 'io.appium.android.apis'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Resolved launch package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Resolved wait package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Pushing settings apk to the device...
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Getting package info for 'io.appium.settings'
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Hidden API policy (https://developer.android.com/guide/app-compatibility/restrictions-non-sdk-interfaces) cannot be enabled. This might be happening because the device under test is not configured properly. Please check https://github.com/appium/appium/issues/13802 for more details. You could also set the &quot;appium:ignoreHiddenApiPolicyError&quot; capability to true in order to ignore this error, which might later lead to unexpected crashes or behavior of the automation server. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Deleting UiAutomator2 session
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+?[38;5;43m[fc454ef0]?[0m?[38;5;17m[AndroidUiautomator2Driver@c83f]?[0m Restoring hidden api policy to the device default configuration
+?[38;5;43m[fc454ef0]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+?[38;5;43m[fc454ef0]?[0m?[38;5;75m[AppiumDriver@a602]?[0m Event 'newSessionStarted' logged at 1740581066567 (14:44:26 GMT+0000 (Coordinated Universal Time))
+?[38;5;43m[fc454ef0]?[0m?[38;5;75m[AppiumDriver@a602]?[0m Encountered internal error running command: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Error: Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20
+    at ChildProcess.&lt;anonymous&gt; (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.js:110:19)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.&lt;anonymous&gt; (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.&lt;anonymous&gt; (node:net:343:12)
+    at Pipe.callbackTrampoline (node:internal/async_hooks:130:17)
+?[38;5;43m[fc454ef0]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session 500 718 ms - 1344 
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>?[32m02/26/2025 02:44:13 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeAll:26] - Before All ...
+?[0m?[36m02/26/2025 02:44:20 - [DEBUG] - [io.github.selcukes.excel.SingleExcelData.init:50] - Using excel runner sheet : Smoke
+?[0m?[32m02/26/2025 02:44:20 - [INFO] - [io.github.selcukes.core.driver.DriverFactory.create:65] - Creating new MOBILE session...
+?[0m?[36m02/26/2025 02:44:20 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.lambda$getAppiumAppOptions$5:91] - Using APP: /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[0m?[36m02/26/2025 02:44:20 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.createAppDriver:76] - Creating New ANDROID App Session...
+?[0m?[32m02/26/2025 02:44:20 - [INFO] - [io.github.selcukes.core.driver.AppiumEngine.startLocalServer:59] - Starting Appium server...
+?[0m?[36m02/26/2025 02:44:24 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.getServiceUrl:55] - Using ServiceUrl[http://127.0.0.1:15024]
+?[0m?[91m02/26/2025 02:44:25 - [ERROR] - [io.github.selcukes.commons.helper.ExceptionHelper.logError:106] - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+ 
+Host info: host: 'Mac-1740579580168.local', ip: 'fe80:0:0:0:1446:5254:31f0:a5ce%en0'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '17.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}]}]
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}
+How to fix: 
+No solution found in error_codes.yaml. Please add a solution for this error code.
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+ 
+Host info: host: 'Mac-1740579580168.local', ip: 'fe80:0:0:0:1446:5254:31f0:a5ce%en0'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '17.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}]}]
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at io.github.selcukes.core.driver.AppiumManager.createAppDriver(AppiumManager.java:78)
+	at io.github.selcukes.core.driver.AppiumManager.createDriver(AppiumManager.java:41)
+	at io.github.selcukes.core.driver.DriverFactory.create(DriverFactory.java:74)
+	at io.github.selcukes.core.driver.DriverManager.createDevice(DriverManager.java:90)
+	at io.github.selcukes.core.driver.DriverManager.createDriver(DriverManager.java:58)
+	at io.github.selcukes.example.cucumber.utils.TestContext.createWebDriver(TestContext.java:16)
+	at io.github.selcukes.example.cucumber.utils.TestContext.getDriver(TestContext.java:23)
+	at io.github.selcukes.example.cucumber.steps.CucumberHooks.&lt;init&gt;(CucumberHooks.java:21)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.github.selcukes.testng.SelcukesTestNGRunner.runSerialScenario(SelcukesTestNGRunner.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+?[0m?[32m02/26/2025 02:44:25 - [INFO] - [io.github.selcukes.core.driver.DriverFactory.create:65] - Creating new MOBILE session...
+?[0m?[36m02/26/2025 02:44:25 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.lambda$getAppiumAppOptions$5:91] - Using APP: /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[0m?[36m02/26/2025 02:44:25 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.createAppDriver:76] - Creating New ANDROID App Session...
+?[0m?[36m02/26/2025 02:44:25 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.getServiceUrl:55] - Using ServiceUrl[http://127.0.0.1:15024]
+?[0m?[91m02/26/2025 02:44:26 - [ERROR] - [io.github.selcukes.commons.helper.ExceptionHelper.logError:106] - Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+ 
+Host info: host: 'Mac-1740579580168.local', ip: 'fe80:0:0:0:1446:5254:31f0:a5ce%en0'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '17.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}]}]
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}
+How to fix: 
+No solution found in error_codes.yaml. Please add a solution for this error code.
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+ 
+Host info: host: 'Mac-1740579580168.local', ip: 'fe80:0:0:0:1446:5254:31f0:a5ce%en0'
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.7.2', java.version: '17.0.14'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}]}]
+Capabilities {appium:app: /Users/runner/work/selcukes..., appium:automationName: UIAutomator2, platformName: ANDROID}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:176)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:270)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:174)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:91)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:103)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:109)
+	at io.github.selcukes.core.driver.AppiumManager.createAppDriver(AppiumManager.java:78)
+	at io.github.selcukes.core.driver.AppiumManager.createDriver(AppiumManager.java:41)
+	at io.github.selcukes.core.driver.DriverFactory.create(DriverFactory.java:74)
+	at io.github.selcukes.core.driver.DriverManager.createDevice(DriverManager.java:90)
+	at io.github.selcukes.core.driver.DriverManager.createDriver(DriverManager.java:58)
+	at io.github.selcukes.example.cucumber.utils.TestContext.createWebDriver(TestContext.java:16)
+	at io.github.selcukes.example.cucumber.utils.TestContext.getDriver(TestContext.java:23)
+	at io.github.selcukes.example.cucumber.steps.CucumberHooks.&lt;init&gt;(CucumberHooks.java:21)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.picocontainer.injectors.AbstractInjector.newInstance(AbstractInjector.java:145)
+	at org.picocontainer.injectors.ConstructorInjector$1.run(ConstructorInjector.java:342)
+	at org.picocontainer.injectors.AbstractInjector$ThreadLocalCyclicDependencyGuard.observe(AbstractInjector.java:270)
+	at org.picocontainer.injectors.ConstructorInjector.getComponentInstance(ConstructorInjector.java:364)
+	at org.picocontainer.injectors.AbstractInjectionFactory$LifecycleAdapter.getComponentInstance(AbstractInjectionFactory.java:56)
+	at org.picocontainer.behaviors.AbstractBehavior.getComponentInstance(AbstractBehavior.java:64)
+	at org.picocontainer.behaviors.Stored.getComponentInstance(Stored.java:91)
+	at org.picocontainer.DefaultPicoContainer.getInstance(DefaultPicoContainer.java:699)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:647)
+	at org.picocontainer.DefaultPicoContainer.getComponent(DefaultPicoContainer.java:678)
+	at io.cucumber.picocontainer.PicoFactory.getInstance(PicoFactory.java:64)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:47)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:135)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:132)
+	at io.github.selcukes.testng.SelcukesTestNGRunner.runSerialScenario(SelcukesTestNGRunner.java:64)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:95)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:92)
+	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:200)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:132)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:103)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:63)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:121)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:71)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+
+?[0m</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at Feb 26, 2025, 2:44:27 PM</p>
+</div>
+</div>
+</body>
+</html>

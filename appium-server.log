@@ -1,0 +1,192 @@
+2025-02-26 14:44:22:338 [Appium] Welcome to Appium v2.16.2
+2025-02-26 14:44:22:342 [Appium] Non-default server args:
+2025-02-26 14:44:22:346 [Appium] { address: '127.0.0.1', basePath: '/wd/', port: 15024, sessionOverride: true }
+2025-02-26 14:44:22:347 [Appium] The autodetected Appium home path: /Users/runner/.appium
+2025-02-26 14:44:22:348 [Appium] Attempting to load driver uiautomator2...
+2025-02-26 14:44:22:352 [Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-02-26 14:44:24:241 [Appium] AndroidUiautomator2Driver has been successfully loaded in 1.893s
+2025-02-26 14:44:24:261 [Appium] Appium REST http interface listener started on http://127.0.0.1:15024/wd
+2025-02-26 14:44:24:262 [Appium] Available drivers:
+2025-02-26 14:44:24:263 [Appium]   - uiautomator2@4.0.3 (automationName 'UiAutomator2')
+2025-02-26 14:44:24:264 [Appium] No plugins have been installed. Use the "appium plugin" command to install the one(s) you want to use.
+2025-02-26 14:44:24:572 [HTTP] --> GET /wd/status {}
+2025-02-26 14:44:24:573 [AppiumDriver@a602] Calling AppiumDriver.getStatus() with args: []
+2025-02-26 14:44:24:575 [AppiumDriver@a602] Responding to client with driver.getStatus() result: {"ready":true,"message":"The server is ready to accept new connections","build":{"version":"2.16.2"}}
+2025-02-26 14:44:24:582 [HTTP] <-- GET /wd/status 200 7 ms - 111 
+2025-02-26 14:44:24:953 [HTTP] Request idempotency key: fb91886d-e9cd-483a-9756-b38c53a7cc01
+2025-02-26 14:44:24:976 [HTTP] --> POST /wd/session {"capabilities":{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}}
+2025-02-26 14:44:24:977 [AppiumDriver@a602] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}]
+2025-02-26 14:44:24:978 [AppiumDriver@a602] Event 'newSessionRequested' logged at 1740581064978 (14:44:24 GMT+0000 (Coordinated Universal Time))
+2025-02-26 14:44:24:982 [Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+2025-02-26 14:44:24:983 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-02-26 14:44:24:983 [Appium] Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+2025-02-26 14:44:24:985 [Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-02-26 14:44:24:986 [AppiumDriver@a602] Appium v2.16.2 creating new AndroidUiautomator2Driver (v4.0.3) session
+2025-02-26 14:44:24:986 [AppiumDriver@a602] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-02-26 14:44:24:986 [AppiumDriver@a602] Appium's BaseDriver version is 9.16.2
+2025-02-26 14:44:24:986 [AppiumDriver@a602] AndroidUiautomator2Driver's BaseDriver version is 9.16.2
+2025-02-26 14:44:24:987 [AppiumDriver@a602] There are no active sessions for cleanup
+2025-02-26 14:44:24:993 [38;5;-138m[AndroidUiautomator2Driver@aa47] 
+2025-02-26 14:44:24:993 [38;5;-138m[AndroidUiautomator2Driver@aa47] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "ANDROID",
+    "appium:app": "/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk",
+    "appium:automationName": "UIAutomator2"
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-02-26 14:44:25:000 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Session created with session id: d0653c1d-5e92-49a4-814d-f800b1d0afa1
+2025-02-26 14:44:25:018 [d0653c1d][ADB] Found 5 'build-tools' folders under '/Users/runner/Library/Android/sdk' (newest first):
+2025-02-26 14:44:25:018 [d0653c1d][ADB]     /Users/runner/Library/Android/sdk/build-tools/35.0.1
+2025-02-26 14:44:25:019 [d0653c1d][ADB]     /Users/runner/Library/Android/sdk/build-tools/35.0.0
+2025-02-26 14:44:25:019 [d0653c1d][ADB]     /Users/runner/Library/Android/sdk/build-tools/34.0.0
+2025-02-26 14:44:25:019 [d0653c1d][ADB]     /Users/runner/Library/Android/sdk/build-tools/33.0.3
+2025-02-26 14:44:25:019 [d0653c1d][ADB]     /Users/runner/Library/Android/sdk/build-tools/33.0.2
+2025-02-26 14:44:25:020 [d0653c1d][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2025-02-26 14:44:25:021 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-02-26 14:44:25:059 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Retrieving device list
+2025-02-26 14:44:25:059 [d0653c1d][ADB] Trying to find connected Android devices
+2025-02-26 14:44:25:060 [d0653c1d][ADB] Getting connected devices
+2025-02-26 14:44:25:090 [d0653c1d][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-02-26 14:44:25:090 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Using device: emulator-5554
+2025-02-26 14:44:25:092 [d0653c1d][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2025-02-26 14:44:25:092 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-02-26 14:44:25:116 [d0653c1d][ADB] Setting device id to emulator-5554
+2025-02-26 14:44:25:118 [d0653c1d][BaseDriver] Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2025-02-26 14:44:25:147 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Checking whether app is actually present
+2025-02-26 14:44:25:148 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-02-26 14:44:25:203 [d0653c1d][ADB] Current device property 'ro.build.version.sdk': 30
+2025-02-26 14:44:25:204 [d0653c1d][ADB] Getting device platform version
+2025-02-26 14:44:25:204 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-02-26 14:44:25:251 [d0653c1d][ADB] Current device property 'ro.build.version.release': 11
+2025-02-26 14:44:25:251 [d0653c1d][ADB] Device API level: 30
+2025-02-26 14:44:25:251 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Relaxing hidden api policy
+2025-02-26 14:44:25:252 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2025-02-26 14:44:25:255 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Parsing package and activity from the 'android-app.apk' file manifest
+2025-02-26 14:44:25:256 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2025-02-26 14:44:25:266 [d0653c1d][ADB] Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2'
+2025-02-26 14:44:25:266 [d0653c1d][ADB] Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2025-02-26 14:44:25:303 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2025-02-26 14:44:25:364 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Pushing settings apk to the device...
+2025-02-26 14:44:25:366 [d0653c1d][ADB] Getting package info for 'io.appium.settings'
+2025-02-26 14:44:25:366 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2025-02-26 14:44:25:453 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Hidden API policy (https://developer.android.com/guide/app-compatibility/restrictions-non-sdk-interfaces) cannot be enabled. This might be happening because the device under test is not configured properly. Please check https://github.com/appium/appium/issues/13802 for more details. You could also set the "appium:ignoreHiddenApiPolicyError" capability to true in order to ignore this error, which might later lead to unexpected crashes or behavior of the automation server. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+2025-02-26 14:44:25:476 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Deleting UiAutomator2 session
+2025-02-26 14:44:25:478 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-02-26 14:44:25:482 [d0653c1d][ADB] Package name: 'io.appium.android.apis'
+2025-02-26 14:44:25:482 [d0653c1d][ADB] Main activity name: 'io.appium.android.apis.ApiDemos'
+2025-02-26 14:44:25:482 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Restoring hidden api policy to the device default configuration
+2025-02-26 14:44:25:483 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-02-26 14:44:25:488 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Resolved launch package -> activity: io.appium.android.apis -> io.appium.android.apis.ApiDemos
+2025-02-26 14:44:25:488 [d0653c1d][38;5;-138m[AndroidUiautomator2Driver@aa47] Resolved wait package -> activity: io.appium.android.apis -> io.appium.android.apis.ApiDemos
+2025-02-26 14:44:25:707 [d0653c1d][AppiumDriver@a602] Event 'newSessionStarted' logged at 1740581065707 (14:44:25 GMT+0000 (Coordinated Universal Time))
+2025-02-26 14:44:25:707 [d0653c1d][AppiumDriver@a602] Encountered internal error running command: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Error: Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20
+    at ChildProcess.<anonymous> (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.js:110:19)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+    at Pipe.callbackTrampoline (node:internal/async_hooks:130:17)
+2025-02-26 14:44:25:728 [d0653c1d][HTTP] <-- POST /wd/session 500 750 ms - 1344 
+2025-02-26 14:44:25:849 [HTTP] Request idempotency key: 9406d48e-3f76-4955-a307-5fb0ca8f94a6
+2025-02-26 14:44:25:850 [HTTP] --> POST /wd/session {"capabilities":{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}}
+2025-02-26 14:44:25:850 [AppiumDriver@a602] Calling AppiumDriver.createSession() with args: [null,null,{"firstMatch":[{"appium:app":"/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk","appium:automationName":"UIAutomator2","platformName":"ANDROID"}]}]
+2025-02-26 14:44:25:851 [AppiumDriver@a602] Event 'newSessionRequested' logged at 1740581065851 (14:44:25 GMT+0000 (Coordinated Universal Time))
+2025-02-26 14:44:25:851 [Appium] Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+2025-02-26 14:44:25:851 [Appium] The 'uiautomator2' driver was installed and matched caps.
+2025-02-26 14:44:25:852 [Appium] Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+2025-02-26 14:44:25:864 [Appium] Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+2025-02-26 14:44:25:865 [AppiumDriver@a602] Appium v2.16.2 creating new AndroidUiautomator2Driver (v4.0.3) session
+2025-02-26 14:44:25:865 [AppiumDriver@a602] Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+2025-02-26 14:44:25:865 [AppiumDriver@a602] Appium's BaseDriver version is 9.16.2
+2025-02-26 14:44:25:866 [AppiumDriver@a602] AndroidUiautomator2Driver's BaseDriver version is 9.16.2
+2025-02-26 14:44:25:866 [AppiumDriver@a602] There are no active sessions for cleanup
+2025-02-26 14:44:25:868 [AndroidUiautomator2Driver@c83f] 
+2025-02-26 14:44:25:869 [AndroidUiautomator2Driver@c83f] Creating session with W3C capabilities: {
+  "alwaysMatch": {
+    "platformName": "ANDROID",
+    "appium:app": "/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk",
+    "appium:automationName": "UIAutomator2"
+  },
+  "firstMatch": [
+    {}
+  ]
+}
+2025-02-26 14:44:25:874 [fc454ef0][AndroidUiautomator2Driver@c83f] Session created with session id: fc454ef0-0d1d-41ca-9473-70ee92f0f4d6
+2025-02-26 14:44:25:876 [fc454ef0][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2025-02-26 14:44:25:876 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-02-26 14:44:25:901 [fc454ef0][AndroidUiautomator2Driver@c83f] Retrieving device list
+2025-02-26 14:44:25:901 [fc454ef0][ADB] Trying to find connected Android devices
+2025-02-26 14:44:25:901 [fc454ef0][ADB] Getting connected devices
+2025-02-26 14:44:25:927 [fc454ef0][ADB] Connected devices: [{"udid":"emulator-5554","state":"device"}]
+2025-02-26 14:44:25:927 [fc454ef0][AndroidUiautomator2Driver@c83f] Using device: emulator-5554
+2025-02-26 14:44:25:930 [fc454ef0][ADB] Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+2025-02-26 14:44:25:931 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+2025-02-26 14:44:25:958 [fc454ef0][ADB] Setting device id to emulator-5554
+2025-02-26 14:44:25:959 [fc454ef0][BaseDriver] Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2025-02-26 14:44:25:990 [fc454ef0][AndroidUiautomator2Driver@c83f] Checking whether app is actually present
+2025-02-26 14:44:25:991 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+2025-02-26 14:44:26:042 [fc454ef0][ADB] Current device property 'ro.build.version.sdk': 30
+2025-02-26 14:44:26:043 [fc454ef0][ADB] Getting device platform version
+2025-02-26 14:44:26:044 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+2025-02-26 14:44:26:109 [fc454ef0][ADB] Current device property 'ro.build.version.release': 11
+2025-02-26 14:44:26:109 [fc454ef0][ADB] Device API level: 30
+2025-02-26 14:44:26:109 [fc454ef0][AndroidUiautomator2Driver@c83f] Relaxing hidden api policy
+2025-02-26 14:44:26:110 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+2025-02-26 14:44:26:112 [fc454ef0][AndroidUiautomator2Driver@c83f] Parsing package and activity from the 'android-app.apk' file manifest
+2025-02-26 14:44:26:113 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+2025-02-26 14:44:26:119 [fc454ef0][ADB] Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2'
+2025-02-26 14:44:26:120 [fc454ef0][ADB] Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/35.0.1/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+2025-02-26 14:44:26:144 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+2025-02-26 14:44:26:202 [fc454ef0][ADB] Package name: 'io.appium.android.apis'
+2025-02-26 14:44:26:203 [fc454ef0][ADB] Main activity name: 'io.appium.android.apis.ApiDemos'
+2025-02-26 14:44:26:204 [fc454ef0][AndroidUiautomator2Driver@c83f] Resolved launch package -> activity: io.appium.android.apis -> io.appium.android.apis.ApiDemos
+2025-02-26 14:44:26:204 [fc454ef0][AndroidUiautomator2Driver@c83f] Resolved wait package -> activity: io.appium.android.apis -> io.appium.android.apis.ApiDemos
+2025-02-26 14:44:26:299 [fc454ef0][AndroidUiautomator2Driver@c83f] Pushing settings apk to the device...
+2025-02-26 14:44:26:299 [fc454ef0][ADB] Getting package info for 'io.appium.settings'
+2025-02-26 14:44:26:300 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+2025-02-26 14:44:26:303 [fc454ef0][AndroidUiautomator2Driver@c83f] Hidden API policy (https://developer.android.com/guide/app-compatibility/restrictions-non-sdk-interfaces) cannot be enabled. This might be happening because the device under test is not configured properly. Please check https://github.com/appium/appium/issues/13802 for more details. You could also set the "appium:ignoreHiddenApiPolicyError" capability to true in order to ignore this error, which might later lead to unexpected crashes or behavior of the automation server. Original error: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+2025-02-26 14:44:26:304 [fc454ef0][AndroidUiautomator2Driver@c83f] Deleting UiAutomator2 session
+2025-02-26 14:44:26:304 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings/.recorder.RecorderService'
+2025-02-26 14:44:26:309 [fc454ef0][AndroidUiautomator2Driver@c83f] Restoring hidden api policy to the device default configuration
+2025-02-26 14:44:26:309 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy''
+2025-02-26 14:44:26:567 [fc454ef0][AppiumDriver@a602] Event 'newSessionStarted' logged at 1740581066567 (14:44:26 GMT+0000 (Coordinated Universal Time))
+2025-02-26 14:44:26:568 [fc454ef0][AppiumDriver@a602] Encountered internal error running command: Error executing adbExec. Original error: 'Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20'; Command output: cmd: Can't find service: settings
+cmd: Can't find service: settings
+cmd: Can't find service: settings
+
+Error: Command '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings delete global hidden_api_policy_pre_p_apps;settings delete global hidden_api_policy_p_apps;settings delete global hidden_api_policy'' exited with code 20
+    at ChildProcess.<anonymous> (/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/teen_process/lib/exec.js:110:19)
+    at ChildProcess.emit (node:events:518:28)
+    at maybeClose (node:internal/child_process:1104:16)
+    at Socket.<anonymous> (node:internal/child_process:456:11)
+    at Socket.emit (node:events:518:28)
+    at Pipe.<anonymous> (node:net:343:12)
+    at Pipe.callbackTrampoline (node:internal/async_hooks:130:17)
+2025-02-26 14:44:26:569 [fc454ef0][HTTP] <-- POST /wd/session 500 718 ms - 1344 
+2025-02-26 14:44:26:843 [fc454ef0][ADB] App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' is not installed
+2025-02-26 14:44:26:843 [fc454ef0][ADB] Installing '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-02-26 14:44:26:844 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 help'
+2025-02-26 14:44:26:852 [d0653c1d][ADB] App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' is not installed
+2025-02-26 14:44:26:852 [d0653c1d][ADB] Installing '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-02-26 14:44:26:853 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 help'
+2025-02-26 14:44:26:875 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 features'
+2025-02-26 14:44:26:881 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 features'
+2025-02-26 14:44:26:912 [fc454ef0][ADB] The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2025-02-26 14:44:26:912 [fc454ef0][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -g /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-02-26 14:44:26:922 [d0653c1d][ADB] The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+2025-02-26 14:44:26:923 [d0653c1d][ADB] Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -g /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+2025-02-26 14:44:27:321 [Appium] Received SIGTERM - shutting down
