@@ -1,0 +1,36 @@
+07/15/2025 05:55:27 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeTest:38] - Starting Scenario ..Navigation to Secure Dialog
+07/15/2025 05:55:27 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:28 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on App
+07/15/2025 05:55:28 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:33 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:33 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Activity] is visible
+07/15/2025 05:55:33 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:35 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:35 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Activity
+07/15/2025 05:55:36 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:39 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:47 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Secure Surfaces] is visible
+07/15/2025 05:55:47 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Secure Surfaces
+07/15/2025 05:55:48 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:49 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:51 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Secure Dialog] is visible
+07/15/2025 05:55:51 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:52 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:52 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Secure Dialog
+07/15/2025 05:55:53 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:56 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:56 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Show secure dialog] is visible
+07/15/2025 05:55:56 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:56 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:55:57 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on SHOW SECURE DIALOG
+07/15/2025 05:55:58 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:55:58 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+07/15/2025 05:56:00 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on OK
+07/15/2025 05:56:00 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+07/15/2025 05:56:02 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterTest:59] - Completed Scenario ..Navigation to Secure Dialog
+07/15/2025 05:56:02 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterAll:31] - After All ...
+07/15/2025 05:56:03 - [DEBUG] - [io.github.selcukes.testng.listeners.TestListener.onFinish:30] - Gradle test Execution finished...
+07/15/2025 05:56:05 - [INFO] - [io.github.selcukes.core.listener.EventCapture.afterQuit:71] - Driver closed
+07/15/2025 05:56:05 - [DEBUG] - [io.github.selcukes.core.driver.DriverManager.lambda$removeAllDrivers$4:180] - Closed driver 148815426 and removed from DevicePool.
+07/15/2025 05:56:05 - [INFO] - [io.github.selcukes.core.driver.AppiumEngine.stopServer:69] - Stopped Appium server...
+07/15/2025 05:56:05 - [DEBUG] - [io.github.selcukes.core.listener.ResourceCleanupProvider.afterSuite:40] - Test Suite Execution finished...
