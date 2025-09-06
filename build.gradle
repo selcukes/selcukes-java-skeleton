@@ -13,7 +13,7 @@ repositories {
 }
 ext {
     selcukesVersion = "2.3.14"
-    lombokVersion = "1.18.38"
+    lombokVersion = "1.18.40"
     slf4jVersion = "2.25.1"
 }
 
