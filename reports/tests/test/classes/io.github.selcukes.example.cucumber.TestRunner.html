@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class io.github.selcukes.example.cucumber.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class io.github.selcukes.example.cucumber.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/io.github.selcukes.example.cucumber.html">io.github.selcukes.example.cucumber</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">2m43.24s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+<li>
+<a href="#">Standard error</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">runSerialScenario[0](&quot;Navigation to Secure Dialog&quot;, &quot;Secure Dialog Test in API Demo Application&quot;)</td>
+<td class="success">2m43.24s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>?[38;5;112m[Appium]?[0m Welcome to Appium v3.0.1
+?[38;5;112m[Appium]?[0m Non-default server args:
+?[38;5;112m[Appium]?[0m { address: ?[32m'127.0.0.1'?[39m, basePath: ?[32m'/wd/'?[39m, port: ?[33m35085?[39m, sessionOverride: ?[33mtrue?[39m }
+?[38;5;112m[Appium]?[0m The autodetected Appium home path: /Users/runner/.appium
+?[38;5;112m[Appium]?[0m Attempting to load driver uiautomator2...
+?[38;5;112m[Appium]?[0m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;112m[Appium]?[0m AndroidUiautomator2Driver has been successfully loaded in 2.154s
+?[38;5;112m[Appium]?[0m Appium REST http interface listener started on http://127.0.0.1:35085/wd
+?[38;5;112m[Appium]?[0m Available drivers:
+?[38;5;112m[Appium]?[0m   - uiautomator2@5.0.0 (automationName 'UiAutomator2')
+?[38;5;112m[Appium]?[0m No plugins have been installed. Use the &quot;appium plugin&quot; command to install the one(s) you want to use.
+?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/status?[39m 
+?[38;5;198m[AppiumDriver@8fdb]?[0m Calling AppiumDriver.getStatus() with args: []
+?[38;5;198m[AppiumDriver@8fdb]?[0m Responding to client with driver.getStatus() result: {&quot;ready&quot;:true,&quot;message&quot;:&quot;The server is ready to accept new connections&quot;,&quot;build&quot;:{&quot;version&quot;:&quot;3.0.1&quot;}}
+?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/status 200 9 ms - 110 
+?[38;5;86m[HTTP]?[0m Request idempotency key: d4f6b992-46f3-462e-a7d6-9e9fc47e5d21
+?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session?[39m {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}}
+?[38;5;198m[AppiumDriver@8fdb]?[0m Calling AppiumDriver.createSession() with args: [{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]},{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]},{&quot;firstMatch&quot;:[{&quot;appium:app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;appium:automationName&quot;:&quot;UIAutomator2&quot;,&quot;platformName&quot;:&quot;ANDROID&quot;}]}]
+?[38;5;198m[AppiumDriver@8fdb]?[0m Event 'newSessionRequested' logged at 1757135489892 (05:11:29 GMT+0000 (Coordinated Universal Time))
+?[38;5;112m[Appium]?[0m Attempting to find matching driver for automationName 'UIAutomator2' and platformName 'ANDROID'
+?[38;5;112m[Appium]?[0m The 'uiautomator2' driver was installed and matched caps.
+?[38;5;112m[Appium]?[0m Will require it at /Users/runner/.appium/node_modules/appium-uiautomator2-driver
+?[38;5;112m[Appium]?[0m Requiring driver at /Users/runner/.appium/node_modules/appium-uiautomator2-driver/build/index.js
+?[38;5;198m[AppiumDriver@8fdb]?[0m Appium v3.0.1 creating new AndroidUiautomator2Driver (v5.0.0) session
+?[38;5;198m[AppiumDriver@8fdb]?[0m Checking BaseDriver versions for Appium and AndroidUiautomator2Driver
+?[38;5;198m[AppiumDriver@8fdb]?[0m Appium's BaseDriver version is 10.0.0
+?[38;5;198m[AppiumDriver@8fdb]?[0m AndroidUiautomator2Driver's BaseDriver version is 10.0.0
+?[38;5;198m[AppiumDriver@8fdb]?[0m There are no active sessions for cleanup
+?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m 
+?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Creating session with W3C capabilities: {
+  &quot;alwaysMatch&quot;: {
+    &quot;platformName&quot;: &quot;ANDROID&quot;,
+    &quot;appium:app&quot;: &quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,
+    &quot;appium:automationName&quot;: &quot;UIAutomator2&quot;
+  },
+  &quot;firstMatch&quot;: [
+    {}
+  ]
+}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Session created with session id: f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Found 6 'build-tools' folders under '/Users/runner/Library/Android/sdk' (newest first):
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/36.0.0
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/35.0.1
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/35.0.0
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/34.0.0
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.3
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m     /Users/runner/Library/Android/sdk/build-tools/33.0.2
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Retrieving device list
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Trying to find connected Android devices
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting connected devices
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Connected devices: [{&quot;udid&quot;:&quot;emulator-5554&quot;,&quot;state&quot;:&quot;device&quot;}]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Using device: emulator-5554
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Using 'adb' from '/Users/runner/Library/Android/sdk/platform-tools/adb'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 start-server'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Setting device id to emulator-5554
+?[38;5;121m[f928f33f]?[0m?[38;5;123m[BaseDriver]?[0m Using local app '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Checking whether app is actually present
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.sdk': 30
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting device platform version
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.release'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Current device property 'ro.build.version.release': 11
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Device API level: 30
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Relaxing hidden api policy
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell 'settings put global hidden_api_policy_pre_p_apps 1;settings put global hidden_api_policy_p_apps 1;settings put global hidden_api_policy 1''
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Parsing package and activity from the 'android-app.apk' file manifest
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 wait-for-device'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Using 'aapt2' from '/Users/runner/Library/Android/sdk/build-tools/36.0.0/aapt2'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Reading package manifest: '/Users/runner/Library/Android/sdk/build-tools/36.0.0/aapt2 dump badging /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell echo ping'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Package name: 'io.appium.android.apis'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Main activity name: 'io.appium.android.apis.ApiDemos'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Resolved launch package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Resolved wait package -&gt; activity: io.appium.android.apis -&gt; io.appium.android.apis.ApiDemos
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Pushing settings apk to the device...
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting package info for 'io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' is not installed
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Installing '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 help'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 features'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -g /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/io.appium.settings/apks/settings_apk-debug.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The installation of 'settings_apk-debug.apk' took 9879ms
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Install command stdout: Performing Streamed Install
+Success
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd notification allow_listener io.appium.settings/.NLService'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell appops set io.appium.settings PROJECT_MEDIA allow'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;78m[SettingsApp]?[0m Starting Appium Settings app
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start-activity -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys activity services io.appium.settings'
+?[38;5;121m[f928f33f]?[0m?[38;5;160m[Logcat]?[0m Starting logs capture with command: /Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 logcat -v threadtime
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Forwarding UiAutomator2 Server port 6790 to local port 8200
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Forwarding system: 8200 to device: 6790
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 forward tcp:8200 tcp:6790'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m UIA2Proxy options: {&quot;server&quot;:&quot;127.0.0.1&quot;,&quot;port&quot;:8200,&quot;keepAlive&quot;:true,&quot;scheme&quot;:&quot;http&quot;,&quot;base&quot;:&quot;&quot;,&quot;reqBasePath&quot;:&quot;&quot;,&quot;sessionId&quot;:null,&quot;timeout&quot;:240000}
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting package info for 'io.appium.uiautomator2.server'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.uiautomator2.server'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting install status for io.appium.uiautomator2.server.test
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Checking app cert for /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell cmd package list packages'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Using 'apksigner.jar' from '/Users/runner/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Starting apksigner: /Users/runner/hostedtoolcache/Java_Corretto_jdk/17.0.16-8.1/x64/Contents/Home/bin/java -Xmx1024M -Xss1m -jar /Users/runner/Library/Android/sdk/build-tools/36.0.0/lib/apksigner.jar verify --print-certs /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m 'io.appium.uiautomator2.server.test' is not installed
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m apksigner stdout: Signer #1 certificate DN: C=US, O=Android, CN=Android Debug
+Signer #1 certificate SHA-256 digest: ff2c1b0d041edb6e32a5f7c190ca9c3e78c4ca2cddbbb76133fc30c40b291e30
+Signer #1 certificate SHA-1 digest: b3de7d52e6aa703f166c4ee6e921c2816278c393
+Signer #1 certificate MD5 digest: 7dce13e4e43fbe159a70f7a252cb0acf
+
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is signed with a non-default certificate
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting package info for 'io.appium.android.apis'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys package io.appium.android.apis'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m App '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk' is not installed
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Server packages status: [{&quot;installState&quot;:&quot;notInstalled&quot;,&quot;appPath&quot;:&quot;/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk&quot;,&quot;appId&quot;:&quot;io.appium.uiautomator2.server&quot;},{&quot;installState&quot;:&quot;notInstalled&quot;,&quot;appPath&quot;:&quot;/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk&quot;,&quot;appId&quot;:&quot;io.appium.uiautomator2.server.test&quot;}]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Server packages are going to be (re)installed
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 version'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The application at '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install -r --no-incremental /Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m App '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' is not installed
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Installing '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The application at '/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk' will not be cached, because the device under test has confirmed the support of streamed installs
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 install /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The installation of 'appium-uiautomator2-server-debug-androidTest.apk' took 5017ms
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Install command stdout: Performing Streamed Install
+Success
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The installation of 'appium-uiautomator2-server-v8.0.0.apk' took 10741ms
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Install command stdout: Performing Streamed Install
+Success
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 30000ms for services to be available
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell pm list instrumentation'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Instrumentation target 'io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner' is available
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Adding packages [&quot;io.appium.settings&quot;,&quot;io.appium.uiautomator2.server&quot;,&quot;io.appium.uiautomator2.server.test&quot;] to Doze whitelist
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Got the following command chunks to execute: [[&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.settings&quot;,&quot;;&quot;,&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.uiautomator2.server&quot;,&quot;;&quot;,&quot;dumpsys&quot;,&quot;deviceidle&quot;,&quot;whitelist&quot;,&quot;+io.appium.uiautomator2.server.test&quot;,&quot;;&quot;]]
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys deviceidle whitelist +io.appium.settings ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server ; dumpsys deviceidle whitelist +io.appium.uiautomator2.server.test ;'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m The installation of 'android-app.apk' took 8859ms
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Install command stdout: Performing Streamed Install
+Success
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Performing shallow cleanup of automation leftovers
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m No obsolete sessions have been detected (socket hang up)
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am force-stop io.appium.uiautomator2.server.test'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Starting UIAutomator2 server 8.0.0
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Using UIAutomator2 server from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v8.0.0.apk' and test from '/Users/runner/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 30000ms for UiAutomator2 to be online...
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Creating ADB subprocess with args: [&quot;-P&quot;,&quot;5037&quot;,&quot;-s&quot;,&quot;emulator-5554&quot;,&quot;shell&quot;,&quot;am&quot;,&quot;instrument&quot;,&quot;-w&quot;,&quot;-e&quot;,&quot;disableAnalytics&quot;,&quot;true&quot;,&quot;io.appium.uiautomator2.server.test/androidx.test.runner.AndroidJUnitRunner&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m [Instrumentation] 
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m socket hang up
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/status' to command name 'getStatus'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /status] to [GET http://127.0.0.1:8200/status] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;None&quot;,&quot;value&quot;:{&quot;build&quot;:{&quot;version&quot;:&quot;8.0.0&quot;,&quot;versionCode&quot;:221},&quot;message&quot;:&quot;UiAutomator2 Server is ready to accept commands&quot;,&quot;ready&quot;:true}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m The initialization of the instrumentation process took 27666ms
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/session' to command name 'createSession'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /session] to [POST http://127.0.0.1:8200/session] with body: {&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;,&quot;appActivity&quot;:&quot;io.appium.android.apis.ApiDemos&quot;}],&quot;alwaysMatch&quot;:{}}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;capabilities&quot;:{&quot;firstMatch&quot;:[{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;,&quot;appActivity&quot;:&quot;io.appium.android.apis.ApiDemos&quot;}],&quot;alwaysMatch&quot;:{}},&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Determined the downstream protocol as 'W3C'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /appium/device/pixel_ratio] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/appium/device/pixel_ratio] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /appium/device/system_bars] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/appium/device/system_bars] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/window/current/size] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /appium/device/info] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/appium/device/info] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys power'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:3.5}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;height&quot;:2560,&quot;width&quot;:1440}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;statusBar&quot;:84}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;androidId&quot;:&quot;d56caac436a5ebb4&quot;,&quot;apiVersion&quot;:&quot;30&quot;,&quot;bluetooth&quot;:{&quot;state&quot;:&quot;ON&quot;},&quot;brand&quot;:&quot;Android&quot;,&quot;carrierName&quot;:&quot;Android&quot;,&quot;displayDensity&quot;:560,&quot;locale&quot;:&quot;en_US&quot;,&quot;manufacturer&quot;:&quot;unknown&quot;,&quot;model&quot;:&quot;Android SDK built for x86_64&quot;,&quot;networks&quot;:[{&quot;capabilities&quot;:{&quot;SSID&quot;:null,&quot;linkDownBandwidthKbps&quot;:42453,&quot;linkUpstreamBandwidthKbps&quot;:42453,&quot;networkCapabilities&quot;:&quot;NET_CAPABILITY_NOT_METERED,NET_CAPABILITY_INTERNET,NET_CAPABILITY_NOT_RESTRICTED,NET_CAPABILITY_TRUSTED,NET_CAPABILITY_NOT_VPN,NET_CAPABILITY_VALIDATED,NET_CAPABILITY_NOT_ROAMING,NET_CAPABILITY_FOREGROUND,NET_CAPABILITY_NOT_CONGESTED,NET_CAPABILITY_NOT_SUSPENDED&quot;,&quot;signalStrength&quot;:-30,&quot;transportTypes&quot;:&quot;TRANSPORT_WIFI&quot;},&quot;detailedState&quot;:&quot;CONNECTED&quot;,&quot;extraInfo&quot;:&quot;&quot;,&quot;isAvailable&quot;:true,&quot;isConnected&quot;:true,&quot;isFailover&quot;:false,&quot;isRoaming&quot;:false,&quot;state&quot;:&quot;CONNECTED&quot;,&quot;subtype&quot;:0,&quot;subtypeName&quot;:&quot;&quot;,&quot;type&quot;:1,&quot;typeName&quot;:&quot;WIFI&quot;}],&quot;platformVersion&quot;:&quot;11&quot;,&quot;realDisplaySize&quot;:&quot;1440x2560&quot;,&quot;timeZone&quot;:&quot;GMT&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Screen already unlocked, doing nothing
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Starting 'io.appium.android.apis/io.appium.android.apis.ApiDemos' and waiting for 'io.appium.android.apis/io.appium.android.apis.ApiDemos'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell am start-activity -W -n io.appium.android.apis/io.appium.android.apis.ApiDemos -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Expected package names to be focused within 20000ms: 'io.appium.android.apis'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Expected activity name patterns to be focused within 20000ms: '/^io\.appium\.android\.apis\.ApiDemos$/'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Getting focused package and activity
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Running '/Users/runner/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell dumpsys window displays'
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Focused package: io.appium.android.apis
+?[38;5;121m[f928f33f]?[0m?[38;5;229m[ADB]?[0m Focused fully qualified activity name: io.appium.android.apis.ApiDemos
+?[38;5;121m[f928f33f]?[0m?[38;5;198m[AppiumDriver@8fdb]?[0m New AndroidUiautomator2Driver session created successfully, session f928f33f-675c-4322-a393-c407fe1ced85 added to master session list
+?[38;5;121m[f928f33f]?[0m?[38;5;198m[AppiumDriver@8fdb]?[0m Event 'newSessionStarted' logged at 1757135594218 (05:13:14 GMT+0000 (Coordinated Universal Time))
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Cached the protocol value 'W3C' for the new session f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.createSession() result: {&quot;capabilities&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;,&quot;platform&quot;:&quot;LINUX&quot;,&quot;webStorageEnabled&quot;:false,&quot;takesScreenshot&quot;:true,&quot;javascriptEnabled&quot;:true,&quot;databaseEnabled&quot;:false,&quot;networkConnectionEnabled&quot;:true,&quot;locationContextEnabled&quot;:false,&quot;warnings&quot;:{},&quot;desired&quot;:{&quot;platformName&quot;:&quot;ANDROID&quot;,&quot;app&quot;:&quot;/Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk&quot;,&quot;automationName&quot;:&quot;UIAutomator2&quot;},&quot;deviceName&quot;:&quot;emulator-5554&quot;,&quot;deviceUDID&quot;:&quot;emulator-5554&quot;,&quot;appPackage&quot;:&quot;io.appium.android.apis&quot;,&quot;appActivity&quot;:&quot;io.appium.android.apis.ApiDemos&quot;,&quot;pixelRatio&quot;:&quot;3.5&quot;,&quot;statBarHeight&quot;:84,&quot;viewportRect&quot;:{&quot;left&quot;:0,&quot;top&quot;:84,&quot;width&quot;:1440,&quot;height&quot;:2476},&quot;deviceApiLevel&quot;:30,&quot;platformVersion&quot;:&quot;11&quot;,&quot;deviceManufacturer&quot;:&quot;unknown&quot;,&quot;deviceModel&quot;:&quot;Android SDK built for x86_64&quot;,&quot;deviceScreenSize&quot;:&quot;1440x2560&quot;,&quot;deviceScreenDensity&quot;:560}}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session 200 104282 ms - 1035 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/timeouts?[39m {&quot;implicit&quot;:1000}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.timeouts() with args: [null,null,null,null,1000,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m W3C timeout argument: {&quot;implicit&quot;:1000}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Set implicit wait to 1000ms
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.timeouts() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/timeouts 200 7 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;App&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;App&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;App&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 689 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-0008-ffff-ffff0000000c&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0008-ffff-ffff0000000c/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-0008-ffff-ffff0000000c/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0008-ffff-ffff0000000c/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/displayed 200 62 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-0008-ffff-ffff0000000c&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0008-ffff-ffff0000000c/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-0008-ffff-ffff0000000c/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0008-ffff-ffff0000000c/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/enabled 200 58 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0008-ffff-ffff0000000c/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;App&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/text 200 124 ms - 15 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/click?[39m {&quot;id&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-0008-ffff-ffff0000000c&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0008-ffff-ffff0000000c/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-0008-ffff-ffff0000000c/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0008-ffff-ffff0000000c/click] with body: {&quot;element&quot;:&quot;00000000-0000-0008-ffff-ffff0000000c&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0008-ffff-ffff0000000c/click 200 835 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJ...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJycrMzLzkrhUAAAAAoOqwWCxq2rSp2rdvL4vFori4OEnS2bNnZYzR3r17dfz4...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 7879 ms - 132632 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Activity&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Activity&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Activity&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 407 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Activity&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text 200 49 ms - 20 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/displayed 200 83 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJ...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJycrMzLzkrhUAAAAAoOqwWCxq2rSp2rdvL4vFori4OEnS2bNnZYzR3r17dfz4...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 659 ms - 151224 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Activity&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Activity&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Activity&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 193 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/displayed 200 36 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0009-ffff-ffff00000020/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-0009-ffff-ffff00000020/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/enabled 200 126 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Activity&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/text 200 34 ms - 20 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/click?[39m {&quot;id&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-0009-ffff-ffff00000020&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-0009-ffff-ffff00000020/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-0009-ffff-ffff00000020/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-0009-ffff-ffff00000020/click] with body: {&quot;element&quot;:&quot;00000000-0000-0009-ffff-ffff00000020&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-0009-ffff-ffff00000020/click 200 471 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJ...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eFNl/v//V9I2XaDQlrXsVRBkR2VfBdlEFFQUdMQVkVGWER0H5aOOOoqjiMygoIDLjKij8hn5OjAsIoiALAIilKWCgGDL0lK6r8n9+8MP/VGapEmbpcXn47re1wwn59znnZMgV165cx+LJCMAAAAAAAAAAHzMGuwGAAAAAAAAAACXJgJoAAAAAAAAAIBfEEADAAAAAAAAAPyCABoAAAAAAAAA4BcE0AAAAAAAAAAAvyCABgAAAAAAAAD4BQE0AAAAAAAAAMAvCKABAAAAAAAAAH5BAA0AAAAAAAAA8AsCaAAAAAAAAACAXxBAAwAAAAAAAAD8ggAaAAAAAAAAAOAXBNAAAAAAAAAAAL8ggAYAAAAAAAAA+AUBNAAAAAAAAADALwigcUmxWCyqX7++xo4dq08//VQpKSlyOByy2+1yOBwl//98HT58WIsWLdLw4cNVu3ZtWSyWYD8FAAAAAAAA4JJhkWSC3QRQGRaLRdHR0XrllVd06623KjY2tmS7NxwOh06ePKkFCxbopZdeUnFxsT/arbIsFosiIiIUFhYmq9WqkJAQhYWFSZKMMSoqKioJ8AsLC1VQUBDkjgEAAAAAAFDVEUCj2rJYLGrcuLG2bNmi+Ph4Wa2+m9DvcDi0fft2DR48WFlZWT4bt6oJCQlRVFSUIiIiFBMTo+7du6t169aqVauWYmNj1apVK0lSUVGRDh48qMzMTKWnp2vv3r3asWOHcnNzlZ+fr7y8PDkcjiA/GwAAAAAAAFQ1BNColiIjI7V3714lJCT4ddkMu90um812yYWroaGhio2NVUJCgq677jr16tVL/fv3V82aNT063uFw6MyZM/ryyy+1efNmrV+/XsnJycrMzLzkrhUAAAAAoOqwWCxq2rSp2rdvL4vFori4OEnS2bNnZYzR3r17dfz4...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 1660 ms - 151828 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/elements?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElements() with args: [&quot;accessibility id&quot;,&quot;Secure Surfaces&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/elements' to command name 'findElements'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/elements] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Surfaces&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:[]}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElements() result: []
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/elements 200 2567 ms - 12 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/window/rect?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getWindowRect() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /window/current/size] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/window/current/size] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;height&quot;:2560,&quot;width&quot;:1440}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getWindowRect() result: {&quot;width&quot;:1440,&quot;height&quot;:2560,&quot;x&quot;:0,&quot;y&quot;:0}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/window/rect 200 38 ms - 50 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/execute/sync?[39m {&quot;args&quot;:[{&quot;width&quot;:1440,&quot;top&quot;:100,&quot;percent&quot;:0.8,&quot;left&quot;:0,&quot;height&quot;:2304,&quot;direction&quot;:&quot;DOWN&quot;}],&quot;script&quot;:&quot;mobile: scrollGesture&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.execute() with args: [&quot;mobile: scrollGesture&quot;,[{&quot;width&quot;:1440,&quot;top&quot;:100,&quot;percent&quot;:0.8,&quot;left&quot;:0,&quot;height&quot;:2304,&quot;direction&quot;:&quot;DOWN&quot;}],&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /appium/gestures/scroll] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/appium/gestures/scroll] with body: {&quot;area&quot;:{&quot;left&quot;:0,&quot;top&quot;:100,&quot;width&quot;:1440,&quot;height&quot;:2304},&quot;direction&quot;:&quot;DOWN&quot;,&quot;percent&quot;:0.8}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:true}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.execute() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/execute/sync 200 7827 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/elements?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElements() with args: [&quot;accessibility id&quot;,&quot;Secure Surfaces&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/elements' to command name 'findElements'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /elements] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/elements] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Surfaces&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:true}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:[{&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}]}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElements() result: [{&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}]
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/elements 200 169 ms - 139 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Secure Surfaces&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Surfaces&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 52 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed 200 97 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Secure Surfaces&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Surfaces&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 70 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text 200 31 ms - 27 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed 200 38 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Secure Surfaces&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Surfaces&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 117 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/displayed 200 54 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000a-ffff-ffff0000003b/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000a-ffff-ffff0000003b/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/enabled 200 66 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Secure Surfaces&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/text 200 70 ms - 27 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/click?[39m {&quot;id&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-000a-ffff-ffff0000003b&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000a-ffff-ffff0000003b/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-000a-ffff-ffff0000003b/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000a-ffff-ffff0000003b/click] with body: {&quot;element&quot;:&quot;00000000-0000-000a-ffff-ffff0000003b&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000a-ffff-ffff0000003b/click 200 498 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6unJzcy+7ewUAAAAAqD0sFovatGmjbt26yWKxKC4uTpJ0/vx5GWN04MABnTx5...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 5348 ms - 95380 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Secure Dialog&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Dialog&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 695 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Secure Dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text 200 642 ms - 25 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/displayed 200 198 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6unJzcy+7ewUAAAAAqD0sFovatGmjbt26yWKxKC4uTpJ0/vx5GWN04MABnTx5...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 1387 ms - 95380 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Secure Dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Secure Dialog&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Secure Dialog&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 43 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/displayed 200 70 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000b-ffff-ffff0000004e/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000b-ffff-ffff0000004e/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/enabled 200 59 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;Secure Dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/text 200 44 ms - 25 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/click?[39m {&quot;id&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-000b-ffff-ffff0000004e&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000b-ffff-ffff0000004e/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-000b-ffff-ffff0000004e/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000b-ffff-ffff0000004e/click] with body: {&quot;element&quot;:&quot;00000000-0000-000b-ffff-ffff0000004e&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000b-ffff-ffff0000004e/click 200 794 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eJTlvf/xz0z2sCVhDXtEBIGwVPZdkE1EQUVBa1wpUstSl1qUS621irWI9KCggEvrVpdz5FgoixREQCCyCSEQoYBgwpIQsq8z9+8PD/kRM2syS4Lv13V9rjbPcj/feSaRa75zzz0WSUYAAAAAAAAAAPiYNdgFAAAAAAAAAAAuTzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKABAAAAAAAAAH5BAxoAAAAAAAAA4Bc0oAEAAAAAAAAAfkEDGgAAAAAAAADgFzSgAQAAAAAAAAB+QQMaAAAAAAAAAOAXNKBxWbFYLGrWrJmmTJmijz/+WBkZGbLb7bLZbLLb7RX//2KOHj2q5cuXa9y4cWrUqJEsFkuwHwIAAAAAAABw2bBIMsEuAqgJi8WiBg0a6KWXXtKtt96q2NjYiu3esNvtOn36tJYuXaoXXnhB5eXl/ii31rJYLIqMjFRYWJisVqtCQkIUFhYmSTLGqKysrKKBX1paqpKSkiBXDAAAAAAAgNqOBjTqLIvFolatWmn79u2Kj4+X1eq7Cf12u13JyckaNWqU8vLyfDZubRMSEqLo6GhFRkYqJiZG/fr1U6dOndSwYUPFxsaqY8eOkqSysjIdPnxYubm5ys7O1oEDB7Rr1y4VFhaquLhYRUVFstvtQX40AAAAAAAAqG1oQKNOioqK0oEDB5SQkODXZTNsNpvCw8Mvu+ZqaGioYmNjlZCQoOuuu04DBw7UsGHDVL9+fY/Ot9vtOnfunL744gtt27ZNmzZtUnp6unJzcy+7ewUAAAAAqD0sFovatGmjbt26yWKxKC4uTpJ0/vx5GWN04MABnTx5...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 4698 ms - 95380 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Show secure dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Show secure dialog&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Show secure dialog&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 44 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;SHOW SECURE DIALOG&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text 200 88 ms - 30 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/displayed 200 31 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15fFTl3f//90z2hAAJO2FVEATCogJhUwTZRAREFLRiUSlQy6LWUpVbLW0Fb0WkRcUCLq1Lb8VWbm+QRQQREEUEZAcpIKuQELKQfeb6/cEv+RIzk8wkc3Im4fV8PD4P5SzX+Zwz55zMfOaa6zgkGQEAAAAAAAAAEGBOuxMAAAAAAAAAAFRPFKABAAAAAAAAAJagAA0AAAAAAAAAsAQFaAAAAAAAAACAJShAAwAAAAAAAAAsQQEaAAAAAAAAAGAJCtAAAAAAAAAAAEtQgAYAAAAAAAAAWIICNAAAAAAAAADAEhSgAQAAAAAAAACWoAANAAAAAAAAALAEBWgAAAAAAAAAgCUoQAMAAAAAAAAALEEBGgAAAAAAAABgCQrQAAAAAAAAAABLUIBGteJwOFS/fn2NGTNGH374oU6fPi232y2XyyW32130/4Vx+PBhLV68WEOGDFGtWrXkcDjs3gUAAAAAAACg2nBIMnYnAVSEw+FQbGysXnjhBd15552Ki4srmu4Pt9utM2fOaOHChZo9e7YKCgqsSDdoORwORUZGKiwsTE6nUyEhIQoLC5MkGWOUn59fVMDPy8tTbm6uzRkDAAAAAAAg2FGARpXlcDiUkJCgLVu2qFGjRnI6A9eh3+12a+vWrRowYIAyMjIC1m6wCQkJUXR0tCIjI1W7dm11795dbdq0Uc2aNRUXF6fWrVtLkvLz83XgwAGlp6crNTVVu3fv1rZt25SVlaWcnBxlZ2fL7XbbvDcAAAAAAAAINhSgUSVFRUVp9+7datmypaXDZrhcLoWHh1e74mpoaKji4uLUsmVL3XLLLerZs6duuukm1ahRw6f13W63zp07p88++0ybN2/W+vXr...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15fFTl3f//90z2hAAJO2FVEATCogJhUwTZRAREFLRiUSlQy6LWUpVbLW0Fb0WkRcUCLq1Lb8VWbm+QRQQREEUEZAcpIKuQELKQfeb6/cEv+RIzk8wkc3Im4fV8PD4P5SzX+Zwz55zMfOaa6zgkGQEAAAAAAAAAEGBOuxMAAAAAAAAAAFRPFKABAAAAAAAAAJagAA0AAAAAAAAAsAQFaAAAAAAAAACAJShAAwAAAAAAAAAsQQEaAAAAAAAAAGAJCtAAAAAAAAAAAEtQgAYAAAAAAAAAWIICNAAAAAAAAADAEhSgAQAAAAAAAACWoAANAAAAAAAAALAEBWgAAAAAAAAAgCUoQAMAAAAAAAAALEEBGgAAAAAAAABgCQrQAAAAAAAAAABLUIBGteJwOFS/fn2NGTNGH374oU6fPi232y2XyyW32130/4Vx+PBhLV68WEOGDFGtWrXkcDjs3gUAAAAAAACg2nBIMnYnAVSEw+FQbGysXnjhBd15552Ki4srmu4Pt9utM2fOaOHChZo9e7YKCgqsSDdoORwORUZGKiwsTE6nUyEhIQoLC5MkGWOUn59fVMDPy8tTbm6uzRkDAAAAAAAg2FGARpXlcDiUkJCgLVu2qFGjRnI6A9eh3+12a+vWrRowYIAyMjIC1m6wCQkJUXR0tCIjI1W7dm11795dbdq0Uc2aNRUXF6fWrVtLkvLz83XgwAGlp6crNTVVu3fv1rZt25SVlaWcnBxlZ2fL7XbbvDcAAAAAAAAINhSgUSVFRUVp9+7datmypaXDZrhcLoWHh1e74mpoaKji4uLUsmVL3XLLLerZs6duuukm1ahRw6f13W63zp07p88++0ybN2/W+vXrderUKaWnp1e7YwUAAAAACB4Oh0NNmzZVhw4d5HA4FB8fL0k6f/68jDHavXu3...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 1477 ms - 213204 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;accessibility id&quot;,&quot;value&quot;:&quot;Show secure dialog&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;accessibility id&quot;,&quot;Show secure dialog&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;accessibility id&quot;,&quot;selector&quot;:&quot;Show secure dialog&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 54 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/displayed 200 38 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000c-ffff-ffff00000056/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000c-ffff-ffff00000056/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/enabled 200 161 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;SHOW SECURE DIALOG&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/text 200 88 ms - 30 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/click?[39m {&quot;id&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-000c-ffff-ffff00000056&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000c-ffff-ffff00000056/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-000c-ffff-ffff00000056/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000c-ffff-ffff00000056/click] with body: {&quot;element&quot;:&quot;00000000-0000-000c-ffff-ffff00000056&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000c-ffff-ffff00000056/click 200 546 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 500: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;error&quot;:&quot;unable to capture screen&quot;,&quot;message&quot;:&quot;Failed to capture a screenshot. Does the current view have 'secure' flag set?&quot;,&quot;stacktrace&quot;:&quot;io.appium.uiautomator2.common.exceptions.TakeScreenshotException: Failed to capture a screenshot. Does the current view have 'secure' flag set?\n\tat io.appium.uiautomator2.utils.ScreenshotHelper.takeDeviceScreenshot(ScreenshotHelper.java:137)\n\tat io.appium.uiautomator2.utils.ScreenshotHelper.takeScreenshot(ScreenshotHelper.java:59)\n\tat io.appium.uiautomator2.utils.ScreenshotHelper.takeScreenshot(ScreenshotHelper.java:76)\n\tat io.appium.uiautomator2.handler.CaptureScreenshot.safeHandle(CaptureScreenshot.java:32)\n\tat io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)\n\tat io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)\n\tat io.appium.uia...
+?[38;5;121m[f928f33f]?[0m?[38;5;123m[W3C]?[0m Matched W3C error code 'unable to capture screen' to UnableToCaptureScreen
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Encountered internal error running command: io.appium.uiautomator2.common.exceptions.TakeScreenshotException: Failed to capture a screenshot. Does the current view have 'secure' flag set?
+	at io.appium.uiautomator2.utils.ScreenshotHelper.takeDeviceScreenshot(ScreenshotHelper.java:137)
+	at io.appium.uiautomator2.utils.ScreenshotHelper.takeScreenshot(ScreenshotHelper.java:59)
+	at io.appium.uiautomator2.utils.ScreenshotHelper.takeScreenshot(ScreenshotHelper.java:76)
+	at io.appium.uiautomator2.handler.CaptureScreenshot.safeHandle(CaptureScreenshot.java:32)
+	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:59)
+	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:259)
+	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:253)
+	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:77)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:287)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:163)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:700)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:635)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:552)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:514)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:923)
+
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 500 3488 ms - 4143 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element?[39m {&quot;using&quot;:&quot;id&quot;,&quot;value&quot;:&quot;android:id/button1&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.findElement() with args: [&quot;id&quot;,&quot;android:id/button1&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Valid locator strategies for this request: xpath, id, class name, accessibility id, css selector, -android uiautomator
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Waiting up to 1000 ms for condition
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element' to command name 'findElement'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element] with body: {&quot;strategy&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;android:id/button1&quot;,&quot;context&quot;:&quot;&quot;,&quot;multiple&quot;:false}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:{&quot;ELEMENT&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;,&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;}}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.findElement() result: {&quot;element-6066-11e4-a52e-4f735466cecf&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;,&quot;ELEMENT&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element 200 1470 ms - 137 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/displayed?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementDisplayed() with args: [&quot;00000000-0000-000d-ffff-ffff00000073&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000d-ffff-ffff00000073/attribute/displayed' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000d-ffff-ffff00000073/attribute/displayed] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000d-ffff-ffff00000073/attribute/displayed] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementDisplayed() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/displayed 200 40 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/enabled?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.elementEnabled() with args: [&quot;00000000-0000-000d-ffff-ffff00000073&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000d-ffff-ffff00000073/attribute/enabled' to command name 'getAttribute'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /element/00000000-0000-000d-ffff-ffff00000073/attribute/enabled] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000d-ffff-ffff00000073/attribute/enabled] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;true&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.elementEnabled() result: true
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/enabled 200 306 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/text?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Driver proxy active, passing request on via HTTP proxy
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/text' to command name 'getText'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/text] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000d-ffff-ffff00000073/text] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;OK&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Replacing sessionId 490a90e0-79e8-4f52-a076-956f2aa9bbcd with f928f33f-675c-4322-a393-c407fe1ced85
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/text 200 28 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mPOST?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/click?[39m {&quot;id&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.click() with args: [&quot;00000000-0000-000d-ffff-ffff00000073&quot;,&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/element/00000000-0000-000d-ffff-ffff00000073/click' to command name 'click'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [POST /element/00000000-0000-000d-ffff-ffff00000073/click] to [POST http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/element/00000000-0000-000d-ffff-ffff00000073/click] with body: {&quot;element&quot;:&quot;00000000-0000-000d-ffff-ffff00000073&quot;}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:null}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.click() result: null
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- POST /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/element/00000000-0000-000d-ffff-ffff00000073/click 200 1040 ms - 14 
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m ?[37m--&gt;?[39m ?[37mGET?[39m ?[37m/wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot?[39m {}
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Calling AppiumDriver.getScreenshot() with args: [&quot;f928f33f-675c-4322-a393-c407fe1ced85&quot;]
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Matched '/screenshot' to command name 'getScreenshot'
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Proxying [GET /screenshot] to [GET http://127.0.0.1:8200/session/490a90e0-79e8-4f52-a076-956f2aa9bbcd/screenshot] with no body
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Got response with status 200: {&quot;sessionId&quot;:&quot;490a90e0-79e8-4f52-a076-956f2aa9bbcd&quot;,&quot;value&quot;:&quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eBRluv//T3f2DUhYQ1gVBNkSBDFsEkE2MbI4KODIHEQGHIfFFRcEBs8IHETgDAoOizgzOo7gqONXVBBBFAQRBdlBBAQhQiBkIXv6+f3BjxxiOkkn6eruhPfruu5LqeWpu6qrKt13P/2UTZIRAAAAAAAAAABuZvd2AgAAAAAAAACA6okCNAAAAAAAAADAEhSgAQAAAAAAAACWoAANAAAAAAAAALAEBWgAAAAAAAAAgCUoQAMAAAAAAAAALEEBGgAAAAAAAABgCQrQAAAAAAAAAABLUIAGAAAAAAAAAFiCAjQAAAAAAAAAwBIUoAEAAAAAAAAAlqAADQAAAAAAAACwBAVoAAAAAAAAAIAlKEADAAAAAAAAACxBARoAAAAAAAAAYAkK0KhWbDab6tWrpxEjRmj16tU6c+aMHA6HCgoK5HA4Cv//Shw9elTLly/XwIEDVbNmTdlsNm/vAgAAAAAAAFBt2CQZbycBVIbNZlNERITmzZun3/zmN4qMjCycXh4Oh0NJSUlaunSpZs+erfz8fCvS9Vk2m03BwcEKCAiQ3W6Xn5+fAgICJEnGGOXl5RUW8HNzc5WTk+PljAEAAAAAAODrKECjyrLZbIqJidG2bdsUHR0tu919HfodDod27Nihvn37Kj093W3t+ho/Pz+FhoYqODhYtWrV0i233KJWrVqpRo0aioyMVMuWLSVJeXl5OnTokNLS0pSSkqK9e/dq586dyszMVHZ2trKysuRwOLy8NwAAAAAAAPA1FKBRJYWEhGjv3r1q3ry5pcNmFBQUKDAwsNoVV/39/RUZGanmzZvr9ttvV7du3dSrVy+Fh4e7tL7D4dC5c+f06aefauvWrdq0aZNO...
+?[38;5;121m[f928f33f]?[0m?[38;5;-29m[AndroidUiautomator2Driver@43be]?[0m Responding to client with driver.getScreenshot() result: &quot;iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAACAASURBVHic7N15eBRluv//T3f2DUhYQ1gVBNkSBDFsEkE2MbI4KODIHEQGHIfFFRcEBs8IHETgDAoOizgzOo7gqONXVBBBFAQRBdlBBAQhQiBkIXv6+f3BjxxiOkkn6eruhPfruu5LqeWpu6qrKt13P/2UTZIRAAAAAAAAAABuZvd2AgAAAAAAAACA6okCNAAAAAAAAADAEhSgAQAAAAAAAACWoAANAAAAAAAAALAEBWgAAAAAAAAAgCUoQAMAAAAAAAAALEEBGgAAAAAAAABgCQrQAAAAAAAAAABLUIAGAAAAAAAAAFiCAjQAAAAAAAAAwBIUoAEAAAAAAAAAlqAADQAAAAAAAACwBAVoAAAAAAAAAIAlKEADAAAAAAAAACxBARoAAAAAAAAAYAkK0KhWbDab6tWrpxEjRmj16tU6c+aMHA6HCgoK5HA4Cv//Shw9elTLly/XwIEDVbNmTdlsNm/vAgAAAAAAAFBt2CQZbycBVIbNZlNERITmzZun3/zmN4qMjCycXh4Oh0NJSUlaunSpZs+erfz8fCvS9Vk2m03BwcEKCAiQ3W6Xn5+fAgICJEnGGOXl5RUW8HNzc5WTk+PljAEAAAAAAODrKECjyrLZbIqJidG2bdsUHR0tu919HfodDod27Nihvn37Kj093W3t+ho/Pz+FhoYqODhYtWrV0i233KJWrVqpRo0aioyMVMuWLSVJeXl5OnTokNLS0pSSkqK9e/dq586dyszMVHZ2trKysuRwOLy8NwAAAAAAAPA1FKBRJYWEhGjv3r1q3ry5pcNmFBQUKDAwsNoVV/39/RUZGanmzZvr9ttvV7du3dSrVy+Fh4e7tL7D4dC5c+f06aefauvWrdq0aZNOnz6ttLS0anesAAAAAAC+w2azqXHjxmrXrp1sNpuioqIkSRcuXJAxRnv37tXJ...
+?[38;5;121m[f928f33f]?[0m?[38;5;86m[HTTP]?[0m &lt;-- GET /wd/session/f928f33f-675c-4322-a393-c407fe1ced85/screenshot 200 2136 ms - 213008 
+</pre>
+</span>
+</div>
+<div class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>?[32m09/06/2025 05:11:15 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeAll:26] - Before All ...
+?[0m?[36m09/06/2025 05:11:23 - [DEBUG] - [io.github.selcukes.excel.SingleExcelData.init:50] - Using excel runner sheet : Smoke
+?[0m?[32m09/06/2025 05:11:24 - [INFO] - [io.github.selcukes.core.driver.DriverFactory.create:65] - Creating new MOBILE session...
+?[0m?[36m09/06/2025 05:11:24 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.lambda$getAppiumAppOptions$5:91] - Using APP: /Users/runner/work/selcukes-java-skeleton/selcukes-java-skeleton/src/test/resources/android-app.apk
+?[0m?[36m09/06/2025 05:11:24 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.createAppDriver:76] - Creating New ANDROID App Session...
+?[0m?[32m09/06/2025 05:11:24 - [INFO] - [io.github.selcukes.core.driver.AppiumEngine.startLocalServer:59] - Starting Appium server...
+?[0m?[36m09/06/2025 05:11:29 - [DEBUG] - [io.github.selcukes.core.driver.AppiumManager.getServiceUrl:55] - Using ServiceUrl[http://127.0.0.1:35085]
+?[0m?[32m09/06/2025 05:13:15 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeTest:38] - Starting Scenario ..Navigation to Secure Dialog
+?[0m?[32m09/06/2025 05:13:15 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:16 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on App
+?[0m?[32m09/06/2025 05:13:16 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:24 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:25 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Activity] is visible
+?[0m?[32m09/06/2025 05:13:25 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:26 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:26 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Activity
+?[0m?[32m09/06/2025 05:13:27 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:28 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:40 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Secure Surfaces] is visible
+?[0m?[32m09/06/2025 05:13:41 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Secure Surfaces
+?[0m?[32m09/06/2025 05:13:41 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:47 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:48 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Secure Dialog] is visible
+?[0m?[32m09/06/2025 05:13:48 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:50 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:50 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on Secure Dialog
+?[0m?[32m09/06/2025 05:13:51 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:55 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:56 - [INFO] - [io.github.selcukes.core.validation.ElementValidation.isVisible:85] - Verifying element [accessibility id: Show secure dialog] is visible
+?[0m?[32m09/06/2025 05:13:56 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:13:57 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:13:58 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on SHOW SECURE DIALOG
+?[0m?[32m09/06/2025 05:13:58 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:14:02 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.beforeStep:43] - Before Step
+?[0m?[32m09/06/2025 05:14:03 - [INFO] - [io.github.selcukes.core.listener.EventCapture.beforeClick:49] - Clicking on OK
+?[0m?[32m09/06/2025 05:14:05 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterStep:48] - After Step
+?[0m?[32m09/06/2025 05:14:07 - [INFO] - [io.github.selcukes.example.cucumber.steps.CucumberHooks.afterTest:59] - Completed Scenario ..Navigation to Secure Dialog
+?[0m</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.14.3</a> at Sep 6, 2025, 5:14:13 AM</p>
+</div>
+</div>
+</body>
+</html>
